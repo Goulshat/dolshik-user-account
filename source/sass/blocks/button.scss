@@ -1,0 +1,67 @@
+.button {
+<<<<<<< HEAD
+=======
+  position: relative;
+>>>>>>> 726e9947a39b8bbe9f125ef2d7aa3c37f0153500
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+<<<<<<< HEAD
+  //padding: 14px 20px;
+  //font-weight: 700;
+  //font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $white;
+  border: 2px solid $whitey;
+
+  @media (min-width: $tablet) {
+    font-size: 17px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $white;
+  }
+
+  &:active {
+    color: $white;
+  }
+
+  &:disabled {
+    color: $white;
+    background-color: $white;
+    border-color: $white;
+=======
+  padding: 30px 40px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $accent;
+  border: 2px solid $accent;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-light;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    opacity: 0.8;
+  }
+
+  @media (max-width: $mobile) {
+    width: 288px;
+>>>>>>> 726e9947a39b8bbe9f125ef2d7aa3c37f0153500
+  }
+}

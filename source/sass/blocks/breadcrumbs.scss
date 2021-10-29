@@ -1,0 +1,45 @@
+.breadcrumbs__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px 35px; // если задать общему контейнеру .page__body padding по бокам то этот можно убрать
+}
+
+.breadcrumbs__item {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+  //max-width: 350px; для переполнения
+
+  &::after {
+    position: absolute;
+    bottom: 50%;
+    right: -20px;
+    content: "";
+    width: 15px;
+    height: 1px;
+    background-color: $text-extra-light;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:last-child::after {
+    display: none;
+  }
+}
+
+.breadcrumbs__link {
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+  border-bottom: 1px solid currentColor;
+  
+  &--current {
+    color: $text-extra-light;
+    border-bottom-color: transparent;
+  }
+}

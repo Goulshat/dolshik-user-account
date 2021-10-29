@@ -1,0 +1,31 @@
+.usernav {
+  //@include flex;
+}
+
+.usernav__list {
+  @include clear-list;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.usernav__section:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.usernav__section-title {
+  margin: 0 0 20px 0;
+  font-weight: 600;
+}
+
+.usernav__section-list {
+  @include clear-list;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.usernav__item-link {
+  color: inherit;
+  text-decoration: none;
+}
