@@ -1,0 +1,178 @@
+.documents {
+  margin-bottom: 105px;
+  padding: 30px 40px 40px 40px;
+  color: $black;
+  border: 1px solid $border-color;
+  border-radius: 10px;
+}
+
+.documents__title {
+  margin: 0;
+  margin-bottom: 18px;
+  font-size: 21px;
+}
+
+.documents__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 38px;
+  padding-bottom: 23px;
+
+  &--bordered {
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+.documents__list {
+  flex: 1 1 380px;
+}
+
+.documents__download {
+  flex: 1 1 450px;
+}
+
+.documents__templates {
+  flex: 1 1 320px;
+  padding-left: 60px;
+  border-left: 1px solid $border-color;
+}
+
+.documents__name {
+  position: relative;
+  margin: 0;
+  margin-bottom: 5px;
+
+  &--checked,
+  &--to-sign {
+    padding-left: 20px;
+
+    &::before {
+      position: absolute;
+      display: flex;
+      content: "";
+      top: 50%;
+      left: -10px;
+      width: 15px;
+      height: 15px;
+      background: url("../../img/icons/tick.svg") center no-repeat;
+      transform: translateY(-50%);
+    }
+  }
+
+  &--to-sign::before {
+    background-image: url("../../img/icons/round-tick.svg");
+  }
+}
+
+.documents__name-status {
+  position: relative;
+  padding-left: 20px;
+
+  &--uploaded {
+    color: $documents;
+  }
+
+  &--download {
+    color: $accent-blue;
+    text-decoration: underline;
+  }
+
+  &--delete {
+    color: $accent-red;
+    text-decoration: underline;
+  }
+
+  &::before {
+    position: absolute;
+    content: "\2014";
+    //top: 50%;
+    color: $documents;
+    left: 0;
+  }
+}
+
+.documents__name-time {
+  color: $documents;
+}
+
+.documents__name-download {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.documents__list-heading {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: $documents;
+}
+
+/*  Раздел загрузки документов  */
+.documents__upload {
+  display: grid;
+  grid-template-areas:
+    "label1 label2 . ."
+    "input btn-choose btn-upload .";
+  grid-template-columns: auto auto auto 1fr;
+  row-gap: 3px;
+  column-gap: 13px;
+  align-items: center;
+}
+
+.documents__upload-label,
+.documents__upload-div {
+  padding-left: 5px;
+  font-size: 14px;
+  color: #818181;
+}
+
+.documents__upload-label {
+  grid-area: label1;
+}
+
+.documents__upload-div {
+  grid-area: label2;
+}
+
+.documents__upload-input {
+  grid-area: input;
+  display: block;
+  padding: 10px 20px;
+  width: 325px;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+
+  &::placeholder {
+    color: #9f9f9f;
+  }
+}
+
+.documents__upload-choose {
+  grid-area: btn-choose;
+  padding: 6px 20px;
+  min-width: 140px;
+  color: #9f9f9f;
+  border: none;
+  background: linear-gradient(180deg, #ebebeb 0%, rgba(239, 239, 239, 0.838542) 20%, rgba(193, 193, 193, 0) 121.05%);
+  filter: drop-shadow(0px 2px 0px rgba(0, 0, 0, 0.25));
+  border-radius: 5px;
+}
+
+.documents__upload-btn {
+  grid-area: btn-upload;
+  //width: 145px;
+}
+
+/* Договоры */
+
+.documents__list-to-sign {
+  flex: 1 1 250px;
+}
+
+.documents__list-signed {
+  flex: 1 1 auto;
+}
+
+.documents__upload-contract {
+  flex: 1 1 375px;
+}
