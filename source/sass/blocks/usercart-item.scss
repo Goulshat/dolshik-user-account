@@ -1,0 +1,129 @@
+.usercart-item {
+  //display: flex;
+  align-items: flex-start;
+  padding: 20px 45px 20px 20px;
+  border: 1px solid $border-color;
+  border-radius: 10px;
+  box-shadow: 0px 4px 40px $box-shadow;
+}
+
+.usercart-item__image {
+  display: block;
+  width: 113px;
+  height: 113px;
+  object-fit: contain;
+  //margin-right: 25px;
+}
+
+.usercart-item__inner {
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.usercart-item__title {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  color: $black;
+}
+
+.usercart-item__delivery {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 40px;
+  padding-left: 30px;
+  color: $text-input-delivery;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 19px;
+    height: 19px;
+    content: "";
+    border: 1px solid $border-color;
+    border-radius: 2px;
+    transform: translateY(-50%);
+  }
+}
+
+.usercart-item__delivery-today {
+  color: $text-extra-light;
+}
+
+.usercart-item__delivery-date {
+  color: $accent-blue;
+  text-decoration: underline;
+}
+
+/*  Цена  */
+
+.usercart-item__price {
+  //width: 130px;
+  //display: flex;
+  padding-top: 16px;
+  color: $black;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+
+  &:last-child {
+    text-align: right;
+  }
+}
+
+/*  Кнопки для выбора количества товара */
+
+.usercart-item__quantity {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  // margin-left: 65px;
+  // margin-right: 25px;
+  //width: 130px;
+  padding-top: 10px;
+  border-radius: 5px;
+}
+
+.usercart-item__quantity-inner {
+  display: flex;
+  justify-content: center;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.usercart-item__quantity-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 35px;
+  color: $white;
+  background-color: $accent-blue;
+  border: none;
+
+  &--left {
+    border-radius: 5px 0 0 5px;
+  }
+
+  &--right {
+    border-radius: 0 5px 5px 0;
+  }
+}
+
+.usercart-item__quantity-number {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  width: 30px;
+  text-align: center;
+  border: none;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+}

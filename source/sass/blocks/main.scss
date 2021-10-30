@@ -1,14 +1,12 @@
 .main {
-  //min-width: 320px;
-  min-width: 320px;
-  min-height: 100%;
-  margin: 0;
+  grid-column: 2 / -1;
+  padding-top: 45px;
+}
+
+.main__title {
+  margin-top: 0;
+  margin-bottom: 40px;
   padding: 0;
-  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
-  font-size: $font-size;
-  line-height: 1;
-  font-weight: 400;
-  color: $regularblue;
-  text-align: left;
-  background-color: $white;
+  font-size: $font-title;
+  font-weight: 300;
 }

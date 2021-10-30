@@ -1,7 +1,16 @@
+.breadcrumbs {
+  grid-column: 1 / -1;
+}
+
 .breadcrumbs__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  padding: 25px 35px; // если задать общему контейнеру .page__body padding по бокам то этот можно убрать
+  padding-top: 23px;
+  padding-bottom: 23px; // если задать общему контейнеру то этот можно убратьs
+  border-bottom: 1px dashed pink;
 }
 
 .breadcrumbs__item {
@@ -36,8 +45,8 @@
   text-decoration: none;
   color: inherit;
   padding: 0;
-  border-bottom: 1px solid currentColor;
-  
+  text-decoration: underline;
+
   &--current {
     color: $text-extra-light;
     border-bottom-color: transparent;

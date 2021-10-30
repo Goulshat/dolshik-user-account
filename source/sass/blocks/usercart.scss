@@ -1,0 +1,135 @@
+//.usercart {}
+
+.usercart__heading-wrap {
+  display: grid;
+  grid-template-columns: 1fr 110px 150px 110px;
+  gap: 25px;
+  margin-bottom: 45px;
+  padding: 16px 30px 16px 160px;
+  text-align: center;
+  border: 1px solid $border-color;
+  border-radius: 10px;
+};
+
+.usercart__inner-grid {
+  display: grid;
+  grid-template-columns: 113px 1fr 110px 150px 110px;
+  gap: 25px;
+}
+
+.usercart__heading-item {
+  //margin-left: 104px;
+  line-height: 30px;
+  color: $black;
+}
+
+.usercart__heading-item:first-child {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.usercart__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* РЕАЛЬНЫЙ ОТСТУП - вернуть
+  margin-bottom: 20px;*/
+  /*отступ временный для пиксель перфект*/
+  margin-bottom: 15px;
+}
+
+.usercart__item {
+  margin-bottom: 29px;
+}
+
+.usercart__item:last-child {
+  margin-bottom: 0;
+}
+
+/*  Нижний раздел - оплата кешбеком  */
+
+.usercart__bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.usercart__cashback {
+  padding: 20px 23px 20px 26px;
+  border: 1px solid $border-color;
+  border-radius: 10px;
+}
+
+.usercart__cashback-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: $black;
+}
+
+.usercart__cashback-text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 22px;
+}
+
+.usercart__cashback-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.usercart__cashback-input {
+  // display: inline-block;
+  // vertical-align: middle;
+  margin-left: 20px;
+  padding: 9px;
+  width: 100%;
+  //align-items: center;
+  border: 1px solid $text-input-cashback;
+  border-radius: 5px;
+}
+
+.usercart__cashback-small-text{
+  font-size: 12px;
+  color: $text-small;
+}
+
+/* срок хранения */
+.usercart__onhold {
+  padding: 20px 25px 30px;
+  border: 1px solid $border-color;
+  border-radius: 10px;
+  //убрать прозрачность
+  background: transparent;
+}
+
+.usercart__onhold-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: $black;
+}
+
+.usercart__onhold-text {
+  position: relative;
+}
+
+.usercart__onhold-input {
+  padding: 9px;
+  border: 1px solid $text-input-cashback;
+  border-radius: 5px;
+}
+
+.usercart__onhold-calendar {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  fill: $black;
+  transform: translateY(-50%);
+}

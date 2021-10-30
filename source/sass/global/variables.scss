@@ -9,21 +9,26 @@ $accent-light-green: #67CE00; //price
 $accent-blue: #556DE6; // interactive
 $accent-red: #FF0000; //error, reset
 
-$bg-main: #E5E5E5;
-$bg-count: #E3ECEF;
+$bg-main: #e5e5e5;
+$bg-count: #e3ecef;
 
-$border-color: #D8D8D8;
-$border-light: #EFEFEF;
+$border-color: #d8d8d8;
+$border-light: #efefef;
 $box-shadow: rgba(0, 0, 0, 0.1);
 
 $text-grey: #545454;
-$text-extra-light: #ABABAB;
-$text-lighter: #CACACA;
-$text-light: #CBCBCB;
+$text-input-delivery: #5a5a5a;
+$text-input-cashback: #dcdcdc;
+$text-small: #afafaf;
+$text-extra-light: #ababab;
+$text-lighter: #cacaca;
+$text-light: #cbcbcb;
 $text-count: #687980;
 
-$font-size: 16px;
+// $font-regular: 16px;
+// $font-counter: 10px;
+// $font-title: 48px;
 
-$mobile: 576px; 
-$tablet: 768px; 
-$desktop: 1024px; 
+$mobile: 576px;
+$tablet: 768px;
+$desktop: 1024px;
