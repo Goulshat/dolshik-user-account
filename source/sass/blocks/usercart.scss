@@ -100,7 +100,9 @@
 
 /* срок хранения */
 .usercart__onhold {
-  padding: 20px 25px 30px;
+  align-self: flex-start;
+  justify-self: start;
+  padding: 20px 40px 30px 25px;
   border: 1px solid $border-color;
   border-radius: 10px;
   //убрать прозрачность
@@ -110,7 +112,7 @@
 .usercart__onhold-title {
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   font-size: 18px;
   font-weight: 600;
   color: $black;
@@ -118,10 +120,14 @@
 
 .usercart__onhold-text {
   position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 23px;
 }
 
 .usercart__onhold-input {
   padding: 9px;
+  width: 126px;
   border: 1px solid $text-input-cashback;
   border-radius: 5px;
 }
@@ -132,4 +138,39 @@
   right: 5px;
   fill: $black;
   transform: translateY(-50%);
+}
+
+/* Итоговая цена */
+
+.usercart__total {
+  align-self: flex-start;
+  padding: 20px 25px 30px;
+  border: 1px solid $border-color;
+  border-radius: 10px;
+}
+
+.usercart__total-title {
+  margin: 0;
+  padding-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: $black;
+
+  &:first-child {
+    padding-top: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $border-light;
+  }
+}
+
+.usercart__total-price {
+  color: $text-total-price;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.usercart__total-amount {
+  color: $accent-light-green;
+  font-weight: 600;
+  font-size: 21px;
 }
