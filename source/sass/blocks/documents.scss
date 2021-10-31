@@ -15,10 +15,10 @@
 .documents__wrap {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 38px;
-  padding-bottom: 23px;
 
   &--bordered {
+    padding-bottom: 23px;
+    margin-bottom: 38px;
     border-bottom: 1px solid $border-color;
   }
 }
@@ -44,14 +44,14 @@
 
   &--checked,
   &--to-sign {
-    padding-left: 20px;
+    padding-left: 25px;
 
     &::before {
       position: absolute;
       display: flex;
       content: "";
       top: 50%;
-      left: -10px;
+      left: 5px;
       width: 15px;
       height: 15px;
       background: url("../../img/icons/tick.svg") center no-repeat;
@@ -68,6 +68,16 @@
   position: relative;
   padding-left: 20px;
 
+  &::before {
+    position: absolute;
+    bottom: 40%;
+    left: 0;
+    content: "";
+    width: 15px;
+    height: 1px;
+    background-color: $documents;
+  }
+
   &--uploaded {
     color: $documents;
   }
@@ -80,14 +90,10 @@
   &--delete {
     color: $accent-red;
     text-decoration: underline;
-  }
 
-  &::before {
-    position: absolute;
-    content: "\2014";
-    //top: 50%;
-    color: $documents;
-    left: 0;
+    &::before {
+      display: none;
+    }
   }
 }
 
@@ -166,13 +172,34 @@
 /* Договоры */
 
 .documents__list-to-sign {
-  flex: 1 1 250px;
+  flex: 0 1 250px;
+  //border-right: 1px solid $border-color;
 }
 
 .documents__list-signed {
-  flex: 1 1 auto;
+  flex: 3 2 auto;
+  padding-left: 45px;
+  border-left: 1px solid $border-color;
 }
 
 .documents__upload-contract {
-  flex: 1 1 375px;
+  flex: 0 1 375px;
+  padding-left: 35px;
+  padding-bottom: 25px;
+  border-left: 1px solid $border-color;
+}
+
+.documents__download-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  padding: 20px 100px;
+  font-size: 10px;
+  line-height: 1;
+  text-align: center;
+  color: #a2a2a2;
+  border: 3px dashed #dbdbdb;
+  border-radius: 5px;
 }
