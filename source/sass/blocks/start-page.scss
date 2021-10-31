@@ -1,9 +1,17 @@
-.start-page__list {
+.start-page__grid-list {
   @include clear-list;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: minmax(350px,440px) minmax(320px,1fr) minmax(270px,1fr);
   column-gap: 30px;
   row-gap: 20px;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+  // @media (max-width: 1440px) {
+  //   grid-template-columns: 410px 270px 270px;
+  // }
 }
 
 .start-page__item {
@@ -16,6 +24,10 @@
   min-height: 257px;
   border: 1px solid $border-color;
   border-radius: 10px;
+
+  // @media (max-width: 1440px) {
+  //   padding: 30px;
+  // }
 }
 
 .start-page__item-title {
@@ -28,23 +40,38 @@
   color: $black;
 }
 
-.start-page__inner-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 10px;
-  column-gap: 10px;
-  margin-bottom: 20px;
+.start-page__inner-personal-data {
+  display: flex;
+  flex-wrap: wrap;
 }
+
+// .start-page__inner-grid {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   row-gap: 10px;
+//   column-gap: 10px;
+//   margin-bottom: 20px;
+// }
 
 .start-page__inner-column {
   display: flex;
   flex-direction: column;
-  margin-bottom: auto;
+  //margin-bottom: 10px;
   width: 100%;
 }
 
 .start-page__light-text {
   margin: 0;
+  margin-right: 5px;
+  margin-bottom: 8px;
+  min-width: 150px;
+  // .start-page__inner-personal-data & {
+  //   min-width: 145px;
+
+  //   // @media (min-width: 1600px) {
+  //   //   min-width: 165px;
+  //   // }
+  // }
 }
 
 .start-page__regular-text {
@@ -60,14 +87,32 @@
 }
 
 .start-page__item-btn {
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 0;
   line-height: 1;
-}
 
-.start-page__item-btn-wrap .start-page__item-btn {
-  margin-top: 0;
+  .start-page__inner-personal-data & {
+    margin-right: 10px;
+    margin-top: 10px;
+  }
 
-  &:last-child {
-    margin-left: 20px;
+  .start-page__inner-personal-data &:last-child {
+    margin-right: 0;
   }
 }
+
+// .start-page__item-btn-wrap {
+//   display: grid;
+//   grid-template-columns: 185px 145px;
+//   gap: 20px;
+//   padding: 7px 10px;
+// }
+
+// .start-page__item-btn {
+//   margin-top: 0;
+//   scroll-margin-right: 20px;
+
+//   &:last-child {
+//     margin-left: 0;
+//   }
+// }

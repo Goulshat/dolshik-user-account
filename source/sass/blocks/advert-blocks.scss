@@ -1,0 +1,31 @@
+.advert-blocks__item {
+  border: 1px solid $border-color;
+  border-radius: 10px;
+}
+
+.advert-blocks__link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px;
+  height: 226px;
+  text-decoration: none;
+}
+
+.advert-blocks__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.advert-blocks__title {
+  padding: 3px 12px;
+  color: white;
+  background-color: #373737;
+}

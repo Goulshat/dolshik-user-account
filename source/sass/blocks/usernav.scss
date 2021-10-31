@@ -1,12 +1,13 @@
-.usernav {
-  grid-template-columns: 1 / 2;
-}
+// .usernav {
+//
+// }
 
 .usernav__list {
   @include clear-list;
   display: flex;
   flex-direction: column;
   padding-top: 30px;
+  padding-right: 20px;
 }
 
 .usernav__section:not(:last-child) {
