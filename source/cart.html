@@ -17,7 +17,7 @@
       html {
         background-repeat: no-repeat;
         background-position: 0 0;
-        background-size: 1440 auto;
+        background-size: 1920px auto;
         background-image: url("img/mockup/user-account__cart@1x.png");
       }
 
@@ -42,22 +42,21 @@
   </head>
   <body class="page__body">
     <header style="height: 170px; outline: 1px dashed pink"></header>
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Дольщик.онлайн</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Личный кабинет</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link breadcrumbs__link--current">Корзина</a>
+        </li>
+      </ul>
+    </div>
     <div class="page__container">
-      <div class="breadcrumbs">
-        <ul class="breadcrumbs__list">
-          <li class="breadcrumbs__item">
-            <a href="#" class="breadcrumbs__link">Дольщик.онлайн</a>
-          </li>
-          <li class="breadcrumbs__item">
-            <a href="#" class="breadcrumbs__link">Личный кабинет</a>
-          </li>
-          <li class="breadcrumbs__item">
-            <a href="#" class="breadcrumbs__link breadcrumbs__link--current">Корзина</a>
-          </li>
-        </ul>
-      </div>
-
-      <nav class="usernav">
+      <nav class="usernav page__container-nav">
         <ul class="usernav__list">
           <li class="usernav__section">
             <h2 class="usernav__section-title">Личные данные</h2>
@@ -101,8 +100,8 @@
         </ul>
       </nav>
 
-      <main class="main-workarea">
-        <h1 class="main-workarea__title">Корзина</h1>
+      <main class="page__container-main">
+        <h1 class="page__main-title">Корзина</h1>
 
         <form action="#" method="post" name="">
           <div class="usercart">

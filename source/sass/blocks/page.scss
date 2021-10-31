@@ -33,10 +33,15 @@ img {
 .page__container {
   display: grid;
  // display: flex;
-  grid-template-columns: minmax(250px, auto) minmax(1000px, 3fr);
-  justify-content: space-between;
+  grid-template-columns: 260px minmax(1000px, 1fr);
+  //grid-template-columns: minmax(250px, 1fr) minmax(1000px, 3fr);
+  //justify-content: space-between;
   padding-right: 35px;
   padding-left: 35px;
+
+  &--form {
+    grid-template-columns: 1fr 3fr;
+  }
 }
 
 .page__container-nav {
@@ -49,8 +54,21 @@ img {
   // flex: 1 1 1000px;
   // max-width: 1320px;
   grid-column: 2 / 3;
-  padding-top: 50px;
+  padding-top: 35px;
   padding-left: 5px;
   padding-bottom: 226px;
   justify-self: flex-end;
+
+  .page__container--form & {
+    justify-self: flex-start;
+  }
+}
+
+.page__main-title {
+  margin-top: 0;
+  margin-bottom: 55px;
+  padding: 0;
+  padding-top: 15px;
+  font-size: 48px;
+  font-weight: 300;
 }
