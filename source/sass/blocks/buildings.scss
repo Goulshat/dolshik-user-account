@@ -101,7 +101,8 @@
   }
 
   &:last-child {
-    padding: 0;
+    justify-content: flex-end;
+    padding: 0 25px 0 5px;
   }
 
   .buildings__table-row:first-child & {
