@@ -1,5 +1,5 @@
 // Начните писать стили здесь
-@import "../../node_modules/normalize-scss/sass/normalize.scss";
+//@import "../../node_modules/normalize-scss/sass/normalize.scss";
 @import "global/fonts.scss";
 @import "global/variables.scss";
 
@@ -13,7 +13,6 @@
 
 @import "blocks/breadcrumbs.scss";
 @import "blocks/usernav.scss";
-@import "blocks/main-workarea.scss";
 
 @import "blocks/start-page.scss";
 @import "blocks/usercart.scss";
@@ -21,3 +20,5 @@
 @import "blocks/documents.scss";
 @import "blocks/advert-blocks.scss";
 @import "blocks/personal-data.scss";
+
+@import "blocks/buildings.scss";

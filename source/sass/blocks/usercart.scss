@@ -7,7 +7,8 @@
   margin-bottom: 45px;
   padding: 16px 30px 16px 160px;
   text-align: center;
-  border: 1px solid $border-color;
+  background-color: #ffffff;
+  border: 1px solid #d8d8d8;
   border-radius: 10px;
 };
 
@@ -18,7 +19,6 @@
 }
 
 .usercart__heading-item {
-  //margin-left: 104px;
   line-height: 30px;
   color: $black;
 }
@@ -32,14 +32,12 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  /* РЕАЛЬНЫЙ ОТСТУП - вернуть
-  margin-bottom: 20px;*/
-  /*отступ временный для пиксель перфект*/
   margin-bottom: 15px;
 }
 
 .usercart__item {
   margin-bottom: 29px;
+  background-color: #ffffff;
 }
 
 .usercart__item:last-child {
@@ -56,7 +54,8 @@
 
 .usercart__cashback {
   padding: 20px 23px 20px 26px;
-  border: 1px solid $border-color;
+  background-color: #ffffff;
+  border: 1px solid #d8d8d8;
   border-radius: 10px;
 }
 
@@ -66,7 +65,7 @@
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: 600;
-  color: $black;
+  color: #000000;
 }
 
 .usercart__cashback-text {
@@ -83,13 +82,10 @@
 }
 
 .usercart__cashback-input {
-  // display: inline-block;
-  // vertical-align: middle;
   margin-left: 20px;
   padding: 9px;
   width: 100%;
-  //align-items: center;
-  border: 1px solid $text-input-cashback;
+  border: 1px solid #dcdcdc;
   border-radius: 5px;
 }
 
@@ -103,10 +99,9 @@
   align-self: flex-start;
   justify-self: start;
   padding: 20px 40px 30px 25px;
-  border: 1px solid $border-color;
+  border: 1px solid #d8d8d8;
   border-radius: 10px;
-  //убрать прозрачность
-  background: transparent;
+  background-color: #ffffff;
 }
 
 .usercart__onhold-title {
@@ -128,7 +123,7 @@
 .usercart__onhold-input {
   padding: 9px;
   width: 126px;
-  border: 1px solid $text-input-cashback;
+  border: 1px solid #dcdcdc;
   border-radius: 5px;
 }
 
@@ -145,7 +140,8 @@
 .usercart__total {
   align-self: flex-start;
   padding: 20px 25px 30px;
-  border: 1px solid $border-color;
+  background-color: #ffffff;
+  border: 1px solid #d8d8d8;
   border-radius: 10px;
 }
 
@@ -154,23 +150,23 @@
   padding-top: 15px;
   font-size: 18px;
   font-weight: 600;
-  color: $black;
+  color: #000000;
 
   &:first-child {
     padding-top: 0;
     padding-bottom: 15px;
-    border-bottom: 1px solid $border-light;
+    border-bottom: 1px solid #efefef;
   }
 }
 
 .usercart__total-price {
-  color: $text-total-price;
+  color: #626262;
   font-weight: 400;
   font-size: 16px;
 }
 
 .usercart__total-amount {
-  color: $accent-light-green;
+  color: #67ce00;
   font-weight: 600;
   font-size: 21px;
 }

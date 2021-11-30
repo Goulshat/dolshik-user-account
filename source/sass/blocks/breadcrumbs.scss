@@ -8,8 +8,7 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 23px;
-  padding-bottom: 23px; // если задать общему контейнеру то этот можно убратьs
+  padding: 23px 35px;
   border-bottom: 1px dashed pink;
 }
 
@@ -20,25 +19,23 @@
   justify-content: center;
   align-items: center;
   margin-right: 25px;
-  //max-width: 350px; для переполнения
+}
 
-  &::after {
-    position: absolute;
-    bottom: 50%;
-    right: -20px;
-    content: "";
-    width: 15px;
-    height: 1px;
-    background-color: $text-extra-light;
-  }
+.breadcrumbs__item::after {
+  position: absolute;
+  bottom: 50%;
+  right: -20px;
+  content: "";
+  width: 15px;
+  height: 1px;
+  background-color: #ababab;
+}
+.breadcrumbs__item:last-child {
+  margin-right: 0;
+}
 
-  &:last-child {
-    margin-right: 0;
-  }
-
-  &:last-child::after {
-    display: none;
-  }
+.breadcrumbs__item:last-child::after {
+  display: none;
 }
 
 .breadcrumbs__link {
@@ -46,9 +43,9 @@
   color: inherit;
   padding: 0;
   text-decoration: underline;
+}
 
-  &--current {
-    color: $text-extra-light;
-    border-bottom-color: transparent;
-  }
+.breadcrumbs__link--current {
+  color: #ababab;
+  border-bottom-color: transparent;
 }

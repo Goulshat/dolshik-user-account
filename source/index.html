@@ -11,34 +11,6 @@
     <link rel="preload" href="fonts/opensans.woff2" as="font">
     <link rel="preload" href="fonts/opensansbold.woff2" as="font"> -->
     <link rel="stylesheet" href="css/style.min.css">
-
-    <!-- Pixel Glass-->
-    <style>
-      html {
-        background-repeat: no-repeat;
-        background-position: 0 0;
-        background-size: 1920px auto;
-        background-image: url("img/mockup/start-page.png");
-      }
-
-    </style>
-    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-    <script src="../node_modules/pixel-glass/script.js"></script>
-    <!-- Pixel Glass
-    /* Tablet */
-      @media (min-width: 768px) {
-        html {
-          background-image: url("img/mockups/index-tablet.png");
-        }
-      }
-      /* Desktop */
-      @media (min-width: 1150px) {
-        html {
-          background-image: url("img/mockups/index-desktop.png");
-        }
-      }
-    -->
-
   </head>
   <body class="page__body">
     <header style="height: 170px; outline: 1px dashed pink"></header>
@@ -97,6 +69,89 @@
               </li>
             </ul>
           </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Квартиры</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Мои квартиры
+                  <span class="usernav__item-count">2</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Забронированные
+                  <span class="usernav__item-count">5</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Избранные
+                  <span class="usernav__item-count">17</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Покупки</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Корзина товаров
+                  <span class="usernav__item-count">3</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Заказы
+                  <span class="usernav__item-count">10</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Услуги подрядчико</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Мои заказы
+                  <span class="usernav__item-count">10</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Избранные подрядчики</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Кредитование</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Ипотека
+                  <span class="usernav__item-count">10</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Потребительский кредит</a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Страхование</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Электронные сервисы</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Заказать ЭЦП</a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Электронный документооборот</a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Запрос в Росреестр</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
 
@@ -118,11 +173,8 @@
                   Кэшбек:&nbsp;
                   <span class="start-page__regular-text">2 000 руб.</span>
                 </p>
-
-                <!-- <div class="start-page__item-btn-wrap"> -->
-                  <a class="btn-blue start-page__item-btn" href="#">Изменить личные данные</a>
-                  <a class="btn-blue start-page__item-btn" href="#">Перейти в финансы</a>
-                <!-- </div> -->
+                <a class="btn-blue start-page__item-btn" href="#">Изменить личные данные</a>
+                <a class="btn-blue start-page__item-btn" href="#">Перейти в финансы</a>
               </div>
             </li>
 

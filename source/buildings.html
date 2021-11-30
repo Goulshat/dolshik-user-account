@@ -18,7 +18,7 @@
         background-repeat: no-repeat;
         background-position: 0 0;
         background-size: 1920px auto;
-        background-image: url("img/mockup/form.png");
+        background-image: url("img/mockup/buildings.png");
       }
 
     </style>
@@ -170,73 +170,87 @@
         </ul>
       </nav>
 
-      <main class="page__container-main">
-        <h1 class="page__main-title">Личные данные</h1>
+      <main class="page__container-main"> <!-- class="page__container-main"-->
+        <section class="buildings">
+          <div class="buildings__header-wrap">
+            <h1 class="buildings__title">Радость</h1>
+            <a class="btn-blue buildings__btn-add" href="#">Добавить дом</a>
+          </div>
 
-        <form class="personal-data" action="#" method="post" name="personal-data">
-          <fieldset class="personal-data__container">
-            <label class="personal-data__label personal-data__label--lastname">
-              <span class="personal-data__label-text">Фамилия</span>
-              <input class="personal-data__input" type="text" placeholder="Константинопольский">
-            </label>
-            <label class="personal-data__label">
-              <span class="personal-data__label-text">Имя</span>
-              <input class="personal-data__input" type="text" placeholder="Константин">
-            </label>
-            <label class="personal-data__label">
-              <span class="personal-data__label-text">Отчество</span>
-              <input class="personal-data__input" type="text" placeholder="Константинович">
-            </label>
-            <label class="personal-data__label">
-              <span class="personal-data__label-text">
-                E-mail
-                <span class="personal-data__required">*</span>
-              </span>
-              <input class="personal-data__input" type="email" placeholder="kostyakostya@mail.ru" required>
-            </label>
-            <label class="personal-data__label">
-              <span class="personal-data__label-text">
-                Мобильный телефон
-                <span class="personal-data__required">*</span>
-              </span>
-              <input class="personal-data__input" type="tel" placeholder="+7 999 888 65 43">
-            </label>
-            <div class="personal-data__upload-area">
-              <div class="personal-data__upload-preview"></div>
-              <button class="btn-blue personal-data__upload-btn">Выберите файл</button>
-              <span class="personal-data__upload-text">Файл не выбран</span>
+          <div class="buildings__table">
+            <div class="buildings__table-row">
+              <div class="buildings__table-cell">Превью</div>
+              <div class="buildings__table-cell">Название</div>
+              <div class="buildings__table-cell">ЖК</div>
+              <div class="buildings__table-cell">Активность</div>
+              <div class="buildings__table-cell">Дата создания</div>
+              <div class="buildings__table-cell">ID</div>
+              <div class="buildings__table-cell"></div>
             </div>
-          </fieldset>
 
-          <div class="personal-data__wrap">
-            <label class="personal-data__label">Описание</label>
-            <div style="outline: 1px dashed pink; height: 452px;"></div>
+            <div class="buildings__table-row">
+              <div class="buildings__table-cell">
+                <a class="buildings__img-preview-link" href="#">
+                  <img class="buildings__img-preview" src="img/preview.png" width="40" height="40" alt="Изображение дома">
+                </a>
+              </div>
+
+              <div class="buildings__table-cell">
+                <a class="buildings__table-link" href="#">Дом № 1</a>
+              </div>
+
+              <div class="buildings__table-cell">
+                <a class="buildings__table-link" href="#">Радость</a>
+              </div>
+
+              <div class="buildings__table-cell">Да</div>
+
+              <div class="buildings__table-cell">17.03.2021</div>
+
+              <div class="buildings__table-cell">1081</div>
+
+              <div class="buildings__table-cell">
+                <svg class="buildings__table-icon buildings__table-icon--eye" width="21" height="17">
+                  <use xlink:href="img/icons/sprite.svg#eye" aria-hidden="true"></use>
+                </svg>
+                <svg class="buildings__table-icon buildings__table-icon--trash" width="21" height="17">
+                  <use xlink:href="img/icons/sprite.svg#trash" aria-hidden="true"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="buildings__table-row">
+              <div class="buildings__table-cell">
+                <a class="buildings__img-preview-link" href="#">
+                  <img class="buildings__img-preview" src="img/preview.png" width="40" height="40" alt="Изображение дома">
+                </a>
+              </div>
+
+              <div class="buildings__table-cell">
+                <a class="buildings__table-link" href="#">Дом № 1 Дом № 1 Дом № 1</a>
+              </div>
+
+              <div class="buildings__table-cell">
+                <a class="buildings__table-link" href="#">Радость Радость Радость Радость</a>
+              </div>
+
+              <div class="buildings__table-cell">Да</div>
+
+              <div class="buildings__table-cell">17.03.2021</div>
+
+              <div class="buildings__table-cell">1081</div>
+
+              <div class="buildings__table-cell">
+                <svg class="buildings__table-icon buildings__table-icon--eye" width="21" height="17">
+                  <use xlink:href="img/icons/sprite.svg#eye" aria-hidden="true"></use>
+                </svg>
+                <svg class="buildings__table-icon buildings__table-icon--trash" width="21" height="17">
+                  <use xlink:href="img/icons/sprite.svg#trash" aria-hidden="true"></use>
+                </svg>
+              </div>
+            </div>
           </div>
-
-          <fieldset class="personal-data__container personal-data__container--bg">
-            <label class="personal-data__label personal-data__label--required">
-              <span class="personal-data__label-text">
-                Логин (мин. 3 символа)
-                <span class="personal-data__required">*</span>
-              </span>
-              <input class="personal-data__input" type="text" placeholder="Constanta" required>
-            </label>
-            <label class="personal-data__label">
-              <span class="personal-data__label-text">Новый пароль</span>
-              <input class="personal-data__input" type="password" placeholder="**************">
-            </label>
-            <label class="personal-data__label">
-              <span class="personal-data__label-text">Подтверждение нового пароля</span>
-              <input class="personal-data__input" type="password" placeholder="**************">
-            </label>
-            <small class="personal-data__small-text">Пароль должен быть не менее 8 символов длиной, содержать латинские символы верхнего регистра (A-Z), содержать латинские символы нижнего регистра (a-z), содержать цифры (0-9).</small>
-          </fieldset>
-
-          <div class="personal-data__bottom-wrap">
-            <button class="btn-blue personal-data__btn-save" type="button">Сохранить</button>
-            <button class="personal-data__btn-reset" type="button">Отменить</button>
-          </div>
-        </form>
+        </section>
       </main>
     </div>
   </body>

@@ -2,7 +2,8 @@
   margin-bottom: 105px;
   padding: 30px 40px 40px 40px;
   color: $black;
-  border: 1px solid $border-color;
+  background-color: #ffffff;
+  border: 1px solid #d8d8d8;
   border-radius: 10px;
 }
 
@@ -15,12 +16,12 @@
 .documents__wrap {
   display: grid;
   grid-template-columns: 250px 1fr minmax(180px,375px);
+}
 
-  &--bottom-bordered {
-    padding-bottom: 23px;
-    margin-bottom: 38px;
-    border-bottom: 1px solid $border-color;
-  }
+.documents__wrap--bottom-bordered {
+  padding-bottom: 23px;
+  margin-bottom: 38px;
+  border-bottom: 1px solid $border-color;
 }
 
 .documents__inner-wrap {
@@ -31,7 +32,7 @@
 }
 
 .documents__list {
-  margin-right: 45px;
+  margin-right: 55px;
 }
 
 //.documents__download {}
@@ -45,64 +46,65 @@
   position: relative;
   margin: 0;
   margin-bottom: 4px;
+}
 
-  &--checked,
-  &--to-sign {
-    padding-left: 25px;
+.documents__name--checked,
+.documents__name--to-sign {
+  padding-left: 25px;
+}
 
-    &::before {
-      position: absolute;
-      display: flex;
-      content: "";
-      top: 50%;
-      left: 5px;
-      width: 15px;
-      height: 15px;
-      background: url("../../img/icons/tick.svg") center no-repeat;
-      transform: translateY(-50%);
-    }
-  }
+.documents__name--checked::before,
+.documents__name--to-sign::before {
+  position: absolute;
+  display: flex;
+  content: "";
+  top: 50%;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  background: url("../../img/icons/tick.svg") center no-repeat;
+  transform: translateY(-50%);
+}
 
-  &--to-sign::before {
-    background-image: url("../../img/icons/round-tick.svg");
-  }
+.documents__name--to-sign::before {
+  background-image: url("../../img/icons/round-tick.svg");
 }
 
 .documents__name-status {
   position: relative;
   padding-left: 20px;
+}
 
-  &::before {
-    position: absolute;
-    bottom: 40%;
-    left: 0;
-    content: "";
-    width: 15px;
-    height: 1px;
-    background-color: $documents;
-  }
+.documents__name-status::before {
+  position: absolute;
+  bottom: 40%;
+  left: 0;
+  content: "";
+  width: 15px;
+  height: 1px;
+  background-color: #a3a3a3;
+}
 
-  &--uploaded {
-    color: $documents;
-  }
+.documents__name-status--uploaded {
+  color: #a3a3a3;
+}
 
-  &--download {
-    color: $accent-blue;
-    text-decoration: underline;
-  }
+.documents__name-status--download {
+  color: #556de6;
+  text-decoration: underline;
+}
 
-  &--delete {
-    color: $accent-red;
-    text-decoration: underline;
+.documents__name-status--delete {
+  color: #ff0000;
+  text-decoration: underline;
+}
 
-    &::before {
-      display: none;
-    }
-  }
+.documents__name-status--delete::before {
+  display: none;
 }
 
 .documents__name-time {
-  color: $documents;
+  color: #a3a3a3;
 }
 
 .documents__name-download {
@@ -114,7 +116,7 @@
   margin: 0;
   font-size: 16px;
   font-weight: 400;
-  color: $documents;
+  color: #a3a3a3;
 }
 
 /*  Раздел загрузки документов  */
@@ -149,7 +151,7 @@
   display: block;
   padding: 10px 20px;
   width: 325px;
-  border: 1px solid $border-color;
+  border: 1px solid #d8d8d8;
   border-radius: 5px;
 
   &::placeholder {
@@ -163,6 +165,7 @@
   min-width: 140px;
   color: #9f9f9f;
   border: none;
+  /* почему в макете сложный градиент вместо простого цвета - хз*/
   background: linear-gradient(180deg, #ebebeb 0%, rgba(239, 239, 239, 0.838542) 20%, rgba(193, 193, 193, 0) 121.05%);
   filter: drop-shadow(0px 2px 0px rgba(0, 0, 0, 0.25));
   border-radius: 5px;
@@ -170,24 +173,21 @@
 
 .documents__upload-btn {
   grid-area: btn-upload;
-  //width: 145px;
 }
 
 /* Договоры */
 
-//.documents__list-to-sign {}
-
 .documents__list-signed {
   flex: 3 2 auto;
   padding-left: 45px;
-  border-left: 1px solid $border-color;
+  border-left: 1px solid #d8d8d8;
 }
 
 .documents__upload-contract {
   flex: 0 1 375px;
   padding-left: 35px;
   padding-bottom: 25px;
-  border-left: 1px solid $border-color;
+  border-left: 1px solid #d8d8d8;
 }
 
 .documents__download-area {

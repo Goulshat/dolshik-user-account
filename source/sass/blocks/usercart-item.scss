@@ -1,10 +1,8 @@
 .usercart-item {
-  //display: flex;
-  align-items: flex-start;
   padding: 20px 45px 20px 20px;
-  border: 1px solid $border-color;
+  border: 1px solid #d8d8d8;
   border-radius: 10px;
-  box-shadow: 0px 4px 40px $box-shadow;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
 }
 
 .usercart-item__image {
@@ -12,7 +10,6 @@
   width: 113px;
   height: 113px;
   object-fit: contain;
-  //margin-right: 25px;
 }
 
 .usercart-item__inner {
@@ -25,7 +22,7 @@
   width: 100%;
   font-size: 18px;
   font-weight: 600;
-  color: $black;
+  color: #000000;
 }
 
 .usercart-item__delivery {
@@ -34,23 +31,23 @@
   flex-wrap: wrap;
   margin-right: 40px;
   padding-left: 30px;
-  color: $text-input-delivery;
+  color: #5a5a5a;
+}
 
-  &:last-child {
-    margin-right: 0;
-  }
+.usercart-item__delivery:last-child {
+  margin-right: 0;
+}
 
-  &::before {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 19px;
-    height: 19px;
-    content: "";
-    border: 1px solid $border-color;
-    border-radius: 2px;
-    transform: translateY(-50%);
-  }
+.usercart-item__delivery::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 19px;
+  height: 19px;
+  content: "";
+  border: 1px solid #d8d8d8;
+  border-radius: 2px;
+  transform: translateY(-50%);
 }
 
 .usercart-item__delivery-today {
@@ -63,30 +60,23 @@
 }
 
 /*  Цена  */
-
 .usercart-item__price {
-  //width: 130px;
-  //display: flex;
   padding-top: 16px;
   color: $black;
   font-size: 18px;
   font-weight: 600;
   text-align: left;
+}
 
-  &:last-child {
-    text-align: right;
-  }
+.usercart-item__price:last-child {
+  text-align: right;
 }
 
 /*  Кнопки для выбора количества товара */
-
 .usercart-item__quantity {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  // margin-left: 65px;
-  // margin-right: 25px;
-  //width: 130px;
   padding-top: 10px;
   border-radius: 5px;
 }
@@ -107,14 +97,14 @@
   color: $white;
   background-color: $accent-blue;
   border: none;
+}
 
-  &--left {
-    border-radius: 5px 0 0 5px;
-  }
+.usercart-item__quantity-btn--left {
+  border-radius: 5px 0 0 5px;
+}
 
-  &--right {
-    border-radius: 0 5px 5px 0;
-  }
+.usercart-item__quantity-btn--right {
+  border-radius: 0 5px 5px 0;
 }
 
 .usercart-item__quantity-number {
@@ -124,6 +114,6 @@
   width: 30px;
   text-align: center;
   border: none;
-  border-top: 1px solid $border-color;
-  border-bottom: 1px solid $border-color;
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
 }

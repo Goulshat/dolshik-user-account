@@ -24,20 +24,7 @@
     </style>
     <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
     <script src="../node_modules/pixel-glass/script.js"></script>
-    <!-- Pixel Glass
-    /* Tablet */
-      @media (min-width: 768px) {
-        html {
-          background-image: url("img/mockups/index-tablet.png");
-        }
-      }
-      /* Desktop */
-      @media (min-width: 1150px) {
-        html {
-          background-image: url("img/mockups/index-desktop.png");
-        }
-      }
-    -->
+    <!-- Pixel Glass -->
 
   </head>
   <body class="page__body">
@@ -55,7 +42,7 @@
         </li>
       </ul>
     </div>
-    <div class="page__container">
+    <div class="page__container page__container--form">
       <nav class="usernav page__container-nav">
         <ul class="usernav__list">
           <li class="usernav__section">
@@ -97,13 +84,96 @@
               </li>
             </ul>
           </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Квартиры</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Мои квартиры
+                  <span class="usernav__item-count">2</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Забронированные
+                  <span class="usernav__item-count">5</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Избранные
+                  <span class="usernav__item-count">17</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Покупки</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Корзина товаров
+                  <span class="usernav__item-count">3</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Заказы
+                  <span class="usernav__item-count">10</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Услуги подрядчико</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Мои заказы
+                  <span class="usernav__item-count">10</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Избранные подрядчики</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Кредитование</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Ипотека
+                  <span class="usernav__item-count">10</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Потребительский кредит</a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Страхование</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Электронные сервисы</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Заказать ЭЦП</a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Электронный документооборот</a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Запрос в Росреестр</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
 
       <main class="page__container-main">
         <h1 class="page__main-title">Корзина</h1>
 
-        <form action="#" method="post" name="">
+        <form action="#" method="post" name="usercart">
           <div class="usercart">
             <div class="usercart__heading-wrap">
                 <div class="usercart__heading-item">Товары</div>
@@ -371,7 +441,6 @@
                 <p class="usercart__total-title">Итого с применением КЭШБЭК:</p>
                 <span class="usercart__total-amount">18 000 руб.</span>
               </div>
-            </div>
             </div>
           </div>
         </form>
