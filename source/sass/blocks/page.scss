@@ -1,3 +1,4 @@
+/*----  Глобальные стили ----*/
 *,
 *::before,
 *::after {
@@ -27,6 +28,8 @@ img {
   background-color: #fbfbfb;
 }
 
+/*---- Layout страницы ----*/
+
 .page__container {
   display: grid;
   grid-template-columns: 260px minmax(1000px, 1fr);
@@ -45,8 +48,11 @@ img {
 
 .page__container-main {
   grid-column: 2 / 3;
+  /* может и не нужны здесь поля снизу, похоже в предыдущих макетах этот отступ был от балды сделан */
   padding: 35px 0 226px;
   justify-self: flex-end;
+  /* ------ ИЗМЕНЕНИЯ - ДОБАВЛЕНО свойство ширины ниже------ */
+  width: 100%;
 
   .page__container--form & {
     justify-self: flex-start;
