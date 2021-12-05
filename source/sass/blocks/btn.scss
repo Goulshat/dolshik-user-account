@@ -1,15 +1,28 @@
 /*--- Голубая кнопочка ---*/
-.btn-blue {
+.btn {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 7px 14px;
   font-size: 12px;
+  line-height: 1;
   color: $white;
   text-align: center;
   text-decoration: none;
-  background-color: #556de6;
-  border: 1px solid #556de6;
   border-radius: 5px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &--blue {
+    background-color: $accent-blue;
+    border: 1px solid $accent-blue;
+  }
 }

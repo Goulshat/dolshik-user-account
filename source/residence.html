@@ -160,77 +160,146 @@
       <main class="page__container-main">
         <h1 class="page__main-title">Квартиры</h1>
 
-        <section class="apartments">
-          <a class="btn btn--blue apartments__btn-add" href="#">Добавить квартиру</a>
+        <section class="residence">
+          <div class="residence__heading-wrap">
+            <a class="btn btn--blue residence__btn-add" href="#">Добавить квартиру</a>
+            <button class="btn residence__btn-download" type="button">Выгрузить excel-таблицу с квартирами</button>
+            <button class="btn residence__btn-upload" type="button">Загрузить excel-таблицу</button>
+          </div>
 
-          <div class="apartments__table">
-            <div class="apartments__table-row">
-              <div class="apartments__table-cell">ЖК</div>
-              <div class="apartments__table-cell">ID</div>
-            </div>
+          <div class="residence__table-outer">
+            <table class="residence__table">
+              <tr class="residence__table-row">
+                <td class="residence__table-cell">Превью</td>
+                <td class="residence__table-cell">Название</td>
+                <td class="residence__table-cell">ЖК</td>
+                <td class="residence__table-cell">Дом</td>
+                <td class="residence__table-cell">Секция</td>
+                <td class="residence__table-cell">Планировка</td>
+                <td class="residence__table-cell">Статус</td>
+                <td class="residence__table-cell">Цена</td>
+                <td class="residence__table-cell">ID</td>
+              </tr>
 
-            <div class="apartments__table-row">
-              <div class="apartments__table-cell">
-                <a class="apartments__table-link" href="#">Радость</a>
+              <tr class="residence__table-row">
+                <td class="residence__table-cell">
+                  <a class="residence__img-preview-link" href="#">
+                    <img class="residence__img-preview" src="img/preview.png" width="64" height="40" alt="Изображение дома">
+                  </a>
+                </td>
+
+                <td class="residence__table-cell">
+                  <a class="residence__table-link" href="#">2-к квартира в ЖСК &#171;Радость&#187;  №&nbsp;1</a>
+                </td>
+
+                <td class="residence__table-cell">Радость [1080]</td>
+
+                <td class="residence__table-cell">Дом № 1 [1081]</td>
+
+                <td class="residence__table-cell">Секция 1 [1082]</td>
+
+                <td class="residence__table-cell">2.1 [1092]</td>
+
+                <td class="residence__table-cell">
+                  <select class="residence__table-select" name="residence-flat-status">
+                    <option class="residence__table-option" value="free" selected>Свободна</option>
+                    <option class="residence__table-option" value="booked">Бронь</option>
+                    <option class="residence__table-option" value="not-available">Занято</option>
+                  </select>
+                </td>
+
+                <td class="residence__table-cell">5&nbsp;055&nbsp;800</td>
+
+                <td class="residence__table-cell">16&nbsp;263</td>
+              </tr>
+
+              <div class="residence__table-row">
+                <div class="residence__table-cell">
+                  <a class="residence__img-preview-link" href="#">
+                    <img class="residence__img-preview" src="img/preview.png" width="40" height="40" alt="Изображение дома">
+                  </a>
+                </div>
+
+                <div class="residence__table-cell">
+                  <a class="residence__table-link" href="#">2-к квартира в ЖСК «Радость» №&nbsp;2</a>
+                </div>
+
+                <div class="residence__table-cell">Радость [1080]</div>
+
+                <div class="residence__table-cell">Дом № 1 [1081]</div>
+
+                <div class="residence__table-cell">Секция 1 [1082]</div>
+
+                <div class="residence__table-cell">2.1 [1092]</div>
+
+                <div class="residence__table-cell">
+                  <select name="residence-flat-status">
+                    <option value="free">Свободно</option>
+                    <option value="booked">Бронь</option>
+                    <option value="not-available">Занято</option>
+                  </select>
+                </div>
+
+                <div class="residence__table-cell">5 055 800</div>
+
+                <div class="residence__table-cell">16263</div>
               </div>
 
-              <div class="apartments__table-cell">
-                1081
-              </div>
-            </div>
+              <div class="residence__table-row">
+                <div class="residence__table-cell">
+                  <a class="residence__img-preview-link" href="#">
+                    <img class="residence__img-preview" src="img/preview.png" width="40" height="40" alt="Изображение дома">
+                  </a>
+                </div>
 
-            <div class="apartments__table-row">
-              <div class="apartments__table-cell">
-                <a class="apartments__table-link" href="#">Золотая долина</a>
-              </div>
+                <div class="residence__table-cell">
+                  <a class="residence__table-link" href="#">2-к квартира в ЖСК «Радость» №&nbsp;3</a>
+                </div>
 
-              <div class="apartments__table-cell">
-                1860
-              </div>
-            </div>
+                <div class="residence__table-cell">Радость [1080]</div>
 
-            <div class="apartments__table-row">
-              <div class="apartments__table-cell">
-                <a class="apartments__table-link" href="#">Айвазовский</a>
-              </div>
+                <div class="residence__table-cell">Дом № 1 [1081]</div>
 
-              <div class="apartments__table-cell">
-                1081
-              </div>
-            </div>
+                <div class="residence__table-cell">Секция 1 [1082]</div>
 
-            <div class="apartments__table-row">
-              <div class="apartments__table-cell">
-                <a class="apartments__table-link" href="#">Чайка</a>
-              </div>
+                <div class="residence__table-cell">2.1 [1092]</div>
 
-              <div class="apartments__table-cell">
-                1860
-              </div>
-            </div>
+                <div class="residence__table-cell">
+                  <select name="residence-flat-status">
+                    <option value="free">Свободно</option>
+                    <option value="booked">Бронь</option>
+                    <option value="not-available">Занято</option>
+                  </select>
+                </div>
 
-            <div class="apartments__table-row">
-              <div class="apartments__table-cell">Показать
-                <select class="apartments__select-number" name="" id="">
-                  <option value="25" selected>25</option>
-                  <option value="30">30</option>
-                </select>
-                записей
+                <div class="residence__table-cell">5 055 800</div>
+
+                <div class="residence__table-cell">16262</div>
               </div>
 
-              <div class="apartments__table-cell">
-                Планировки с
-                <span class="apartments__items-number apartments__items-number--begin">1</span>
-                по
-                <span class="apartments__items-number apartments__items-number--end">12</span> из
-                <span class="apartments__items-number apartments__items-number--total">12</span> планировок
-              </div>
+              <div class="residence__table-row">
+                <div class="residence__table-cell">Показать
+                  <select class="apartments__select-number" name="apartments-select-number" id="apartments-select-number">
+                    <option value="25" selected>25</option>
+                    <option value="30">30</option>
+                  </select>
+                  записей
+                </div>
 
-              <div class="apartments__table-cell">
-                <span class="apartments__items-number apartments__items-number--selected">0</span>
-                выбрано
+                <div class="residence__table-cell">
+                  Планировки с
+                  <span class="residence__items-number residence__items-number--begin">1</span>
+                  по
+                  <span class="residence__items-number residence__items-number--end">12</span> из
+                  <span class="residence__items-number residence__items-number--total">12</span> планировок
+                </div>
+
+                <div class="residence__table-cell">
+                  <span class="residence__items-number residence__items-number--selected">0</span>
+                  выбрано
+                </div>
               </div>
-            </div>
+            </table>
           </div>
         </section>
       </main>
