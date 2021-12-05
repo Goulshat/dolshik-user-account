@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Личный кабинет: Жилые комплексы</title>
+    <title>Личный кабинет: Квартиры</title>
     <!--<link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/180.png">
@@ -11,10 +11,10 @@
     <link rel="preload" href="fonts/opensans.woff2" as="font">
     <link rel="preload" href="fonts/opensansbold.woff2" as="font"> -->
     <link rel="stylesheet" href="css/style.min.css">
-
   </head>
   <body class="page__body">
     <header style="height: 170px; outline: 1px dashed pink"></header>
+
     <div class="breadcrumbs">
       <ul class="breadcrumbs__list">
         <li class="breadcrumbs__item">
@@ -28,6 +28,7 @@
         </li>
       </ul>
     </div>
+
     <div class="page__container page__container--form">
       <nav class="usernav page__container-nav">
         <ul class="usernav__list">
@@ -157,152 +158,100 @@
       </nav>
 
       <main class="page__container-main">
-        <section class="residence">
-          <div class="residence__header-wrap">
-            <h1 class="residence__title">Жилые комплексы</h1>
-            <a class="btn btn--blue residence__btn-add" href="#">Добавить ЖК</a>
-          </div>
+        <h1 class="page__main-title">Планировки</h1>
 
-          <h2 class="residence__caption">Строящиеся жилые комплексы</h2>
+        <section class="floor-plan">
+          <a class="btn btn--blue floor-plan__btn-add" href="#">Добавить ЖК</a>
 
-          <div class="residence__table">
-            <div class="residence__table-row">
-              <div class="residence__table-cell">Логотип</div>
-              <div class="residence__table-cell">Жилой комплекс</div>
-              <div class="residence__table-cell">Высотность</div>
-              <div class="residence__table-cell">Корпусов</div>
-              <div class="residence__table-cell">Класс</div>
-              <div class="residence__table-cell">Сдача</div>
-              <div class="residence__table-cell"></div>
+          <div class="floor-plan__table">
+            <div class="floor-plan__table-row">
+              <div class="floor-plan__table-cell">Превью</div>
+              <div class="floor-plan__table-cell">Название</div>
+              <div class="floor-plan__table-cell">Название для сайта</div>
+              <div class="floor-plan__table-cell">Общая S</div>
+              <div class="floor-plan__table-cell">Кухня</div>
+              <div class="floor-plan__table-cell">Цена</div>
+              <div class="floor-plan__table-cell"></div>
             </div>
 
-            <div class="residence__table-row">
+            <div class="floor-plan__table-row">
               <div class="residence__table-cell">
                 <a class="residence__img-preview-link" href="#">
-                  <img class="residence__img-preview" src="img/preview.png" width="69" height="77" alt="Логотип жилого комплекса">
+                  <img class="residence__img-preview" src="img/preview.png" width="40" height="40" alt="Превью плана">
                 </a>
               </div>
 
-              <div class="residence__table-cell">
-                <a class="residence__table-link" href="#">Ласточка</a>
+              <div class="floor-plan__table-cell">
+                <a class="floor-plan__table-link" href="#">1-к&nbsp;квартира 45,6&nbsp;кв.м. северо-запад 1Е (15&nbsp;этаж)</a>
               </div>
 
-              <div class="residence__table-cell">25</div>
+              <div class="floor-plan__table-cell">Светлая 1-к квартира в ЖК «Адмиралтейский» 45,6 кв.м на северо-западной стороне</div>
 
-              <div class="residence__table-cell">1</div>
+              <div class="floor-plan__table-cell">45,6 кв.м</div>
 
-              <div class="residence__table-cell">Комфорт</div>
+              <div class="floor-plan__table-cell">8,9 кв.м</div>
 
-              <div class="residence__table-cell">I квартал 2022</div>
+              <div class="floor-plan__table-cell">10 999 999 руб.</div>
 
-              <div class="residence__table-cell">
-                <svg class="residence__table-icon residence__table-icon--eye" width="21" height="17">
+              <div class="floor-plan__table-cell">
+                <svg class="floor-plan__table-icon floor-plan__table-icon--eye" width="21" height="17">
                   <use xlink:href="img/icons/sprite.svg#eye" aria-hidden="true"></use>
                 </svg>
-                <svg class="residence__table-icon residence__table-icon--trash" width="21" height="17">
+                <svg class="floor-plan__table-icon floor-plan__table-icon--trash" width="21" height="17">
                   <use xlink:href="img/icons/sprite.svg#trash" aria-hidden="true"></use>
                 </svg>
               </div>
             </div>
 
-            <div class="residence__table-row">
+            <div class="floor-plan__table-row">
               <div class="residence__table-cell">
                 <a class="residence__img-preview-link" href="#">
-                  <img class="residence__img-preview" src="img/preview.png" width="69" height="77" alt="Логотип жилого комплекса">
+                  <img class="residence__img-preview" src="img/preview.png" width="40" height="40" alt="Превью плана">
                 </a>
               </div>
 
-              <div class="residence__table-cell">
-                <a class="residence__table-link" href="#">Восточный луч Восточный луч</a>
+              <div class="floor-plan__table-cell">
+                <a class="floor-plan__table-link" href="#">1-к&nbsp;квартира 45,6&nbsp;кв.м. северо-запад 1Е (15&nbsp;этаж)</a>
               </div>
 
-              <div class="residence__table-cell">25</div>
+              <div class="floor-plan__table-cell">Светлая 1-к квартира в ЖК «Адмиралтейский» 45,6 кв.м на северо-западной стороне</div>
 
-              <div class="residence__table-cell">20</div>
+              <div class="floor-plan__table-cell">45,6 кв.м</div>
 
-              <div class="residence__table-cell">Комфорт Комфорт Комфорт</div>
+              <div class="floor-plan__table-cell">8,9 кв.м</div>
 
-              <div class="residence__table-cell">IV квартал 2022</div>
+              <div class="floor-plan__table-cell">10 999 999 руб.</div>
 
-              <div class="residence__table-cell">
-                <svg class="residence__table-icon residence__table-icon--eye" width="21" height="17">
+              <div class="floor-plan__table-cell">
+                <svg class="floor-plan__table-icon floor-plan__table-icon--eye" width="21" height="17">
                   <use xlink:href="img/icons/sprite.svg#eye" aria-hidden="true"></use>
                 </svg>
-                <svg class="residence__table-icon residence__table-icon--trash" width="21" height="17">
-                  <use xlink:href="img/icons/sprite.svg#trash" aria-hidden="true"></use>
-                </svg>
-              </div>
-            </div>
-          </div>
-
-          <h2 class="residence__caption">Сданные жилые комплексы</h2>
-
-          <div class="residence__table">
-            <div class="residence__table-row">
-              <div class="residence__table-cell">Логотип</div>
-              <div class="residence__table-cell">Жилой комплекс</div>
-              <div class="residence__table-cell">Высотность</div>
-              <div class="residence__table-cell">Корпусов</div>
-              <div class="residence__table-cell">Класс</div>
-              <div class="residence__table-cell">Сдача</div>
-              <div class="residence__table-cell"></div>
-            </div>
-
-            <div class="residence__table-row">
-              <div class="residence__table-cell">
-                <a class="residence__img-preview-link" href="#">
-                  <img class="residence__img-preview" src="img/preview.png" width="69" height="77" alt="Логотип жилого комплекса">
-                </a>
-              </div>
-
-              <div class="residence__table-cell">
-                <a class="residence__table-link" href="#">Невельский</a>
-              </div>
-
-              <div class="residence__table-cell">25</div>
-
-              <div class="residence__table-cell">1</div>
-
-              <div class="residence__table-cell">Комфорт</div>
-
-              <div class="residence__table-cell">I квартал 2022</div>
-
-              <div class="residence__table-cell">
-                <svg class="residence__table-icon residence__table-icon--eye" width="21" height="17">
-                  <use xlink:href="img/icons/sprite.svg#eye" aria-hidden="true"></use>
-                </svg>
-                <svg class="residence__table-icon residence__table-icon--trash" width="21" height="17">
+                <svg class="floor-plan__table-icon floor-plan__table-icon--trash" width="21" height="17">
                   <use xlink:href="img/icons/sprite.svg#trash" aria-hidden="true"></use>
                 </svg>
               </div>
             </div>
 
-            <div class="residence__table-row">
-              <div class="residence__table-cell">
-                <a class="residence__img-preview-link" href="#">
-                  <img class="residence__img-preview" src="img/preview.png" width="69" height="77" alt="Логотип жилого комплекса">
-                </a>
+            <div class="floor-plan__table-row">
+              <div class="floor-plan__table-cell">Показать
+                <select class="floor-plan__select-number" name="" id="">
+                  <option value="25" selected>25</option>
+                  <option value="30">30</option>
+                </select>
+                записей
               </div>
 
-              <div class="residence__table-cell">
-                <a class="residence__table-link" href="#">Эко Сити</a>
+              <div class="floor-plan__table-cell">
+                Планировки с
+                <span class="floor-plan__items-number floor-plan__items-number--begin">1</span>
+                по
+                <span class="floor-plan__items-number floor-plan__items-number--end">12</span> из
+                <span class="floor-plan__items-number floor-plan__items-number--total">12</span> планировок
               </div>
 
-              <div class="residence__table-cell">25</div>
-
-              <div class="residence__table-cell">20</div>
-
-              <div class="residence__table-cell">Комфорт Комфорт Комфорт</div>
-
-              <div class="residence__table-cell">IV квартал 2022</div>
-
-              <div class="residence__table-cell">
-                <svg class="residence__table-icon residence__table-icon--eye" width="21" height="17">
-                  <use xlink:href="img/icons/sprite.svg#eye" aria-hidden="true"></use>
-                </svg>
-                <svg class="residence__table-icon residence__table-icon--trash" width="21" height="17">
-                  <use xlink:href="img/icons/sprite.svg#trash" aria-hidden="true"></use>
-                </svg>
+              <div class="floor-plan__table-cell">
+                <span class="floor-plan__items-number floor-plan__items-number--selected">0</span>
+                выбрано
               </div>
             </div>
           </div>
