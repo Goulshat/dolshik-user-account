@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Личный кабинет: Квартиры</title>
+    <!--<link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font"> -->
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="page__body">
+    <header style="height: 170px; outline: 1px dashed pink"></header>
+
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Дольщик.онлайн</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Личный кабинет</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link breadcrumbs__link--current">Корзина</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="page__container page__container--form">
+      <nav class="usernav page__container-nav">
+        <ul class="usernav__list">
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Личные данные</h2>
+
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Сообщения
+                  <span class="usernav__item-count">99+</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Документы
+                  <span class="usernav__item-count">2</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Договоры
+                  <span class="usernav__item-count">3</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Изменить личные данные</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Финансы</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Баланс</a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Кэшбэк</a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">История платежей</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Квартиры</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Мои квартиры
+                  <span class="usernav__item-count">2</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Забронированные
+                  <span class="usernav__item-count">5</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Избранные
+                  <span class="usernav__item-count">17</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Покупки</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Корзина товаров
+                  <span class="usernav__item-count">3</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Заказы
+                  <span class="usernav__item-count">10</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Услуги подрядчико</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Мои заказы
+                  <span class="usernav__item-count">10</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Избранные подрядчики</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Кредитование</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Ипотека
+                  <span class="usernav__item-count">10</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Потребительский кредит</a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Страхование</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Электронные сервисы</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Заказать ЭЦП</a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Электронный документооборот</a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Запрос в Росреестр</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="page__container-main">
+        <h1 class="page__main-title">Квартиры</h1>
+
+        <section class="apartments-status">
+          <div class="apartments-status__heading-wrap">
+            <a class="btn btn--blue apartments-status__btn-add" href="#">Добавить квартиру</a>
+            <button class="btn apartments-status__btn-download" type="button">Выгрузить excel-таблицу с квартирами</button>
+            <button class="btn apartments-status__btn-upload" type="button">Загрузить excel-таблицу</button>
+          </div>
+
+          <div class="apartments-status__table-outer">
+            <table class="apartments-status__table">
+              <tr class="apartments-status__table-row">
+                <td class="apartments-status__table-cell">Превью</td>
+                <td class="apartments-status__table-cell">Название</td>
+                <td class="apartments-status__table-cell">ЖК</td>
+                <td class="apartments-status__table-cell">Дом</td>
+                <td class="apartments-status__table-cell">Секция</td>
+                <td class="apartments-status__table-cell">Планировка</td>
+                <td class="apartments-status__table-cell">Статус</td>
+                <td class="apartments-status__table-cell">Цена</td>
+                <td class="apartments-status__table-cell">ID</td>
+              </tr>
+
+              <tr class="apartments-status__table-row">
+                <td class="apartments-status__table-cell">
+                  <a class="apartments-status__img-preview-link" href="#">
+                    <img class="apartments-status__img-preview" src="img/preview.png" width="64" height="40" alt="Изображение дома">
+                  </a>
+                </td>
+
+                <td class="apartments-status__table-cell">
+                  <a class="apartments-status__table-link" href="#">2-к квартира в ЖСК &#171;Радость&#187;  №&nbsp;1</a>
+                </td>
+
+                <td class="apartments-status__table-cell">Радость [1080]</td>
+
+                <td class="apartments-status__table-cell">Дом № 1 [1081]</td>
+
+                <td class="apartments-status__table-cell">Секция 1 [1082]</td>
+
+                <td class="apartments-status__table-cell">2.1 [1092]</td>
+
+                <td class="apartments-status__table-cell">
+                  <select class="apartments-status__table-select" name="apartments-status-flat-status">
+                    <option class="apartments-status__table-option" value="free" selected>Свободна</option>
+                    <option class="apartments-status__table-option" value="booked">Бронь</option>
+                    <option class="apartments-status__table-option" value="not-available">Занято</option>
+                  </select>
+                </td>
+
+                <td class="apartments-status__table-cell">5&nbsp;055&nbsp;800</td>
+
+                <td class="apartments-status__table-cell">16&nbsp;263</td>
+              </tr>
+
+              <div class="apartments-status__table-row">
+                <div class="apartments-status__table-cell">
+                  <a class="apartments-status__img-preview-link" href="#">
+                    <img class="apartments-status__img-preview" src="img/preview.png" width="40" height="40" alt="Изображение дома">
+                  </a>
+                </div>
+
+                <div class="apartments-status__table-cell">
+                  <a class="apartments-status__table-link" href="#">2-к квартира в ЖСК «Радость» №&nbsp;2</a>
+                </div>
+
+                <div class="apartments-status__table-cell">Радость [1080]</div>
+
+                <div class="apartments-status__table-cell">Дом № 1 [1081]</div>
+
+                <div class="apartments-status__table-cell">Секция 1 [1082]</div>
+
+                <div class="apartments-status__table-cell">2.1 [1092]</div>
+
+                <div class="apartments-status__table-cell">
+                  <select name="apartments-status-flat-status">
+                    <option value="free">Свободно</option>
+                    <option value="booked">Бронь</option>
+                    <option value="not-available">Занято</option>
+                  </select>
+                </div>
+
+                <div class="apartments-status__table-cell">5 055 800</div>
+
+                <div class="apartments-status__table-cell">16263</div>
+              </div>
+
+              <div class="apartments-status__table-row">
+                <div class="apartments-status__table-cell">
+                  <a class="apartments-status__img-preview-link" href="#">
+                    <img class="apartments-status__img-preview" src="img/preview.png" width="40" height="40" alt="Изображение дома">
+                  </a>
+                </div>
+
+                <div class="apartments-status__table-cell">
+                  <a class="apartments-status__table-link" href="#">2-к квартира в ЖСК «Радость» №&nbsp;3</a>
+                </div>
+
+                <div class="apartments-status__table-cell">Радость [1080]</div>
+
+                <div class="apartments-status__table-cell">Дом № 1 [1081]</div>
+
+                <div class="apartments-status__table-cell">Секция 1 [1082]</div>
+
+                <div class="apartments-status__table-cell">2.1 [1092]</div>
+
+                <div class="apartments-status__table-cell">
+                  <select name="apartments-status-flat-status">
+                    <option value="free">Свободно</option>
+                    <option value="booked">Бронь</option>
+                    <option value="not-available">Занято</option>
+                  </select>
+                </div>
+
+                <div class="apartments-status__table-cell">5 055 800</div>
+
+                <div class="apartments-status__table-cell">16262</div>
+              </div>
+
+              <div class="apartments-status__table-row">
+                <div class="apartments-status__table-cell">Показать
+                  <select class="apartments__select-number" name="apartments-select-number" id="apartments-select-number">
+                    <option value="25" selected>25</option>
+                    <option value="30">30</option>
+                  </select>
+                  записей
+                </div>
+
+                <div class="apartments-status__table-cell">
+                  Планировки с
+                  <span class="apartments-status__items-number apartments-status__items-number--begin">1</span>
+                  по
+                  <span class="apartments-status__items-number apartments-status__items-number--end">12</span> из
+                  <span class="apartments-status__items-number apartments-status__items-number--total">12</span> планировок
+                </div>
+
+                <div class="apartments-status__table-cell">
+                  <span class="apartments-status__items-number apartments-status__items-number--selected">0</span>
+                  выбрано
+                </div>
+              </div>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

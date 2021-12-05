@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Личный кабинет: Квартиры</title>
+    <title>Личный кабинет: Жилые комплексы</title>
     <!--<link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/180.png">
@@ -11,10 +11,24 @@
     <link rel="preload" href="fonts/opensans.woff2" as="font">
     <link rel="preload" href="fonts/opensansbold.woff2" as="font"> -->
     <link rel="stylesheet" href="css/style.min.css">
+
+    <!-- Pixel Glass-->
+    <style>
+      html {
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 1920px auto;
+        background-image: url("img/mockup/residence.png");
+      }
+
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- Pixel Glass -->
+
   </head>
   <body class="page__body">
     <header style="height: 170px; outline: 1px dashed pink"></header>
-
     <div class="breadcrumbs">
       <ul class="breadcrumbs__list">
         <li class="breadcrumbs__item">
@@ -28,7 +42,6 @@
         </li>
       </ul>
     </div>
-
     <div class="page__container page__container--form">
       <nav class="usernav page__container-nav">
         <ul class="usernav__list">
@@ -157,149 +170,155 @@
         </ul>
       </nav>
 
-      <main class="page__container-main">
-        <h1 class="page__main-title">Квартиры</h1>
-
+      <main class="page__container-main"> <!-- class="page__container-main"-->
         <section class="residence">
-          <div class="residence__heading-wrap">
-            <a class="btn btn--blue residence__btn-add" href="#">Добавить квартиру</a>
-            <button class="btn residence__btn-download" type="button">Выгрузить excel-таблицу с квартирами</button>
-            <button class="btn residence__btn-upload" type="button">Загрузить excel-таблицу</button>
+          <div class="residence__header-wrap">
+            <h1 class="residence__title">Жилые комплексы</h1>
+            <a class="btn btn--blue residence__btn-add" href="#">Добавить ЖК</a>
           </div>
 
-          <div class="residence__table-outer">
-            <table class="residence__table">
-              <tr class="residence__table-row">
-                <td class="residence__table-cell">Превью</td>
-                <td class="residence__table-cell">Название</td>
-                <td class="residence__table-cell">ЖК</td>
-                <td class="residence__table-cell">Дом</td>
-                <td class="residence__table-cell">Секция</td>
-                <td class="residence__table-cell">Планировка</td>
-                <td class="residence__table-cell">Статус</td>
-                <td class="residence__table-cell">Цена</td>
-                <td class="residence__table-cell">ID</td>
-              </tr>
+          <h2 class="residence__caption">Строящиеся жилые комплексы</h2>
 
-              <tr class="residence__table-row">
-                <td class="residence__table-cell">
-                  <a class="residence__img-preview-link" href="#">
-                    <img class="residence__img-preview" src="img/preview.png" width="64" height="40" alt="Изображение дома">
-                  </a>
-                </td>
+          <div class="residence__table">
+            <div class="residence__table-row">
+              <div class="residence__table-cell">Логотип</div>
+              <div class="residence__table-cell">Жилой комплекс</div>
+              <div class="residence__table-cell">Высотность</div>
+              <div class="residence__table-cell">Корпусов</div>
+              <div class="residence__table-cell">Класс</div>
+              <div class="residence__table-cell">Сдача</div>
+              <div class="residence__table-cell"></div>
+            </div>
 
-                <td class="residence__table-cell">
-                  <a class="residence__table-link" href="#">2-к квартира в ЖСК &#171;Радость&#187;  №&nbsp;1</a>
-                </td>
-
-                <td class="residence__table-cell">Радость [1080]</td>
-
-                <td class="residence__table-cell">Дом № 1 [1081]</td>
-
-                <td class="residence__table-cell">Секция 1 [1082]</td>
-
-                <td class="residence__table-cell">2.1 [1092]</td>
-
-                <td class="residence__table-cell">
-                  <select class="residence__table-select" name="residence-flat-status">
-                    <option class="residence__table-option" value="free" selected>Свободна</option>
-                    <option class="residence__table-option" value="booked">Бронь</option>
-                    <option class="residence__table-option" value="not-available">Занято</option>
-                  </select>
-                </td>
-
-                <td class="residence__table-cell">5&nbsp;055&nbsp;800</td>
-
-                <td class="residence__table-cell">16&nbsp;263</td>
-              </tr>
-
-              <div class="residence__table-row">
-                <div class="residence__table-cell">
-                  <a class="residence__img-preview-link" href="#">
-                    <img class="residence__img-preview" src="img/preview.png" width="40" height="40" alt="Изображение дома">
-                  </a>
-                </div>
-
-                <div class="residence__table-cell">
-                  <a class="residence__table-link" href="#">2-к квартира в ЖСК «Радость» №&nbsp;2</a>
-                </div>
-
-                <div class="residence__table-cell">Радость [1080]</div>
-
-                <div class="residence__table-cell">Дом № 1 [1081]</div>
-
-                <div class="residence__table-cell">Секция 1 [1082]</div>
-
-                <div class="residence__table-cell">2.1 [1092]</div>
-
-                <div class="residence__table-cell">
-                  <select name="residence-flat-status">
-                    <option value="free">Свободно</option>
-                    <option value="booked">Бронь</option>
-                    <option value="not-available">Занято</option>
-                  </select>
-                </div>
-
-                <div class="residence__table-cell">5 055 800</div>
-
-                <div class="residence__table-cell">16263</div>
+            <div class="residence__table-row">
+              <div class="residence__table-cell">
+                <a class="residence__img-preview-link" href="#">
+                  <img class="residence__img-preview" src="img/preview.png" width="69" height="77" alt="Логотип жилого комплекса">
+                </a>
               </div>
 
-              <div class="residence__table-row">
-                <div class="residence__table-cell">
-                  <a class="residence__img-preview-link" href="#">
-                    <img class="residence__img-preview" src="img/preview.png" width="40" height="40" alt="Изображение дома">
-                  </a>
-                </div>
-
-                <div class="residence__table-cell">
-                  <a class="residence__table-link" href="#">2-к квартира в ЖСК «Радость» №&nbsp;3</a>
-                </div>
-
-                <div class="residence__table-cell">Радость [1080]</div>
-
-                <div class="residence__table-cell">Дом № 1 [1081]</div>
-
-                <div class="residence__table-cell">Секция 1 [1082]</div>
-
-                <div class="residence__table-cell">2.1 [1092]</div>
-
-                <div class="residence__table-cell">
-                  <select name="residence-flat-status">
-                    <option value="free">Свободно</option>
-                    <option value="booked">Бронь</option>
-                    <option value="not-available">Занято</option>
-                  </select>
-                </div>
-
-                <div class="residence__table-cell">5 055 800</div>
-
-                <div class="residence__table-cell">16262</div>
+              <div class="residence__table-cell">
+                <a class="residence__table-link" href="#">Ласточка</a>
               </div>
 
-              <div class="residence__table-row">
-                <div class="residence__table-cell">Показать
-                  <select class="apartments__select-number" name="apartments-select-number" id="apartments-select-number">
-                    <option value="25" selected>25</option>
-                    <option value="30">30</option>
-                  </select>
-                  записей
-                </div>
+              <div class="residence__table-cell">25</div>
 
-                <div class="residence__table-cell">
-                  Планировки с
-                  <span class="residence__items-number residence__items-number--begin">1</span>
-                  по
-                  <span class="residence__items-number residence__items-number--end">12</span> из
-                  <span class="residence__items-number residence__items-number--total">12</span> планировок
-                </div>
+              <div class="residence__table-cell">1</div>
 
-                <div class="residence__table-cell">
-                  <span class="residence__items-number residence__items-number--selected">0</span>
-                  выбрано
-                </div>
+              <div class="residence__table-cell">Комфорт</div>
+
+              <div class="residence__table-cell">I квартал 2022</div>
+
+              <div class="residence__table-cell">
+                <svg class="residence__table-icon residence__table-icon--eye" width="21" height="17">
+                  <use xlink:href="img/icons/sprite.svg#eye" aria-hidden="true"></use>
+                </svg>
+                <svg class="residence__table-icon residence__table-icon--trash" width="21" height="17">
+                  <use xlink:href="img/icons/sprite.svg#trash" aria-hidden="true"></use>
+                </svg>
               </div>
-            </table>
+            </div>
+
+            <div class="residence__table-row">
+              <div class="residence__table-cell">
+                <a class="residence__img-preview-link" href="#">
+                  <img class="residence__img-preview" src="img/preview.png" width="69" height="77" alt="Логотип жилого комплекса">
+                </a>
+              </div>
+
+              <div class="residence__table-cell">
+                <a class="residence__table-link" href="#">Восточный луч Восточный луч</a>
+              </div>
+
+              <div class="residence__table-cell">25</div>
+
+              <div class="residence__table-cell">20</div>
+
+              <div class="residence__table-cell">Комфорт Комфорт Комфорт</div>
+
+              <div class="residence__table-cell">IV квартал 2022</div>
+
+              <div class="residence__table-cell">
+                <svg class="residence__table-icon residence__table-icon--eye" width="21" height="17">
+                  <use xlink:href="img/icons/sprite.svg#eye" aria-hidden="true"></use>
+                </svg>
+                <svg class="residence__table-icon residence__table-icon--trash" width="21" height="17">
+                  <use xlink:href="img/icons/sprite.svg#trash" aria-hidden="true"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="residence__caption">Сданные жилые комплексы</h2>
+
+          <div class="residence__table">
+            <div class="residence__table-row">
+              <div class="residence__table-cell">Логотип</div>
+              <div class="residence__table-cell">Жилой комплекс</div>
+              <div class="residence__table-cell">Высотность</div>
+              <div class="residence__table-cell">Корпусов</div>
+              <div class="residence__table-cell">Класс</div>
+              <div class="residence__table-cell">Сдача</div>
+              <div class="residence__table-cell"></div>
+            </div>
+
+            <div class="residence__table-row">
+              <div class="residence__table-cell">
+                <a class="residence__img-preview-link" href="#">
+                  <img class="residence__img-preview" src="img/preview.png" width="69" height="77" alt="Логотип жилого комплекса">
+                </a>
+              </div>
+
+              <div class="residence__table-cell">
+                <a class="residence__table-link" href="#">Невельский</a>
+              </div>
+
+              <div class="residence__table-cell">25</div>
+
+              <div class="residence__table-cell">1</div>
+
+              <div class="residence__table-cell">Комфорт</div>
+
+              <div class="residence__table-cell">I квартал 2022</div>
+
+              <div class="residence__table-cell">
+                <svg class="residence__table-icon residence__table-icon--eye" width="21" height="17">
+                  <use xlink:href="img/icons/sprite.svg#eye" aria-hidden="true"></use>
+                </svg>
+                <svg class="residence__table-icon residence__table-icon--trash" width="21" height="17">
+                  <use xlink:href="img/icons/sprite.svg#trash" aria-hidden="true"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="residence__table-row">
+              <div class="residence__table-cell">
+                <a class="residence__img-preview-link" href="#">
+                  <img class="residence__img-preview" src="img/preview.png" width="69" height="77" alt="Логотип жилого комплекса">
+                </a>
+              </div>
+
+              <div class="residence__table-cell">
+                <a class="residence__table-link" href="#">Эко Сити</a>
+              </div>
+
+              <div class="residence__table-cell">25</div>
+
+              <div class="residence__table-cell">20</div>
+
+              <div class="residence__table-cell">Комфорт Комфорт Комфорт</div>
+
+              <div class="residence__table-cell">IV квартал 2022</div>
+
+              <div class="residence__table-cell">
+                <svg class="residence__table-icon residence__table-icon--eye" width="21" height="17">
+                  <use xlink:href="img/icons/sprite.svg#eye" aria-hidden="true"></use>
+                </svg>
+                <svg class="residence__table-icon residence__table-icon--trash" width="21" height="17">
+                  <use xlink:href="img/icons/sprite.svg#trash" aria-hidden="true"></use>
+                </svg>
+              </div>
+            </div>
           </div>
         </section>
       </main>
