@@ -1,0 +1,41 @@
+.messages-chatbox-message {
+  display: block;
+  //flex-direction: column;
+  margin-bottom: 15px;
+  padding: 20px;
+  width: fit-content;
+  max-width: 65%;
+
+  &--current-user {
+    align-self: flex-end;
+    background-color: #def0fd;
+    //border-color: #def0fd;
+  }
+
+  &--other-user {
+    align-self: flex-start;
+  }
+
+  &:first-child {
+    margin-top: auto;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.messages-chatbox-message__user-name {
+  margin: 0;
+  padding: 0;
+
+  &--my {
+    display: none;
+  }
+}
+
+.messages-chatbox-message__text {
+  margin: 0;
+  padding: 0;
+  color: $text-grey;
+}

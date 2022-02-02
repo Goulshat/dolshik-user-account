@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Личный кабинет</title>
+    <!--<link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font"> -->
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <!-- Pixel Glass-->
+    <style>
+      html {
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 1920px auto;
+        background-image: url("img/mockup/form.png");
+      }
+
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- Pixel Glass
+    /* Tablet */
+      @media (min-width: 768px) {
+        html {
+          background-image: url("img/mockups/index-tablet.png");
+        }
+      }
+      /* Desktop */
+      @media (min-width: 1150px) {
+        html {
+          background-image: url("img/mockups/index-desktop.png");
+        }
+      }
+    -->
+
+  </head>
+  <body class="page__body">
+    <header style="height: 170px; outline: 1px dashed pink"></header>
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Дольщик.онлайн</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Личный кабинет</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link breadcrumbs__link--current">Корзина</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page__container page__container--form"> <!-- class="page__container--form"-->
+      <nav class="usernav page__container-nav">
+        <ul class="usernav__list">
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Личные данные</h2>
+
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Сообщения
+                  <span class="usernav__item-count">99+</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Документы
+                  <span class="usernav__item-count">2</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Договоры
+                  <span class="usernav__item-count">3</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Изменить личные данные</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Финансы</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Баланс</a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Кэшбэк</a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">История платежей</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="page__container-main page__container-main--chatbox">
+        <h1 class="visually-hidden">Сообщения</h1>
+        <section class="messages">
+          <button class="messages__open-chat-btn">
+            <span class="visually-hidden">Открыть чат</span>
+          </button>
+          <nav class="messages__list-contacts">
+            <!-- the list of links messages-list-link -->
+            <a class="messages-list-link messages-list-link--current" href="#0">
+              <b class="messages-list-link__name">Дизайн 3-хкомнатной квартиры 138 кв.м. ...</b>
+              <span class="messages-list-link__excerp">ДА!</span>
+            </a>
+
+            <a class="messages-list-link" href="#0">
+              <b class="messages-list-link__name">Ирина Морина</b>
+              <span class="messages-list-link__excerp">Здесь нельзя обмениваться личными контактами ...</span>
+            </a>
+
+            <a class="messages-list-link" href="#0">
+              <b class="messages-list-link__name">Техническая поддержка</b>
+              <span class="messages-list-link__excerp">Здравствуйте! Да, конечно! Для этого необходимо ...</span>
+            </a>
+
+            <a class="messages-list-link" href="#0">
+              <b class="messages-list-link__name">Иван Петров</b>
+              <span class="messages-list-link__excerp">Ответ на вопрос</span>
+            </a>
+
+            <a class="messages-list-link" href="#0">
+              <b class="messages-list-link__name">Техническая поддержка</b>
+              <span class="messages-list-link__excerp">Здравствуйте! Да, конечно! Для этого необходимо ...</span>
+            </a>
+
+            <a class="messages-list-link" href="#0">
+              <b class="messages-list-link__name">Дизайн 3-хкомнатной квартиры 138 кв.м. ...</b>
+              <span class="messages-list-link__excerp">ДА!</span>
+            </a>
+
+            <a class="messages-list-link" href="#0">
+              <b class="messages-list-link__name">Дизайн 3-хкомнатной квартиры 138 кв.м. ...</b>
+              <span class="messages-list-link__excerp">ДА!</span>
+            </a>
+
+            <a class="messages-list-link" href="#0">
+              <b class="messages-list-link__name">Дизайн 3-хкомнатной квартиры 138 кв.м. ...</b>
+              <span class="messages-list-link__excerp">ДА!</span>
+            </a>
+
+            <a class="messages-list-link" href="#0">
+              <b class="messages-list-link__name">Дизайн 3-хкомнатной квартиры 138 кв.м. ...</b>
+              <span class="messages-list-link__excerp">ДА!</span>
+            </a>
+
+            <a class="messages-list-link" href="#0">
+              <b class="messages-list-link__name">Дизайн 3-хкомнатной квартиры 138 кв.м. ...</b>
+              <span class="messages-list-link__excerp">ДА!</span>
+            </a>
+
+            <a class="messages-list-link" href="#0">
+              <b class="messages-list-link__name">Дизайн 3-хкомнатной квартиры 138 кв.м. ...</b>
+              <span class="messages-list-link__excerp">ДА!</span>
+            </a>
+          </nav>
+          <!-- messages-chatbox -->
+          <article class="block-outline messages-chatbox messages__chatbox">
+            <header class="messages-chatbox__header">
+              <h2 class="messages-chatbox__header-caption">Чат
+                <span class="messages-chatbox__header-caption-bold">Дизайн 3-х квартиры 138 кв.м. в ЖК Восход</span>
+              </h2>
+
+              <p class="messages-chatbox__header-users">Участники:
+                <a class="messages-chatbox__header-user-current">Вы, </a>
+                <a class="messages-chatbox__header-user-others" href="#">Светлана Светланская, Анастасия Михайлова</a>
+              </p>
+            </header>
+
+            <!-- messages-chatbox-message -->
+            <div class="messages-chatbox__main">
+              <div class="block-outline messages-chatbox-message messages-chatbox-message--other-user">
+                <b class="messages-chatbox-message__user-name messages-chatbox-message__user-name--designer">Светлана Светланская</b>
+                <p class="messages-chatbox-message__text">А что это тут у нас?</p>
+                <p class="messages-chatbox-message__text">А это сообщение в три строки чтобы было понятно как оно выглядит</p>
+              </div>
+
+              <div class="block-outline messages-chatbox-message messages-chatbox-message--other-user">
+                <b class="messages-chatbox-message__user-name messages-chatbox-message__user-name--service-manager">Светлана Светланская</b>
+                <p class="messages-chatbox-message__text">А это уже какой-то тестовый ответ от уже другого пользователя в две строки</p>
+              </div>
+
+              <div class="block-outline messages-chatbox-message messages-chatbox-message--current-user">
+                <b class="messages-chatbox-message__user-name messages-chatbox-message__user-name--my">Я</b>
+                <p class="messages-chatbox-message__text">Пункт. Проверка</p>
+                <p class="messages-chatbox-message__text">Да</p>
+              </div>
+
+              <div class="block-outline messages-chatbox-message messages-chatbox-message--other-user">
+                <b class="messages-chatbox-message__user-name messages-chatbox-message__user-name--service-manager">Светлана Светланская</b>
+                <p class="messages-chatbox-message__text">А это уже какой-то тестовый ответ от уже другого пользователя в две строки</p>
+              </div>
+
+              <div class="block-outline messages-chatbox-message messages-chatbox-message--current-user">
+                <b class="messages-chatbox-message__user-name messages-chatbox-message__user-name--my">Я</b>
+                <p class="messages-chatbox-message__text">Пункт. Проверка</p>
+                <p class="messages-chatbox-message__text"></p>
+              </div>
+
+              <div class="block-outline messages-chatbox-message messages-chatbox-message--other-user">
+                <b class="messages-chatbox-message__user-name messages-chatbox-message__user-name--service-manager">Светлана Светланская</b>
+                <p class="messages-chatbox-message__text">А это уже какой-то тестовый ответ от уже другого пользователя в две строки</p>
+              </div>
+
+              <div class="block-outline messages-chatbox-message messages-chatbox-message--current-user">
+                <b class="messages-chatbox-message__user-name messages-chatbox-message__user-name--my">Я</b>
+                <p class="messages-chatbox-message__text">Пункт. Проверка</p>
+                <p class="messages-chatbox-message__text"></p>
+              </div>
+
+              <div class="block-outline messages-chatbox-message messages-chatbox-message--other-user">
+                <b class="messages-chatbox-message__user-name messages-chatbox-message__user-name--service-manager">Светлана Светланская</b>
+                <p class="messages-chatbox-message__text">А это уже какой-то тестовый ответ от уже другого пользователя в две строки</p>
+              </div>
+
+              <div class="block-outline messages-chatbox-message messages-chatbox-message--current-user">
+                <b class="messages-chatbox-message__user-name messages-chatbox-message__user-name--my">Я</b>
+                <p class="messages-chatbox-message__text">Пункт. Проверка</p>
+                <p class="messages-chatbox-message__text"></p>
+              </div>
+
+              <div class="block-outline messages-chatbox-message messages-chatbox-message--other-user">
+                <b class="messages-chatbox-message__user-name messages-chatbox-message__user-name--service-manager">Светлана Светланская</b>
+                <p class="messages-chatbox-message__text">А это уже какой-то тестовый ответ от уже другого пользователя в две строки</p>
+              </div>
+
+              <div class="block-outline messages-chatbox-message messages-chatbox-message--current-user">
+                <b class="messages-chatbox-message__user-name messages-chatbox-message__user-name--my">Я</b>
+                <p class="messages-chatbox-message__text">Пункт. Проверка</p>
+                <p class="messages-chatbox-message__text"></p>
+              </div>
+
+              <div class="block-outline messages-chatbox-message messages-chatbox-message--current-user">
+                <b class="messages-chatbox-message__user-name messages-chatbox-message__user-name--my">Я</b>
+                <p class="messages-chatbox-message__text">Еще одно большоооооооооое сообщение  чтобы посмотреть разницу в размерах блоков</p>
+              </div>
+
+              <div class="block-outline messages-chatbox-message messages-chatbox-message--current-user">
+                <b class="messages-chatbox-message__user-name messages-chatbox-message__user-name--my">Я</b>
+                <p class="messages-chatbox-message__text">ДА!</p>
+              </div>
+            </div>
+
+            <footer class="messages-chatbox__footer">
+              <form action="#" method="#" class="messages-chatbox-new">
+                <input class="block-outline messages-chatbox-new__message-input" type="text" placeholder="Напишите сообщение">
+                <button class="messages-chatbox-new__send-button" type="submit" aria-label="Отправить">
+                  <svg class="messages-chatbox-new__send-icon" width="30" height="30">
+                    <use xlink:href="img/icons/sprite.svg#btn-send" aria-hidden="true"></use>
+                  </svg>
+                </button>
+              </form>
+            </footer>
+          </article>
+        </section>
+      </section>
+    </div>
+  </body>
+</html>

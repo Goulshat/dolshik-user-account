@@ -1,0 +1,74 @@
+.messages-chatbox {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  width: 100%;
+  max-height: 1000px;
+  padding: 50px 20px 40px 20px;
+  background-color: #fff;
+
+  &:focus-within {
+    //border-color: $accent-blue-light-30;
+    box-shadow: 0 0 15px rgba($accent-blue, 0.3);
+  }
+}
+/*--- ШАПКА ЧАТА ---*/
+.messages-chatbox__header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  padding: 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $border-color;
+}
+/*--- НАЗВАНИЕ ЧАТА ---*/
+.messages-chatbox__header-caption {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  font-size: 30px;
+  font-weight: 400;
+  color: $text-light;
+}
+
+.messages-chatbox__header-caption-bold {
+  color: #000;
+}
+/*--- УЧАСТНИКИ ЧАТА  ---*/
+.messages-chatbox__header-users {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: $text-light;
+}
+
+.messages-chatbox__header-user-current{
+  color: $black;
+}
+
+.messages-chatbox__header-user-others{
+  color: $accent-blue;
+}
+
+/*--- ОКНО ЧАТА ---*/
+.messages-chatbox__main {
+  display: flex;
+  flex-direction: column;
+  //justify-content: flex-end;
+  margin: 0;
+  margin-right: -10px;
+  padding: 30px 15px 20px 0;
+  max-height: 800px;
+  //border-top: 1px solid $border-color;
+  //border-bottom: 1px solid $border-color;
+  overflow-y: auto;
+}
+
+/*--- КОНТЕЙНЕР ДЛЯ ОКНА НОВОГО СООБЩЕНИЯ ---*/
+.messages-chatbox__footer {
+  margin-top: 20px;
+  border-top: 1px solid $border-color;
+  //height: min-content;
+}

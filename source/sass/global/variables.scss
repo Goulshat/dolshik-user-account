@@ -10,9 +10,14 @@ $accent-light-green: #67ce00; //price
 $accent-blue: #556de6; // interactive
 $accent-red: #ff0000; //error, reset
 $accent-pink: #f3448e;
+$accent-blue-light-50: rgba($accent-blue, 50%);
+$accent-blue-light-30: rgba($accent-blue, 30%);
+$accent-blue-light-10: rgba($accent-blue, 10%);
 
-$bg-main: #e5e5e5;
+$bg-main: #f0eeee;
 $bg-count: #e3ecef;
+$bg-hover: #f5f5f5;
+$bg-focus: #f0f0f0;
 
 $border-color: #d8d8d8;
 $border-light: #efefef;

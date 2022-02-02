@@ -1,0 +1,12 @@
+.main {
+  grid-column: 2 / -1;
+  padding-top: 45px;
+}
+
+.main__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  font-size: $font-title;
+  font-weight: 300;
+}
