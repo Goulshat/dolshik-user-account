@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Личный кабинет</title>
+    <!--<link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font"> -->
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <!-- Pixel Glass-->
+    <style>
+      html {
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 1920px auto;
+        background-image: url("img/mockup/user-account__cart@1x.png");
+      }
+
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- Pixel Glass -->
+
+  </head>
+  <body class="page__body">
+    <header style="height: 170px; outline: 1px dashed pink"></header>
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Дольщик.онлайн</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Личный кабинет</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link breadcrumbs__link--current">Корзина</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page__container page__container--form">
+      <nav class="usernav page__container-nav">
+        <ul class="usernav__list">
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Личные данные</h2>
+
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Сообщения
+                  <span class="usernav__item-count">99+</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Документы
+                  <span class="usernav__item-count">2</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Договоры
+                  <span class="usernav__item-count">3</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Изменить личные данные</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Финансы</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Баланс</a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Кэшбэк</a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">История платежей</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Квартиры</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Мои квартиры
+                  <span class="usernav__item-count">2</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Забронированные
+                  <span class="usernav__item-count">5</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Избранные
+                  <span class="usernav__item-count">17</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Покупки</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Корзина товаров
+                  <span class="usernav__item-count">3</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Заказы
+                  <span class="usernav__item-count">10</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Услуги подрядчико</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Мои заказы
+                  <span class="usernav__item-count">10</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Избранные подрядчики</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Кредитование</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Ипотека
+                  <span class="usernav__item-count">10</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Потребительский кредит</a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Страхование</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Электронные сервисы</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Заказать ЭЦП</a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Электронный документооборот</a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Запрос в Росреестр</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="page__container-main">
+        <h1 class="page__main-title">Корзина</h1>
+
+        <form action="#" method="post" name="usercart">
+          <div class="usercart">
+            <div class="usercart__heading-wrap">
+                <div class="usercart__heading-item">Товары</div>
+                <div class="usercart__heading-item">Цена</div>
+                <div class="usercart__heading-item">Количество</div>
+                <div class="usercart__heading-item">Сумма</div>
+            </div>
+
+            <ul class="usercart__list">
+              <li class="usercart__item">
+                <article class="usercart__inner-grid usercart-item">
+                  <img class="usercart-item__image" src="img/preview/cart-item.png" alt="Описание товара" width="113" height="113">
+                  <div class="usercart-item__inner">
+                    <h2 class="usercart-item__title">Ceramica Paradyz Pandora Grafit Wood 25 x 75
+                    </h2>
+                    <label class="usercart-item__delivery">
+                      <input class="visually-hidden" type="checkbox" name="delivery-today">
+                      Доставить сразу&nbsp;
+                      <span class="usercart-item__delivery-today">(31.08.2021)</span>
+                    </label>
+                    <label class="usercart-item__delivery">
+                      <input class="visually-hidden" type="checkbox" name="delivery-date">
+                      Доставить потом&nbsp;
+                      <time class="usercart-item__delivery-date">указать дату</time>
+                    </label>
+                  </div>
+
+                  <div class="usercart-item__price">
+                    <span>250</span> <!-- usercart-item__price-->
+                    руб.
+                  </div>
+
+                  <div class="usercart-item__quantity">
+                    <div class="usercart-item__quantity-inner">
+                      <button class="usercart-item__quantity-btn usercart-item__quantity-btn--left">-</button>
+                      <input class="usercart-item__quantity-number" type="text" value="1">
+                      <button class="usercart-item__quantity-btn usercart-item__quantity-btn--right">+</button>
+                    </div>
+                    шт
+                  </div>
+
+                  <div class="usercart-item__price">
+                    <span>250</span> <!-- usercart-item__amount-->
+                    руб.
+                  </div>
+                </article>
+              </li>
+              <li class="usercart__item">
+                <article class="usercart__inner-grid usercart-item">
+                  <img class="usercart-item__image" src="img/preview/cart-item.png" alt="Описание товара" width="113" height="113">
+                  <div class="usercart-item__inner">
+                    <h2 class="usercart-item__title">Ceramica Paradyz Pandora Grafit Wood 25 x 75
+                    </h2>
+                    <label class="usercart-item__delivery">
+                      <input class="visually-hidden" type="checkbox" name="delivery-today">
+                      Доставить сразу&nbsp;
+                      <span class="usercart-item__delivery-today">(31.08.2021)</span>
+                    </label>
+                    <label class="usercart-item__delivery">
+                      <input class="visually-hidden" type="checkbox" name="delivery-date">
+                      Доставить потом&nbsp;
+                      <time class="usercart-item__delivery-date">указать дату</time>
+                    </label>
+                  </div>
+
+                  <div class="usercart-item__price">
+                    <span>250</span> <!-- usercart-item__price-->
+                    руб.
+                  </div>
+
+                  <div class="usercart-item__quantity">
+                    <div class="usercart-item__quantity-inner">
+                      <button class="usercart-item__quantity-btn usercart-item__quantity-btn--left">-</button>
+                      <input class="usercart-item__quantity-number" type="text" value="1">
+                      <button class="usercart-item__quantity-btn usercart-item__quantity-btn--right">+</button>
+                    </div>
+                    шт
+                  </div>
+
+                  <div class="usercart-item__price">
+                    <span>250</span> <!-- usercart-item__amount-->
+                    руб.
+                  </div>
+                </article>
+              </li>
+              <li class="usercart__item">
+                <article class="usercart__inner-grid usercart-item">
+                  <img class="usercart-item__image" src="img/preview/cart-item.png" alt="Описание товара" width="113" height="113">
+                  <div class="usercart-item__inner">
+                    <h2 class="usercart-item__title">Ceramica Paradyz Pandora Grafit Wood 25 x 75
+                    </h2>
+                    <label class="usercart-item__delivery">
+                      <input class="visually-hidden" type="checkbox" name="delivery-today">
+                      Доставить сразу&nbsp;
+                      <span class="usercart-item__delivery-today">(31.08.2021)</span>
+                    </label>
+                    <label class="usercart-item__delivery">
+                      <input class="visually-hidden" type="checkbox" name="delivery-date">
+                      Доставить потом&nbsp;
+                      <time class="usercart-item__delivery-date">указать дату</time>
+                    </label>
+                  </div>
+
+                  <div class="usercart-item__price">
+                    <span>250</span> <!-- usercart-item__price-->
+                    руб.
+                  </div>
+
+                  <div class="usercart-item__quantity">
+                    <div class="usercart-item__quantity-inner">
+                      <button class="usercart-item__quantity-btn usercart-item__quantity-btn--left">-</button>
+                      <input class="usercart-item__quantity-number" type="text" value="1">
+                      <button class="usercart-item__quantity-btn usercart-item__quantity-btn--right">+</button>
+                    </div>
+                    шт
+                  </div>
+
+                  <div class="usercart-item__price">
+                    <span>250</span> <!-- usercart-item__amount-->
+                    руб.
+                  </div>
+                </article>
+              </li>
+              <li class="usercart__item">
+                <article class="usercart__inner-grid usercart-item">
+                  <img class="usercart-item__image" src="img/preview/cart-item.png" alt="Описание товара" width="113" height="113">
+                  <div class="usercart-item__inner">
+                    <h2 class="usercart-item__title">Ceramica Paradyz Pandora Grafit Wood 25 x 75
+                    </h2>
+                    <label class="usercart-item__delivery">
+                      <input class="visually-hidden" type="checkbox" name="delivery-today">
+                      Доставить сразу&nbsp;
+                      <span class="usercart-item__delivery-today">(31.08.2021)</span>
+                    </label>
+                    <label class="usercart-item__delivery">
+                      <input class="visually-hidden" type="checkbox" name="delivery-date">
+                      Доставить потом&nbsp;
+                      <time class="usercart-item__delivery-date">указать дату</time>
+                    </label>
+                  </div>
+
+                  <div class="usercart-item__price">
+                    <span>250</span> <!-- usercart-item__price-->
+                    руб.
+                  </div>
+
+                  <div class="usercart-item__quantity">
+                    <div class="usercart-item__quantity-inner">
+                      <button class="usercart-item__quantity-btn usercart-item__quantity-btn--left">-</button>
+                      <input class="usercart-item__quantity-number" type="text" value="1">
+                      <button class="usercart-item__quantity-btn usercart-item__quantity-btn--right">+</button>
+                    </div>
+                    шт
+                  </div>
+
+                  <div class="usercart-item__price">
+                    <span>250</span> <!-- usercart-item__amount-->
+                    руб.
+                  </div>
+                </article>
+              </li>
+              <li class="usercart__item">
+                <article class="usercart__inner-grid usercart-item">
+                  <img class="usercart-item__image" src="img/preview/cart-item.png" alt="Описание товара" width="113" height="113">
+                  <div class="usercart-item__inner">
+                    <h2 class="usercart-item__title">Ceramica Paradyz Pandora Grafit Wood 25 x 75
+                    </h2>
+                    <label class="usercart-item__delivery">
+                      <input class="visually-hidden" type="checkbox" name="delivery-today">
+                      Доставить сразу&nbsp;
+                      <span class="usercart-item__delivery-today">(31.08.2021)</span>
+                    </label>
+                    <label class="usercart-item__delivery">
+                      <input class="visually-hidden" type="checkbox" name="delivery-date">
+                      Доставить потом&nbsp;
+                      <time class="usercart-item__delivery-date">указать дату</time>
+                    </label>
+                  </div>
+
+                  <div class="usercart-item__price">
+                    <span>250</span> <!-- usercart-item__price-->
+                    руб.
+                  </div>
+
+                  <div class="usercart-item__quantity">
+                    <div class="usercart-item__quantity-inner">
+                      <button class="usercart-item__quantity-btn usercart-item__quantity-btn--left">-</button>
+                      <input class="usercart-item__quantity-number" type="text" value="1">
+                      <button class="usercart-item__quantity-btn usercart-item__quantity-btn--right">+</button>
+                    </div>
+                    шт
+                  </div>
+
+                  <div class="usercart-item__price">
+                    <span>250</span> <!-- usercart-item__amount-->
+                    руб.
+                  </div>
+                </article>
+              </li>
+              <li class="usercart__item">
+                <article class="usercart__inner-grid usercart-item">
+                  <img class="usercart-item__image" src="img/preview/cart-item.png" alt="Описание товара" width="113" height="113">
+                  <div class="usercart-item__inner">
+                    <h2 class="usercart-item__title">Ceramica Paradyz Pandora Grafit Wood 25 x 75
+                    </h2>
+                    <label class="usercart-item__delivery">
+                      <input class="visually-hidden" type="checkbox" name="delivery-today">
+                      Доставить сразу&nbsp;
+                      <span class="usercart-item__delivery-today">(31.08.2021)</span>
+                    </label>
+                    <label class="usercart-item__delivery">
+                      <input class="visually-hidden" type="checkbox" name="delivery-date">
+                      Доставить потом&nbsp;
+                      <time class="usercart-item__delivery-date">указать дату</time>
+                    </label>
+                  </div>
+
+                  <div class="usercart-item__price">
+                    <span>250</span> <!-- usercart-item__price-->
+                    руб.
+                  </div>
+
+                  <div class="usercart-item__quantity">
+                    <div class="usercart-item__quantity-inner">
+                      <button class="usercart-item__quantity-btn usercart-item__quantity-btn--left">-</button>
+                      <input class="usercart-item__quantity-number" type="text" value="1">
+                      <button class="usercart-item__quantity-btn usercart-item__quantity-btn--right">+</button>
+                    </div>
+                    шт
+                  </div>
+
+                  <div class="usercart-item__price">
+                    <span>250</span> <!-- usercart-item__amount-->
+                    руб.
+                  </div>
+                </article>
+              </li>
+            </ul>
+
+            <div class="usercart__bottom">
+              <div class="usercart__cashback">
+                <h2 class="usercart__cashback-title">Оплата КЭШБЭКом</h2>
+                <p class="usercart__cashback-text">Доступно &mdash; 10 000 бонусов</p>
+                <label class="usercart__cashback-amount">Введите&nbsp;сумму
+                  <input class="usercart__cashback-input" type="text" placeholder="Максимально — 6 000 руб.">
+                </label>
+                <small class="usercart__cashback-small-text">Оплатить можно до 20% от общей стоимости заказа</small>
+              </div>
+
+              <div class="usercart__onhold">
+                <h2 class="usercart__onhold-title">Установить единый срок хранения</h2>
+                <label class="usercart__onhold-text">
+                  <input class="usercart__onhold-input" type="text" placeholder="дд.мм.гггг.">
+                  <svg class="usercart__onhold-calendar" width="16" height="16">
+                    <use xlink:href="img/icons/sprite.svg#calendar" aria-hidden="true"></use>
+                  </svg>
+                </label>
+                <button class="btn-blue">Установить</button>
+              </div>
+
+              <div class="usercart__total">
+                <p class="usercart__total-title">Итого:
+                  <span class="usercart__total-price">21 040 руб.</span>
+                </p>
+                <p class="usercart__total-title">Итого с применением КЭШБЭК:</p>
+                <span class="usercart__total-amount">18 000 руб.</span>
+              </div>
+            </div>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

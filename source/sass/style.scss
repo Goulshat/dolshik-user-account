@@ -11,11 +11,16 @@
 @import "blocks/block-outline.scss";
 @import "blocks/breadcrumbs.scss";
 @import "blocks/usernav.scss";
-//@import "blocks/main-workarea.scss";
 
-@import "blocks/messages.scss";
-@import "blocks/messages-list-contact.scss";
-@import "blocks/messages-chatbox.scss";
-//@import "blocks/messages-chatbox-header.scss";
-@import "blocks/messages-chatbox-message.scss";
-@import "blocks/messages-chatbox-new.scss";
+@import "blocks/start-page.scss";
+@import "blocks/usercart.scss";
+@import "blocks/usercart-item.scss";
+@import "blocks/advert-blocks.scss";
+
+@import "blocks/chat-section.scss";
+@import "blocks/chat-search-form.scss";
+@import "blocks/chat-contacts-list.scss";
+@import "blocks/chatbox.scss";
+@import "blocks/chatbox-message.scss";
+@import "blocks/chatbox-message-new.scss";
+

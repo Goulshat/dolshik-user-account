@@ -1,4 +1,39 @@
 /*---- Навигация ----*/
+//.usernav {}
+
+.usernav__btn {
+  position: absolute;
+  top: 10px;
+  right: -300px;
+  display: none;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background: $accent-blue url("../../img/icons/menu-open.svg") center no-repeat;
+  cursor: pointer;
+  z-index: 10;
+
+  &--close {
+    top: 10px;
+    right: 10px;
+    background-color: $text-extra-light;
+    background-image: url("../../img/icons/menu-close.svg");
+  }
+
+  &:hover,
+  &:focus {
+    opacity: .6;
+  }
+
+  &:active {
+    opacity: .4;
+  }
+
+  @media (max-width: $desktop) {
+    display: flex;
+  }
+}
 
 .usernav__list {
   margin: 0;
@@ -8,6 +43,7 @@
   flex-direction: column;
   padding-top: 30px;
   padding-right: 20px;
+  min-width: 225px;
 }
 
 .usernav__section:not(:last-child) {

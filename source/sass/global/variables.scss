@@ -7,14 +7,15 @@ $regularblue: #2c2e3f;
 $accent-green: #2bb81f; //
 $accent-dark-green: #65a116;
 $accent-light-green: #67ce00; //price
-$accent-blue: #556de6; // interactive
 $accent-red: #ff0000; //error, reset
 $accent-pink: #f3448e;
-$accent-blue-light-50: rgba($accent-blue, 50%);
-$accent-blue-light-30: rgba($accent-blue, 30%);
-$accent-blue-light-10: rgba($accent-blue, 10%);
+$accent-blue: #556de6; // interactive
+$accent-blue-light-50: rgba($accent-blue, .5);
+$accent-blue-light-30: rgba($accent-blue, .3);
+$accent-blue-light-10: rgba($accent-blue, .1);
+$accent-yellow: #e6d625; //
 
-$bg-main: #f0eeee;
+$bg-main: #fbfbfb;
 $bg-count: #e3ecef;
 $bg-hover: #f5f5f5;
 $bg-focus: #f0f0f0;
@@ -44,4 +45,7 @@ $documents: #a3a3a3;
 
 $mobile: 576px;
 $tablet: 768px;
-$desktop: 1024px;
+$desktop: 1200px;
+$desktop-wide: 1440px;
+$usernav: 260px;
+$usernav-hidden: 50px;
