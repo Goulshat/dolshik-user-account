@@ -2,28 +2,34 @@
 //@import "../../node_modules/normalize-scss/sass/normalize.scss";
 @import "global/fonts.scss";
 @import "global/variables.scss";
-
 @import "mixins.scss";
-
 @import "blocks/page.scss";
 @import "blocks/visually-hidden.scss";
 
 @import "blocks/btn.scss";
+//@import "blocks/btn-blue.scss";
 //@import "blocks/link-blue.scss";
-
+@import "blocks/block-outline.scss";
 @import "blocks/breadcrumbs.scss";
 @import "blocks/usernav.scss";
 
 @import "blocks/start-page.scss";
+@import "blocks/advert-blocks.scss";
 @import "blocks/usercart.scss";
 @import "blocks/usercart-item.scss";
 @import "blocks/documents.scss";
-@import "blocks/advert-blocks.scss";
 @import "blocks/personal-data.scss";
 
-@import "blocks/buildings.scss";
-@import "blocks/apartments.scss";
-@import "blocks/apartments-status.scss";
-@import "blocks/residence.scss";
+@import "blocks/chat-section.scss";
+@import "blocks/chat-search-form.scss";
+@import "blocks/chat-contacts-list.scss";
+@import "blocks/chatbox.scss";
+@import "blocks/chatbox-message.scss";
+@import "blocks/chatbox-message-new.scss";
+
+@import "blocks/buildings.scss"; //
+@import "blocks/apartments.scss"; //
+@import "blocks/apartments-status.scss"; //
+@import "blocks/residence.scss"; //
 @import "blocks/floor-plan.scss";
-@import "blocks/residence-add.scss";
+@import "blocks/residence-add.scss"; // форма добавления квартиры

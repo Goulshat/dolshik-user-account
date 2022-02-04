@@ -9,3 +9,13 @@
   list-style: none;
 }
 
+@mixin block-outline {
+  border: 1px solid $border-color;
+  border-radius: 10px;
+}
+
+@mixin round($width) {
+  width: $width;
+  height: $width;
+  border-radius: 50%;
+}
