@@ -23,6 +23,7 @@
   background-color: #fff;
   border: 1px solid #d8d8d8;
   border-radius: 10px;
+  font-size: 14px;
 };
 
 .apartments-status__heading-wrap {
@@ -64,20 +65,20 @@
 }
 
 .apartments-status__table-outer {
-  //width: 100%;
-  overflow: scroll;
+  max-width: 1340px;
+  overflow-x: auto;
 };
 
 .apartments-status__table {
-  width: 1240px;
-  overflow: scroll;
+  width: max-content;
+  width: auto;
 }
 
 .apartments-status__table-row {
-  display: grid;
-  grid-template-columns: 130px 300px 150px 130px 150px 112px 104px 117px 115px;
+  // display: grid;
+  // grid-template-columns: 130px 300px 150px 130px 150px 112px 104px 117px 115px;
+  display: flex;
   align-items: stretch;
-  justify-content: center;
   padding: 10px 0;
 
   &:first-child {
@@ -93,13 +94,6 @@
     background-color: #fcfcfc;
   }
 
-  &:last-child {
-    display: flex;
-    padding: 0;
-    color: #b1b1b1;
-    background-color: #fff;
-  }
-
   &:hover,
   &:focus-within {
     background-color: #e5e5e5;
@@ -112,10 +106,49 @@
   align-items: center;
   padding: 0 23px;
   min-height: 60px;
+  width: max-content;
   border-right: 1px solid #efefef;
 
   &:first-child {
     padding: 0;
+    justify-content: center;
+    width: 130px;
+  }
+
+  &:nth-child(2) {
+    width: 300px;
+  }
+
+  &:nth-child(3) {
+    width: 150px;
+  }
+
+  &:nth-child(4) {
+    width: 130px;
+  }
+
+  &:nth-child(5) {
+    width: 150px;
+  }
+
+  &:nth-child(6) {
+    width: 110px;
+  }
+
+  &:nth-child(7) {
+    width: 130px;
+  }
+
+  &:nth-child(8) {
+    width: 130px;
+  }
+
+  &:nth-child(9) {
+    width: 120px;
+  }
+
+  &:nth-child(10) {
+    width: 115px;
   }
 
   &:last-child {
@@ -123,20 +156,13 @@
   }
 
   .apartments-status__table-row:first-child & {
+    justify-content: space-between;
     padding-top: 0;
     padding-bottom: 0;
     min-height: 21px;
   }
 
-  .apartments-status__table-row:last-child & {
-    min-height: 21px;
-    padding: 23px 0 0;
-    border-right: none;
 
-    &:first-child {
-      margin-right: auto;
-    }
-  }
 };
 
 .apartments-status__table-select {
@@ -179,7 +205,36 @@
   }
 }
 
-.apartments-status__select-number {
+.apartments-status__select-status {
+  margin: 0 5px;
+  padding: 3px 8px;
+  color: inherit;
+  font: inherit;
+  border: 1px solid #c4c4c4;
+  border-radius: 3px;
+  //background-color: transparent;
+}
+
+/*--- ФИЛЬТР ПОД ТАБЛИЦЕЙ ---*/
+
+.apartments-status__table-footer {
+  display: flex;
+  padding: 0;
+  color: #b1b1b1;
+  background-color: #fff;
+}
+
+.apartments-status__table-footer-cell {
+  min-height: 21px;
+  padding: 23px 0 0;
+  border-right: none;
+
+  &:first-child {
+    margin-right: auto;
+  }
+}
+
+.apartments-status__table-footer-select-number {
   margin: 0 5px;
   padding: 3px 8px;
   color: inherit;
@@ -188,7 +243,7 @@
   border-radius: 3px;
 }
 
-.apartments-status__items-number {
+.apartments-status__table-footer-items-number {
   margin-left: 5px;
   margin-right: 5px;
 

@@ -12,6 +12,7 @@
     <link rel="preload" href="fonts/opensansbold.woff2" as="font"> -->
     <link rel="stylesheet" href="css/style.min.css">
   </head>
+
   <body class="page__body">
     <header style="height: 170px; outline: 1px dashed pink"></header>
 
@@ -20,9 +21,11 @@
         <li class="breadcrumbs__item">
           <a href="#" class="breadcrumbs__link">Дольщик.онлайн</a>
         </li>
+
         <li class="breadcrumbs__item">
           <a href="#" class="breadcrumbs__link">Личный кабинет</a>
         </li>
+
         <li class="breadcrumbs__item">
           <a href="#" class="breadcrumbs__link breadcrumbs__link--current">Корзина</a>
         </li>
@@ -179,6 +182,9 @@
                 <td class="apartments-status__table-cell">Статус</td>
                 <td class="apartments-status__table-cell">Цена</td>
                 <td class="apartments-status__table-cell">ID</td>
+                <td class="apartments-status__table-cell">ID</td>
+                <td class="apartments-status__table-cell">ID</td>
+                <td class="apartments-status__table-cell">ID</td>
               </tr>
 
               <tr class="apartments-status__table-row">
@@ -210,96 +216,114 @@
 
                 <td class="apartments-status__table-cell">5&nbsp;055&nbsp;800</td>
 
-                <td class="apartments-status__table-cell">16&nbsp;263</td>
+                <td class="apartments-status__table-cell">16263</td>
+
+                <td class="apartments-status__table-cell">16263</td>
+
+                <td class="apartments-status__table-cell">16263</td>
+
+                <td class="apartments-status__table-cell">16263</td>
               </tr>
 
-              <div class="apartments-status__table-row">
-                <div class="apartments-status__table-cell">
+              <tr class="apartments-status__table-row">
+                <td class="apartments-status__table-cell">
                   <a class="apartments-status__img-preview-link" href="#">
                     <img class="apartments-status__img-preview" src="img/preview.png" width="40" height="40" alt="Изображение дома">
                   </a>
-                </div>
+                </td>
 
-                <div class="apartments-status__table-cell">
+                <td class="apartments-status__table-cell">
                   <a class="apartments-status__table-link" href="#">2-к квартира в ЖСК «Радость» №&nbsp;2</a>
-                </div>
+                </td>
 
-                <div class="apartments-status__table-cell">Радость [1080]</div>
+                <td class="apartments-status__table-cell">Радость [1080]</td>
 
-                <div class="apartments-status__table-cell">Дом № 1 [1081]</div>
+                <td class="apartments-status__table-cell">Дом № 1 [1081]</td>
 
-                <div class="apartments-status__table-cell">Секция 1 [1082]</div>
+                <td class="apartments-status__table-cell">Секция 1 [1082]</td>
 
-                <div class="apartments-status__table-cell">2.1 [1092]</div>
+                <td class="apartments-status__table-cell">2.1 [1092]</td>
 
-                <div class="apartments-status__table-cell">
-                  <select name="apartments-status-flat-status">
-                    <option value="free">Свободно</option>
-                    <option value="booked">Бронь</option>
-                    <option value="not-available">Занято</option>
+                <td class="apartments-status__table-cell">
+                  <select class="apartments-status__table-select" name="apartments-status-flat-status">
+                    <option class="apartments-status__table-option" value="free" selected>Свободна</option>
+                    <option class="apartments-status__table-option" value="booked">Бронь</option>
+                    <option class="apartments-status__table-option" value="not-available">Занято</option>
                   </select>
-                </div>
+                </td>
 
-                <div class="apartments-status__table-cell">5 055 800</div>
+                <td class="apartments-status__table-cell">5 055 800</td>
 
-                <div class="apartments-status__table-cell">16263</div>
-              </div>
+                <td class="apartments-status__table-cell">16263</td>
 
-              <div class="apartments-status__table-row">
-                <div class="apartments-status__table-cell">
+                <td class="apartments-status__table-cell">16263</td>
+
+                <td class="apartments-status__table-cell">16263</td>
+
+                <td class="apartments-status__table-cell">16263</td>
+              </tr>
+
+              <tr class="apartments-status__table-row">
+                <td class="apartments-status__table-cell">
                   <a class="apartments-status__img-preview-link" href="#">
                     <img class="apartments-status__img-preview" src="img/preview.png" width="40" height="40" alt="Изображение дома">
                   </a>
-                </div>
+                </td>
 
-                <div class="apartments-status__table-cell">
+                <td class="apartments-status__table-cell">
                   <a class="apartments-status__table-link" href="#">2-к квартира в ЖСК «Радость» №&nbsp;3</a>
-                </div>
+                </td>
 
-                <div class="apartments-status__table-cell">Радость [1080]</div>
+                <td class="apartments-status__table-cell">Радость [1080]</td>
 
-                <div class="apartments-status__table-cell">Дом № 1 [1081]</div>
+                <td class="apartments-status__table-cell">Дом № 1 [1081]</td>
 
-                <div class="apartments-status__table-cell">Секция 1 [1082]</div>
+                <td class="apartments-status__table-cell">Секция 1 [1082]</td>
 
-                <div class="apartments-status__table-cell">2.1 [1092]</div>
+                <td class="apartments-status__table-cell">2.1 [1092]</td>
 
-                <div class="apartments-status__table-cell">
-                  <select name="apartments-status-flat-status">
-                    <option value="free">Свободно</option>
-                    <option value="booked">Бронь</option>
-                    <option value="not-available">Занято</option>
+                <td class="apartments-status__table-cell">
+                  <select class="apartments-status__table-select" name="apartments-status-flat-status">
+                    <option class="apartments-status__table-option" value="free" selected>Свободна</option>
+                    <option class="apartments-status__table-option" value="booked">Бронь</option>
+                    <option class="apartments-status__table-option" value="not-available">Занято</option>
                   </select>
-                </div>
+                </td>
 
-                <div class="apartments-status__table-cell">5 055 800</div>
+                <td class="apartments-status__table-cell">5 055 800</td>
 
-                <div class="apartments-status__table-cell">16262</div>
-              </div>
+                <td class="apartments-status__table-cell">16262</td>
 
-              <div class="apartments-status__table-row">
-                <div class="apartments-status__table-cell">Показать
-                  <select class="apartments__select-number" name="apartments-select-number" id="apartments-select-number">
-                    <option value="25" selected>25</option>
-                    <option value="30">30</option>
-                  </select>
-                  записей
-                </div>
+                <td class="apartments-status__table-cell">16263</td>
 
-                <div class="apartments-status__table-cell">
-                  Планировки с
-                  <span class="apartments-status__items-number apartments-status__items-number--begin">1</span>
-                  по
-                  <span class="apartments-status__items-number apartments-status__items-number--end">12</span> из
-                  <span class="apartments-status__items-number apartments-status__items-number--total">12</span> планировок
-                </div>
+                <td class="apartments-status__table-cell">16263</td>
 
-                <div class="apartments-status__table-cell">
-                  <span class="apartments-status__items-number apartments-status__items-number--selected">0</span>
-                  выбрано
-                </div>
-              </div>
+                <td class="apartments-status__table-cell">16263</td>
+              </tr>
             </table>
+          </div>
+
+          <div class="apartments-status__table-footer">
+            <div class="apartments-status__table-footer-cell">Показать
+              <select class="apartments__select-number" name="apartments-select-number" id="apartments-select-number">
+                <option value="25" selected>25</option>
+                <option value="30">30</option>
+              </select>
+              записей
+            </div>
+
+            <div class="apartments-status__table-footer-cell">
+              Планировки с
+              <span class="apartments-status__items-number apartments-status__items-number--begin">1</span>
+              по
+              <span class="apartments-status__items-number apartments-status__items-number--end">12</span> из
+              <span class="apartments-status__items-number apartments-status__items-number--total">12</span> планировок
+            </div>
+
+            <div class="apartments-status__table-footer-cell">
+              <span class="apartments-status__items-number apartments-status__items-number--selected">0</span>
+              выбрано
+            </div>
           </div>
         </section>
       </main>
