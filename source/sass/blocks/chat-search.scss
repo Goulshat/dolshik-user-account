@@ -1,12 +1,11 @@
-/*-------*/
-.chat-search-form {
+.chat-search {
   position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
 
-.chat-search-form__input {
+.chat-search__input {
   @include block-outline;
   margin: 0;
   padding: 10px 20px;
@@ -18,6 +17,7 @@
 
   &::placeholder {
     font-size: inherit;
+    font-family: "Open Sans";
     color: $text-form-placeholder;
   }
 
@@ -27,7 +27,7 @@
   }
 }
 
-.chat-search-form__btn {
+.chat-search__btn {
   position: absolute;
   top: 50%;
   right: 5px;
@@ -39,24 +39,24 @@
   border: none;
   background-color: $white;
   cursor: pointer;
-
-  &:hover,
-  &:focus {
-    background-color: $bg-hover;
-    box-shadow: 0 0 7px $box-shadow;
-  }
-
-  &:active {
-    background-color: $bg-focus;
-
-    .chat-search-form__icon {
-      fill: $white;
-    }
-  }
 }
 
-.chat-search-form__icon {
+.chat-search__icon {
   width: 25px;
   height: 25px;
   fill: $text-light;
+
+  .chat-search__input:hover + .chat-search__btn &,
+  .chat-search__input:focus + .chat-search__btn & {
+    fill: $text-chatbox-header;
+  }
+
+  .chat-search__btn:hover &,
+  .chat-search__btn:focus & {
+    fill: $accent-blue;
+  }
+
+  .chat-search__btn:active & {
+    fill: $text-grey;
+  }
 }

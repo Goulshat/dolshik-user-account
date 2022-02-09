@@ -5,7 +5,8 @@
   max-height: 1000px;
   max-width: 912px;
   padding: 40px 20px 40px 20px;
-  background-color: #fff;
+  background-color: $white;
+  @include block-outline;
 
   &:focus-within {
     box-shadow: 0 0 15px rgba($accent-blue, 0.3);
@@ -31,7 +32,7 @@
   padding: 0;
   font-size: 32px;
   font-weight: 300;
-  color: #4f4f4f;
+  color: $text-chatbox-header;
 }
 
 .chatbox__header-caption-bold {
@@ -46,7 +47,7 @@
 }
 
 .chatbox__header-user-current{
-  color: #4f4f4f;
+  color: $text-chatbox-header;
 }
 
 .chatbox__header-user-others{

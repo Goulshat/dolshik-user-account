@@ -23,6 +23,7 @@ $bg-focus: #f0f0f0;
 $border-color: #d8d8d8;
 $border-light: #efefef;
 $box-shadow: rgba(0, 0, 0, 0.1);
+$box-shadow-darker: rgba(0, 0, 0, 0.2);
 
 $text-grey: #545454;
 $text-input-delivery: #5a5a5a;
@@ -36,7 +37,9 @@ $text-count: #687980;
 $text-total-price: #626262;
 $text-form: #818181;
 $text-form-placeholder: #666666;
+
 $text-messages-chatbox: #686868;
+$text-chatbox-header: #4f4f4f;
 
 $documents: #a3a3a3;
 
@@ -48,5 +51,6 @@ $mobile: 576px;
 $tablet: 768px;
 $desktop: 1200px;
 $desktop-wide: 1440px;
+
 $usernav: 260px;
 $usernav-hidden: 50px;

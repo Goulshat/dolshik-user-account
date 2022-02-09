@@ -14,8 +14,17 @@
   border-radius: 10px;
 }
 
+@mixin square($width) {
+  width: $width;
+  height: $width;
+}
+
 @mixin round($width) {
   width: $width;
   height: $width;
   border-radius: 50%;
+}
+
+@mixin border($color) {
+  border: 1px solid $color;
 }
