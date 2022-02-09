@@ -1,0 +1,49 @@
+.chat-contacts-list {
+  @include clear-list;
+  overflow-y: auto;
+}
+
+.chat-contacts-list__item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.chat-contacts-list__link {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 5px 20px 20px;
+  color: inherit;
+  text-decoration: none;
+  //overflow: hidden;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $bg-hover;
+  }
+
+  &:focus {
+    background-color: $bg-focus;
+  }
+
+  &--active {
+    background-color: $bg-focus;
+  }
+}
+
+.chat-contacts-list__name {
+  font-weight: 600;
+  overflow: hidden;
+  color: $black;
+  height: 30px; // чтобы только в 1 строку
+  //.chat-contacts-list--active & {}
+}
+
+.chat-contacts-list__excerp {
+  font-weight: 300;
+  overflow: hidden;
+  color: #b1b1b1;
+  height: 30px; // чтобы только в 1 строку
+}

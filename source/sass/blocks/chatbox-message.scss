@@ -1,0 +1,68 @@
+.chatbox-message {
+  display: block;
+  margin-bottom: 20px;
+  padding: 20px 28px;
+  width: fit-content;
+  max-width: 65%;
+  overflow-wrap: break-word;
+  @include block-outline;
+
+  &--current-user {
+    align-self: flex-end;
+    background-color: #def0fd;
+    border-color: #cad7e0;
+  }
+
+  &--other-user {
+    align-self: flex-start;
+  }
+
+  &:first-child {
+    margin-top: auto;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.chatbox-message__user-name {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: $black;
+
+  .chatbox-message--current-user & {
+    display: none;
+  }
+}
+
+.chatbox-message__user-role {
+  position: relative;
+  bottom: 2px;
+  margin-left: 8px;
+  padding: 2px 8px;
+  font-size: 8px;
+  font-weight: 400;
+  color: $black;
+  border-radius: 4px;
+  //transform: translateY(-10px);
+
+  &--designer {
+    background-color: $accent-yellow;
+  }
+
+  &--service-manager {
+    background-color: $accent-blue;
+    color: $white;
+  }
+}
+
+.chatbox-message__text {
+  margin: 0;
+  padding: 0;
+  color: $text-messages-chatbox;
+}

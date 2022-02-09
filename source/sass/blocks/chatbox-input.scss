@@ -1,0 +1,44 @@
+.chatbox-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  padding-top: 20px;
+}
+
+.chatbox-input__input {
+  display: block;
+  margin-right: 10px;
+  padding: 14px 30px;
+  width: 100%;
+  font-size: 16px;
+  color: $text-messages-chatbox;
+  border-radius: 3px;
+  border: 1px solid #c4c4c4;
+
+  &::placeholder {
+    font-family: "Open Sans";
+    font-size: 16px;
+  }
+}
+
+.chatbox-input__send-button {
+  margin-left: 28px;
+  padding: 8px 16px;
+
+  &:hover,
+  &:focus {
+    opacity: .6;
+  }
+
+  &:active {
+    opacity: .4;
+  }
+}
+/*
+.chatbox-input__send-icon {
+  width: 30px;
+  height: 30px;
+  fill: $white;
+}
+*/
