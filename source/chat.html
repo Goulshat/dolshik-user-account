@@ -258,10 +258,10 @@
             </ul>
           </nav>
           <!-- chatbox -->
-          <article class="chatbox chat-section__chatbox chat-section__chatbox--hidden">
+          <article class="block-outline chatbox chat-section__chatbox chat-section__chatbox--hidden">
             <header class="chatbox__header">
               <h2 class="chatbox__header-caption">Чат
-                <span class="chatbox__header-caption-bold">Дизайн 3-х квартиры 138 кв.м. в ЖК Восход</span>
+                <span class="chatbox__header-caption-bold">&laquo;Дизайн 3-х квартиры 138 кв.м. в ЖК Восход&raquo;</span>
               </h2>
 
               <p class="chatbox__header-users">Участники:
@@ -370,13 +370,17 @@
               </div>
             </div>
 
+            <!-- Новое сообщение -->
             <footer class="chatbox__footer">
-              <form action="#" method="#" class="chatbox-message-new">
-                <input class="block-outline chatbox-message-new__input" type="text" placeholder="Напишите сообщение">
-                <button class="chatbox-message-new__send-button" type="submit" aria-label="Отправить">
-                  <svg class="chatbox-message-new__send-icon" width="30" height="30">
+              <form action="#" method="#" class="chatbox-input">
+                <input class="chatbox-input__input" type="text" placeholder="Так-с... А сколько стоит через вас работать? Напишите сообщение">
+                <button class="btn btn--blue chatbox-input__send-button" type="submit">
+                  <!--
+                  <svg class="chatbox-input__send-icon" width="30" height="30">
                     <use xlink:href="img/icons/sprite.svg#btn-send" aria-hidden="true"></use>
                   </svg>
+                  -->
+                  Отправить
                 </button>
               </form>
             </footer>

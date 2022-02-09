@@ -1,10 +1,12 @@
 // Начните писать стили здесь
-@import "../../node_modules/normalize-scss/sass/normalize.scss";
+//@import "../../node_modules/normalize-scss/sass/normalize.scss";
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "mixins.scss";
 @import "blocks/page.scss";
 @import "blocks/visually-hidden.scss";
+@import "blocks/btn.scss";
+
 
 //@import "blocks/btn-blue.scss";
 //@import "blocks/link-blue.scss";
@@ -22,5 +24,5 @@
 @import "blocks/chat-contacts-list.scss";
 @import "blocks/chatbox.scss";
 @import "blocks/chatbox-message.scss";
-@import "blocks/chatbox-message-new.scss";
+@import "blocks/chatbox-input.scss";
 

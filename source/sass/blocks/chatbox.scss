@@ -1,17 +1,13 @@
 .chatbox {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   width: 100%;
   max-height: 1000px;
+  max-width: 912px;
   padding: 40px 20px 40px 20px;
   background-color: #fff;
-  border-radius: 10px;
 
   &:focus-within {
-    //border-color: $accent-blue-light-30;
     box-shadow: 0 0 15px rgba($accent-blue, 0.3);
   }
 }
@@ -33,24 +29,24 @@
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
-  font-size: 30px;
-  font-weight: 400;
-  color: $text-light;
+  font-size: 32px;
+  font-weight: 300;
+  color: #4f4f4f;
 }
 
 .chatbox__header-caption-bold {
-  color: #000;
+  color: #252734;
 }
 /*--- УЧАСТНИКИ ЧАТА  ---*/
 .chatbox__header-users {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  color: $text-light;
+  color: #a8a8a8;
 }
 
 .chatbox__header-user-current{
-  color: $black;
+  color: #4f4f4f;
 }
 
 .chatbox__header-user-others{
@@ -61,19 +57,15 @@
 .chatbox__main {
   display: flex;
   flex-direction: column;
-  //justify-content: flex-end;
   margin: 0;
   margin-right: -10px;
-  padding: 30px 15px 20px 0;
+  padding: 30px 25px 20px 0;
   max-height: 800px;
-  //border-top: 1px solid $border-color;
-  //border-bottom: 1px solid $border-color;
   overflow-y: auto;
 }
 
 /*--- КОНТЕЙНЕР ДЛЯ ОКНА НОВОГО СООБЩЕНИЯ ---*/
 .chatbox__footer {
-  margin-top: 20px;
+  margin-top: 27px;
   border-top: 1px solid $border-color;
-  //height: min-content;
 }

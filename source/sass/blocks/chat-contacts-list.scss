@@ -36,6 +36,7 @@
 .chat-contacts-list__name {
   font-weight: 600;
   overflow: hidden;
+  color: $black;
   height: 30px; // чтобы только в 1 строку
   //.chat-contacts-list--active & {}
 }
@@ -43,5 +44,6 @@
 .chat-contacts-list__excerp {
   font-weight: 300;
   overflow: hidden;
+  color: #b1b1b1;
   height: 30px; // чтобы только в 1 строку
 }
