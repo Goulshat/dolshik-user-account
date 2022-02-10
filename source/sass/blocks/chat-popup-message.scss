@@ -1,9 +1,9 @@
-.chatbox-message {
+.chat-popup-message {
   display: block;
-  margin-bottom: 20px;
-  padding: 20px 28px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
   width: fit-content;
-  max-width: 65%;
+  max-width: 80%;
   overflow-wrap: break-word;
   @include block-outline;
 
@@ -26,7 +26,7 @@
   }
 }
 
-.chatbox-message__user-name {
+.chat-popup-message__user-name {
   display: inline-block;
   vertical-align: middle;
   margin: 0;
@@ -40,7 +40,7 @@
   }
 }
 
-.chatbox-message__user-role {
+.chat-popup-message__user-role {
   position: relative;
   bottom: 2px;
   margin-left: 8px;
@@ -49,7 +49,6 @@
   font-weight: 400;
   color: $black;
   border-radius: 4px;
-  //transform: translateY(-10px);
 
   &--designer {
     background-color: $accent-yellow;
@@ -61,7 +60,7 @@
   }
 }
 
-.chatbox-message__text {
+.chat-popup-message__text {
   margin: 0;
   padding: 0;
   color: $text-chatbox-messages;

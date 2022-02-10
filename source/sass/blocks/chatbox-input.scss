@@ -12,9 +12,9 @@
   padding: 14px 30px;
   width: 100%;
   font-size: 16px;
-  color: $text-messages-chatbox;
+  color: $text-chatbox-messages;
   border-radius: 3px;
-  border: 1px solid #c4c4c4;
+  border: 1px solid $text-chatbox-input;
 
   &::placeholder {
     font-family: "Open Sans";

@@ -25,6 +25,7 @@
     padding-left: 50px;
   }
 }
+
 /*--- НАЗВАНИЕ ЧАТА ---*/
 .chatbox__header-caption {
   margin: 0;
@@ -36,14 +37,14 @@
 }
 
 .chatbox__header-caption-bold {
-  color: #252734;
+  color: $text-chatbox-header-caption;
 }
 /*--- УЧАСТНИКИ ЧАТА  ---*/
 .chatbox__header-users {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  color: #a8a8a8;
+  color: $text-chatbox-header-users;
 }
 
 .chatbox__header-user-current{

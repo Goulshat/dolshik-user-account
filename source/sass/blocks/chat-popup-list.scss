@@ -1,9 +1,9 @@
-.chat-contacts-list {
+.chat-popup-list {
   @include clear-list;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
-.chat-contacts-list__item {
+.chat-popup-list__item {
   margin-bottom: 10px;
 
   &:last-child {
@@ -11,7 +11,7 @@
   }
 }
 
-.chat-contacts-list__link {
+.chat-popup-list__link {
   display: flex;
   flex-direction: column;
   padding: 10px 5px 20px 20px;
@@ -32,15 +32,15 @@
   }
 }
 
-.chat-contacts-list__name {
+.chat-popup-list__name {
   font-weight: 600;
   overflow: hidden;
   color: $black;
   height: 30px; // чтобы только в 1 строку
-  //.chat-contacts-list--active & {}
+  //.chat-popup-list--active & {}
 }
 
-.chat-contacts-list__excerp {
+.chat-popup-list__excerp {
   font-weight: 300;
   overflow: hidden;
   color: $text-chatlist-excerp;

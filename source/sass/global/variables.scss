@@ -13,16 +13,17 @@ $accent-blue: #556de6; // interactive
 $accent-blue-light-50: rgba($accent-blue, .5);
 $accent-blue-light-30: rgba($accent-blue, .3);
 $accent-blue-light-10: rgba($accent-blue, .1);
-$accent-yellow: #e6d625; //наугад
+$accent-yellow: #eba900; //
 
 $bg-main: #fbfbfb;
 $bg-count: #e3ecef;
-$bg-hover: #f5f5f5;
+$bg-hover: #f2f2f2;
 $bg-focus: #f0f0f0;
 
 $border-color: #d8d8d8;
 $border-light: #efefef;
 $box-shadow: rgba(0, 0, 0, 0.1);
+$box-shadow-darker: rgba(0, 0, 0, 0.2);
 
 $text-grey: #545454;
 $text-input-delivery: #5a5a5a;
@@ -39,10 +40,24 @@ $text-form-placeholder: #666666;
 
 $documents: #a3a3a3;
 
+//chat
+$text-chatbox-messages: #686868;
+$text-chatbox-header: #4f4f4f;
+$text-chatbox-header-users: #a8a8a8;
+$text-chatlist-excerp: #b1b1b1;
+$text-chatbox-header-caption: #252734;
+$text-chatbox-input: #c4c4c4;
+$bg-message-blue: #def0fd;
+$border-message-blue: #cad7e0;
+
 // $font-regular: 16px;
 // $font-counter: 10px;
 // $font-title: 48px;
 
 $mobile: 576px;
 $tablet: 768px;
-$desktop: 1024px;
+$desktop: 1200px;
+$desktop-wide: 1440px;
+
+$usernav: 260px;
+$usernav-hidden: 50px;
