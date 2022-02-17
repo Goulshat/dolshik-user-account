@@ -203,7 +203,7 @@
                     <span class="residence-add__required">*</span>
                   </span>
 
-                  <select class="residence-add__select-stage" name="construction" id="" required>
+                  <select class="residence-add__select-stage" name="construction" required>
                     <option value="in-progress" checked>Строящийся</option>
                     <option value="finished">Сданный</option>
                   </select>
@@ -223,8 +223,10 @@
                   </span>
 
                   <div class="residence-add__download-area">
-                    Перетяните сюда скан паспорта или
-                    <a href="#" class="residence-add__name-download">выберите на ПК</a>
+                    <span class="residence-add__download-text">
+                      Перетяните сюда логотип ЖК или
+                      <a href="#" class="residence-add__download-link">выберите на ПК</a>
+                    </span>
                   </div>
                 </label>
               </fieldset>
@@ -259,8 +261,10 @@
                 <div class="residence-add__label">
                   <span class="residence-add__label-text">Дополнительные изображения</span>
 
-                  <button class="btn btn--blue residence-add__upload-btn">Выберите файл</button>
-                  <span class="residence-add__upload-text">Файл не выбран</span>
+                  <div class="residence-add__btn-wrap">
+                    <button class="btn btn--blue residence-add__btn-upload-img">Выберите файл</button>
+                    <span class="residence-add__upload-text">Файл не выбран</span>
+                  </div>
                 </div>
               </fieldset>
 
@@ -275,6 +279,7 @@
 
                     <button class="residence-add__btn-change-address" type="button">Отменить</button>
                   </label>
+
                   <div style="outline: 1px dashed pink; height: 452px;"></div>
                 </div>
 
