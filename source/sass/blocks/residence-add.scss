@@ -35,7 +35,7 @@
   flex: 1 1 180px;
   margin-right: 2px;
   color: $residence-progress-item;
-  font-size: 12px;
+  font-size: $font-small;
 
   &::after {
     position: absolute;
@@ -85,16 +85,20 @@
   background-color: $white;
   border-top: none;
   @include block-outline;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .residence-add__fieldset {
   border: none;
   margin: 0;
   padding: 30px 36px 36px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
 
   &:first-child {
     padding-top: 40px;
-    display: grid;
     grid-template-columns: 1.8fr 1fr 1fr;
     column-gap: 30px;
   }
@@ -104,11 +108,26 @@
   }
 }
 
+.residence-add__fieldset-inner {
+  // контейнер для кнопочек
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.residence-add__label-wrap {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 30px;
+}
+
 .residence-add__label {
   display: block;
   margin: 0;
+  margin-bottom: 10px;
   width: auto;
-  font-size: 14px;
+  height: auto;
+  font-size: $font-medium;
   font-weight: 600;
   color: $text-form;
 
@@ -122,10 +141,33 @@
     grid-row: 1 / 3;
     justify-content: center;
   }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .residence-add__fieldset-inner & {
+    margin-bottom: 0;
+  }
+
+  .residence-add__label-wrap &:nth-child(-n+3) {
+    grid-column: span 2;
+  }
+
+  .residence-add__label-wrap &:nth-child(n+4) {
+    grid-column: span 3;
+  }
 }
 
 .residence-add__label-text {
+  display: block;
+  margin-bottom: 5px;
   padding-left: 5px;
+
+  sup {
+    font-size: $font-medium * .5;
+    line-height: 1;
+  }
 }
 
 .residence-add__required {
@@ -134,17 +176,17 @@
 
 .residence-add__input {
   display: block;
-  //margin-top: 3px;
+  //margin-top: 5px;
   padding: 10px 20px;
   width: 100%;
-  font-family: "Open Sans";
+  font-family: $font-family;
   font-size: 14px;
-  border: 1px solid $residence-input-text;
-  border-radius: 3px;
+  color: $text-form-placeholder;
+  @include residence-input-outline;
 
   &::placeholder {
-    //font-family: "Open Sans";
-    font-family: inherit;
+    font-family: $font-family;
+    color: $residence-placeholder;
   }
 }
 
@@ -152,40 +194,144 @@
   display: block;
   //margin-top: 3px;
   padding: 10px 20px;
-  border: 1px solid $residence-input-text;
-  border-radius: 3px;
   width: 100%;
+  font-family: $font-family;
+  font-size: 14px;
+  color: $text-form-placeholder;
+  @include residence-input-outline;
+
+  option {
+    font-family: $font-family;
+    color: $text-form-placeholder;
+  }
 }
 
-/*
+.residence-add__select-advantage {
+  @include residence-input-outline;
+
+  option {
+    padding: 5px 10px;
+    font-family: $font-family;
+    font-size: 14px;
+    color: $text-form-placeholder;
+
+    &:checked {
+      background-color: $bg-hover;
+    } // не применяется из-за дефолтных стилей select
+  }
+}
+
 .residence-add__textarea-description {
-
+  align-self: stretch;
+  padding: 10px 18px;
+  min-height: 220px;
+  width: 100%;
+  font-family: $font-family;
+  font-size: 14px;
+  color: $text-form-placeholder;
+  line-height: 2;
+  @include residence-input-outline;
 }
 
-.residence-add__input::placeholder {
-  color: #666666;
+/**/
+.residence-add__btn-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.residence-add__upload-preview {
-  width: 188px;
-  height: 180px;
-  background-image: url("../../img/preview/cat.png");
-  border-radius: 10px;
+.residence-add__btn-upload-img {
+  //padding: 7px 14px;
+  //font-size: 12px;
 }
 
 .residence-add__upload-text {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 7px 14px;
-  font-size: 12px;
-  line-height: 1.5;
-  text-align: center;
+  margin-left: 18px;
+  font-weight: 400;
   color: #c0c0c0;
 }
 
-/*----- Загрузка документов -----*/
+/*--------- Карта ---------*/
+.residence-add__map-wrap {
+  grid-column: 1 / -1;
+  display: block;
+  margin-top: 15px;
+}
 
+.residence-add__map-address-input {
+  display: block;
+  padding-left: 5px;
+  width: 100%;
+  font-family: $font-family;
+  color: $text-form;
+  line-height: 1;
+  border: none;
+  background-color: transparent;
+}
+
+.residence-add__btn-change-address {
+  font-family: $font-family;
+  color: $accent-blue;
+  line-height: 1;
+  background-color: transparent;
+  border: none;
+}
+
+.residence-add__btn-edit {
+  //min-height: 38px;
+  //padding: 7px 14px;
+  margin-left: 10px;
+  padding: 11px 15px;
+  min-width: 190px;
+  font-size: $font-regular;
+}
+
+/*---------- Подвал формы ------------*/
+.residence-add__wrap {
+  padding: 0 35px 35px;
+}
+
+.residence-add__bottom-wrap {
+  display: flex;
+  padding: 35px;
+  justify-content: space-between;
+}
+
+.residence-add__small-text {
+  grid-area: 2 / 2 / 3 / 4;
+  padding-left: 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $documents;
+}
+
+.residence-add__btn-save {
+  justify-self: flex-start;
+  min-width: 190px;
+}
+
+.residence-add__btn-reset {
+  justify-self: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 14px;
+  min-width: 190px;
+  font-size: 12px;
+  text-align: center;
+  color: $residence-btn-reset;
+  background-color: $residence-btn-bg;
+  border: none;
+  border-radius: 5px;
+}
+
+/*----- Загрузка документов -----*/
 .residence-add__download-area {
   display: flex;
   flex-direction: column;
@@ -214,55 +360,36 @@
   bottom: 0;
   left: 25%;
   transform: translateX(-50%);
+  padding: 5px 15px;
+  min-width: 405px;
+  font-family: $font-family;
+  font-size: $font-medium;
+  color: $text-form-placeholder;
+  background-color: $white;
+  @include residence-input-outline;
 }
 
-/**/
-.residence-add__btn-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+/*
+
+.residence-add__input::placeholder {
+  color: #666666;
 }
 
-.residence-add__btn-upload-img {
-  //padding: 7px 14px;
-  //font-size: 12px;
+.residence-add__upload-preview {
+  width: 188px;
+  height: 180px;
+  background-image: url("../../img/preview/cat.png");
+  border-radius: 10px;
 }
 
 .residence-add__upload-text {
-  margin-left: 18px;
-  font-weight: 400;
-  color: #c0c0c0;
-}
-
-/*----------------------*/
-.residence-add__wrap {
-  padding: 0 35px 35px;
-}
-
-.residence-add__bottom-wrap {
-  display: flex;
-  padding: 35px;
-  justify-content: space-between;
-}
-
-.residence-add__small-text {
-  grid-area: 2 / 2 / 3 / 4;
-  padding-left: 5px;
-  font-size: 12px;
-  line-height: 1.5;
-  color: $documents;
-}
-
-.residence-add__btn-reset {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   padding: 7px 14px;
   font-size: 12px;
+  line-height: 1.5;
   text-align: center;
-  color: $residence-btn-reset;
-  background-color: $residence-btn-bg;
-  border: none;
-  border-radius: 5px;
+  color: #c0c0c0;
 }
+*/

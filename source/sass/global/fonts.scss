@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Open Sans";
+  font-family: $font-family;
   src: local("Open Sans Light"),
     url("../fonts/OpenSans-Light.woff2") format("woff2"),
     url("../fonts/OpenSans-Light.woff") format("woff");
@@ -9,7 +9,7 @@
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: $font-family;
   src: local("Open Sans Regular"),
     url("../fonts/OpenSans-Regular.woff2") format("woff2"),
     url("../fonts/OpenSans-Regular.woff") format("woff");
@@ -19,7 +19,7 @@
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: $font-family;
   src: local("Open Sans Semi-Bold"),
     url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
     url("../fonts/OpenSans-SemiBold.woff") format("woff");

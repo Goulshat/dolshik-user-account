@@ -14,6 +14,11 @@
   border-radius: 10px;
 }
 
+@mixin residence-input-outline {
+  border: 1px solid $residence-input-text;
+  border-radius: 3px;
+}
+
 @mixin square($width) {
   width: $width;
   height: $width;

@@ -18,7 +18,7 @@ $accent-yellow: #eba900; //
 
 $bg-main: #fbfbfb;
 $bg-count: #e3ecef;
-$bg-hover: #f2f2f2;
+$bg-hover: #f6f6f6;
 $bg-focus: #f0f0f0;
 
 $border-color: #d8d8d8;
@@ -51,7 +51,7 @@ $residence-input-text: #c4c4c4;
 $residence-progress-item: #c5c5c5;
 $residence-btn-reset: #c6c6c6;
 $residence-btn-bg: #f6f6f6;
-
+$residence-placeholder: #ccc;
 
 //chat
 $text-chatbox-messages: #686868;
@@ -63,9 +63,13 @@ $text-chatbox-input: #c4c4c4;
 $bg-message-blue: #def0fd;
 $border-message-blue: #cad7e0;
 
-// $font-regular: 16px;
+$font-family: "Open Sans";
+$font-regular: 16px;
+$font-medium: 14px;
+$font-small: 12px;
 // $font-counter: 10px;
 // $font-title: 48px;
+
 
 $mobile: 576px;
 $tablet: 768px;
