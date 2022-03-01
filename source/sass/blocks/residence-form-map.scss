@@ -1,0 +1,49 @@
+/*--------- Карта ---------*/
+.residence-form-map {
+  grid-column: 1 / -1;
+  display: block;
+  margin-top: 15px;
+}
+
+.residence-form-map__label {
+  display: block;
+  margin: 0;
+  margin-bottom: 10px;
+  width: auto;
+  height: auto;
+  font-size: $font-medium;
+  font-weight: 600;
+  color: $text-form;
+}
+
+.residence-form-map__label-text {
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 5px;
+}
+
+.residence-form-map__required {
+  color: $accent-red;
+}
+
+.residence-form-map__address-input {
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  width: 100%;
+  font-family: $font-family;
+  color: $text-form;
+  line-height: 1;
+  border: none;
+  background-color: transparent;
+}
+
+.residence-form-map__change-address {
+  display: block;
+  margin-bottom: 20px;
+  font-family: $font-family;
+  color: $accent-blue;
+  line-height: 1;
+  background-color: transparent;
+  border: none;
+}

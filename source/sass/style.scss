@@ -23,7 +23,6 @@
 @import "blocks/apartments-status.scss"; //
 @import "blocks/residence.scss"; //
 @import "blocks/floor-plan.scss";
-@import "blocks/residence-add.scss"; // форма добавления квартиры
 
 // 3 part - chat
 @import "blocks/chat-section.scss";
@@ -36,3 +35,12 @@
 @import "blocks/chat-popup.scss";
 @import "blocks/chat-popup-list.scss";
 @import "blocks/chat-popup-message.scss";
+
+// 4 part - residence-form-add
+
+@import "blocks/residence-tooltip.scss";
+@import "blocks/residence-add.scss"; // форма добавления квартиры
+@import "blocks/residence-form.scss"; // форма добавления квартиры
+@import "blocks/residence-form-map.scss"; // форма добавления квартиры
+@import "blocks/residence-download-area.scss";
+@import "blocks/residence-upload-img.scss";

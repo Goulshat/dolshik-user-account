@@ -1,0 +1,404 @@
+.residence-add {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  // flex-direction: column;
+  // background: url("../../img/backgroud/residence.svg") 100% 100% / 610px 698px no-repeat;
+  // или как вариант попробовать вот так
+  height: 100%;
+  background: url("../../img/backgroud/residence.svg") 100% 100% / 50% auto no-repeat;
+}
+
+.residence-add__help {
+  max-width: 441px;
+  flex: 1 3 440px;
+  margin-left: 30px;
+  padding: 14px 40px 24px 105px;
+  background: $residence-help-bg url("../../img/icons/help.svg") 30px 30px / 50px 50px no-repeat;
+}
+
+.residence-add__container {
+  flex: 1 1 912px;
+}
+
+.residence-add__progress {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.residence-add__progress-item {
+  position: relative;
+  min-width: 180px;
+  flex: 1 1 180px;
+  margin-right: 2px;
+  color: $residence-progress-item;
+  font-size: $font-small;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 10px;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    background-color: $residence-progress-item-bg;
+  }
+
+  &:first-child::after {
+    border-top-left-radius: 5px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+
+    &::after {
+      border-top-right-radius: 5px;
+    }
+  }
+
+  &--filled {
+    color: $accent-green-residence;
+
+    &::after {
+      background-color: $accent-green-residence;
+    }
+  }
+}
+
+/* ---- Всплывающая подсказка - лучше в отдельный блок со своим кодом ---  */
+.residence-add__tooltip {
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 50%;
+  background: #ddd url("../../img/icons/tooltip.svg") center no-repeat;
+}
+
+/*--------- Форма --------*/
+.residence-add__form {
+  background-color: $white;
+  border-top: none;
+  @include block-outline;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.residence-add__fieldset {
+  border: none;
+  margin: 0;
+  padding: 30px 36px 36px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+
+  &:first-child {
+    padding-top: 40px;
+    grid-template-columns: 1.8fr 1fr 1fr;
+    column-gap: 30px;
+  }
+
+  &:nth-child(2n) {
+    background-color: $residence-fieldset-bg;
+  }
+}
+
+.residence-add__fieldset-inner {
+  // контейнер для кнопочек
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+// .residence-add__flex-col-wrap {
+//   //контейнер для textarea
+//   display: flex;
+//   flex-direction: column;
+// }
+
+.residence-add__label-wrap {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 30px;
+}
+
+.residence-add__label {
+  display: block;
+  margin: 0;
+  margin-bottom: 10px;
+  width: auto;
+  height: auto;
+  font-size: $font-medium;
+  font-weight: 600;
+  color: $text-form;
+
+  &--full-name {
+    grid-column: 1 / 3;
+    margin-top: 10px;
+  }
+
+  &--upload {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    justify-content: center;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .residence-add__fieldset-inner & {
+    margin-bottom: 0;
+  }
+
+  .residence-add__label-wrap &:nth-child(-n+3) {
+    grid-column: span 2;
+  }
+
+  .residence-add__label-wrap &:nth-child(n+4) {
+    grid-column: span 3;
+  }
+}
+
+.residence-add__label-text {
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 5px;
+
+  sup {
+    font-size: $font-medium * .5;
+    line-height: 1;
+  }
+}
+
+.residence-add__required {
+  color: $accent-red;
+}
+
+.residence-add__input {
+  display: block;
+  padding: 8px 20px;
+  width: 100%;
+  font-family: $font-family;
+  font-size: 14px;
+  line-height: 1;
+  color: $text-form-placeholder;
+  @include residence-input-outline;
+
+  &::placeholder {
+    font-family: $font-family;
+    color: $residence-placeholder;
+  }
+}
+
+.residence-add__select-stage {
+  display: block;
+  //margin-top: 3px;
+  padding: 7px 20px;
+  width: 100%;
+  font-family: $font-family;
+  font-size: 14px;
+  line-height: 1;
+  color: $text-form-placeholder;
+  background-color: $white;
+  @include residence-input-outline;
+
+  option {
+    font-family: $font-family;
+    color: $text-form-placeholder;
+  }
+}
+
+.residence-add__select-advantage {
+  @include residence-input-outline;
+
+  option {
+    padding: 5px 10px;
+    font-family: $font-family;
+    font-size: 14px;
+    color: $text-form-placeholder;
+
+    &:checked {
+      background-color: $bg-hover;
+    } // не применяется из-за дефолтных стилей select
+  }
+}
+
+.residence-add__textarea-description {
+  align-self: stretch;
+  padding: 10px 18px;
+  min-height: 220px;
+  width: 100%;
+  font-family: $font-family;
+  font-size: 14px;
+  color: $text-form-placeholder;
+  line-height: 2;
+  @include residence-input-outline;
+
+  &--summary {
+    height: 340px;
+  }
+}
+
+/**/
+.residence-add__btn-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.residence-add__btn-upload-img {
+  padding: 8px 14px;
+  //font-size: 12px;
+}
+
+.residence-add__upload-text {
+  margin-left: 18px;
+  font-weight: 400;
+  color: #c0c0c0;
+}
+
+/*--------- Карта ---------*/
+.residence-add__map-wrap {
+  grid-column: 1 / -1;
+  display: block;
+  margin-top: 15px;
+}
+
+.residence-add__map-address-input {
+  display: block;
+  padding-left: 5px;
+  width: 100%;
+  font-family: $font-family;
+  color: $text-form;
+  line-height: 1;
+  border: none;
+  background-color: transparent;
+}
+
+.residence-add__btn-change-address {
+  font-family: $font-family;
+  color: $accent-blue;
+  line-height: 1;
+  background-color: transparent;
+  border: none;
+}
+
+.residence-add__btn-edit {
+  //min-height: 38px;
+  //padding: 7px 14px;
+  margin-left: 10px;
+  padding: 9px 15px;
+  min-width: 190px;
+  font-size: $font-regular;
+}
+
+/*---------- Подвал формы ------------*/
+.residence-add__btn-save {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 14px;
+  min-width: 190px;
+  font-size: $font-regular;
+  color: $residence-placeholder;
+  background-color: $residence-btn-bg;
+  @include residence-input-outline;
+}
+
+.residence-add__btn-add {
+  justify-self: flex-start;
+  padding: 8px 14px;
+  width: 190px;
+  font-size: $font-regular;
+}
+
+.residence-add__btn-reset {
+  justify-self: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 14px;
+  min-width: 190px;
+  font-size: $font-regular;
+  text-align: center;
+  color: $residence-btn-reset;
+  background-color: $residence-btn-bg;
+  border: none;
+  border-radius: 5px;
+}
+
+/*----- Загрузка документов -----*/
+.residence-add__download-area {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 55px;
+  border: 3px dashed $residence-download-border;
+  border-radius: 5px;
+}
+
+.residence-add__download-text {
+  margin: auto;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;
+  color: $residence-download-text;
+}
+
+.residence-add__download-link {
+  margin-left: 3px;
+  color: $accent-blue;
+}
+
+/*----  ----*/
+.residence-add__select-residence {
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  transform: translateX(-50%);
+  padding: 5px 15px;
+  min-width: 405px;
+  font-family: $font-family;
+  font-size: $font-medium;
+  color: $text-form-placeholder;
+  background-color: $white;
+  @include residence-input-outline;
+}
+
+/*
+
+.residence-add__input::placeholder {
+  color: #666666;
+}
+
+.residence-add__upload-preview {
+  width: 188px;
+  height: 180px;
+  background-image: url("../../img/preview/cat.png");
+  border-radius: 10px;
+}
+
+.residence-add__upload-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 7px 14px;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  color: #c0c0c0;
+}
+*/

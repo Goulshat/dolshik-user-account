@@ -183,72 +183,72 @@
               <li class="residence-add__progress-item">Шаг 5: Квартиры</li>
             </ul>
 
-            <form class="residence-form" action="#" method="post" name="form-add-new-residence">
-              <fieldset class="residence-form__fieldset">
-                <label class="residence-form__label">
-                  <span class="residence-form__label-text">
+            <form class="residence-add__form" action="#" method="post" name="form-add-new-residence">
+              <fieldset class="residence-add__fieldset">
+                <label class="residence-add__label">
+                  <span class="residence-add__label-text">
                     Название
-                    <span class="residence-form__required">*</span>
-                    <button class="residence-tooltip" type="button" data-tooltip-text="Текст подсказки, который отображается при наведении на вопросик">
+                    <span class="residence-add__required">*</span>
+                    <button class="residence-add__tooltip" type="button" data-tooltip-text="Текст подсказки, который отображается при наведении на вопросик">
                       <span class="visually-hidden">Подсказка</span>
                     </button>
                   </span>
 
-                  <input class="residence-form__input" type="text" placeholder="Адмиралтейский" required>
+                  <input class="residence-add__input" type="text" placeholder="Адмиралтейский" required>
                 </label>
 
-                <label class="residence-form__label">
-                  <span class="residence-form__label-text">
+                <label class="residence-add__label">
+                  <span class="residence-add__label-text">
                     Статус ЖК
-                    <span class="residence-form__required">*</span>
+                    <span class="residence-add__required">*</span>
                   </span>
 
-                  <select class="residence-form__select-stage" name="construction" required>
+                  <select class="residence-add__select-stage" name="construction" required>
                     <option value="in-progress" checked>Строящийся</option>
                     <option value="finished">Сданный</option>
                   </select>
                 </label>
 
-                <label class="residence-form__label residence-form__label--full-name">
-                  <span class="residence-form__label-text">Полное обозначение (Жилой комплекс)
-                    <span class="residence-form__required">*</span>
+                <label class="residence-add__label residence-add__label--full-name">
+                  <span class="residence-add__label-text">Полное обозначение (Жилой комплекс)
+                    <span class="residence-add__required">*</span>
                   </span>
 
-                  <input class="residence-form__input" type="text" placeholder="Жилой комплекс «Адмиралтейский»">
+                  <input class="residence-add__input" type="text" placeholder="Жилой комплекс «Адмиралтейский»">
                 </label>
 
-                <label class="residence-form__label residence-form__label--upload">
-                  <span class="residence-form__label-text">Логотип ЖК
-                    <span class="residence-form__required">*</span>
+                <label class="residence-add__label residence-add__label--upload">
+                  <span class="residence-add__label-text">Логотип ЖК
+                    <span class="residence-add__required">*</span>
                   </span>
 
-                  <div class="residence-download-area">
-                    <span class="residence-download-area__text">
+                  <div class="residence-add__download-area">
+                    <span class="residence-add__download-text">
                       Перетяните сюда логотип ЖК или
-                      <a href="#" class="residence-download-area__link">выберите на ПК</a>
+                      <a href="#" class="residence-add__download-link">выберите на ПК</a>
                     </span>
                   </div>
                 </label>
               </fieldset>
 
-              <fieldset class="residence-form__fieldset">
+              <fieldset class="residence-add__fieldset">
                 <div>
-                  <label class="residence-form__label">
-                    <span class="residence-form__label-text">Заголовок для описания</span>
-                    <input class="residence-form__input" type="text" placeholder="ЖК «Адмиралтейский»">
+                  <label class="residence-add__label">
+                    <span class="residence-add__label-text">Заголовок для описания</span>
+                    <input class="residence-add__input" type="text" placeholder="ЖК «Адмиралтейский»">
                   </label>
 
-                  <label class="residence-form__label ">
-                    <span class="residence-form__label-text">Краткое описание ЖК</span>
-                    <textarea class="residence-form__textarea-description residence-form__textarea-description--summary" >«Жилой комплекс «Адмиралтейский», расположен в районе Снеговая падь, состоит из двух монолитных домов. В настоящий момент Застройщиком реализуются квартиры в доме А «Жилого комплекса «Адмиралтейский».</textarea>
+                  <label class="residence-add__label ">
+                    <span class="residence-add__label-text">Краткое описание ЖК</span>
+                    <textarea class="residence-add__textarea-description residence-add__textarea-description--summary" >«Жилой комплекс «Адмиралтейский», расположен в районе Снеговая падь, состоит из двух монолитных домов. В настоящий момент Застройщиком реализуются квартиры в доме А «Жилого комплекса «Адмиралтейский».</textarea>
                   </label>
                 </div>
 
                 <div>
-                  <label class="residence-form__label">
-                    <span class="residence-form__label-text">Преимущества</span>
+                  <label class="residence-add__label">
+                    <span class="residence-add__label-text">Преимущества</span>
 
-                    <select class="residence-form__select-advantage" name="advantages" size="6">
+                    <select class="residence-add__select-advantage" name="advantages" size="6">
                       <option value="not-set">(не установлено)</option>
                       <option value="bike-path">Велодорожки</option>
                       <option value="playground">Детская площадка</option>
@@ -258,115 +258,115 @@
                     </select>
                   </label>
 
-                  <div class="residence-upload-img">
-                    <span class="residence-upload-img__title">Дополнительные изображения</span>
+                  <div class="residence-add__label">
+                    <span class="residence-add__label-text">Дополнительные изображения</span>
 
-                    <div class="residence-upload-img__btn-wrap">
-                      <button class="btn btn--blue residence-upload-img__btn">Выберите файл</button>
-                      <span class="residence-upload-img__label">Файл не выбран</span>
+                    <div class="residence-add__btn-wrap">
+                      <button class="btn btn--blue residence-add__btn-upload-img">Выберите файл</button>
+                      <span class="residence-add__upload-text">Файл не выбран</span>
                     </div>
 
-                    <div class="residence-upload-img__btn-wrap">
-                      <button class="btn btn--blue residence-upload-img__btn">Выберите файл</button>
-                      <span class="residence-upload-img__label">Файл не выбран</span>
+                    <div class="residence-add__btn-wrap">
+                      <button class="btn btn--blue residence-add__btn-upload-img">Выберите файл</button>
+                      <span class="residence-add__upload-text">Файл не выбран</span>
                     </div>
 
-                    <div class="residence-upload-img__btn-wrap">
-                      <button class="btn btn--blue residence-upload-img__btn">Выберите файл</button>
-                      <span class="residence-upload-img__label">Файл не выбран</span>
+                    <div class="residence-add__btn-wrap">
+                      <button class="btn btn--blue residence-add__btn-upload-img">Выберите файл</button>
+                      <span class="residence-add__upload-text">Файл не выбран</span>
                     </div>
 
-                    <div class="residence-upload-img__btn-wrap">
-                      <button class="btn btn--blue residence-upload-img__btn">Выберите файл</button>
-                      <span class="residence-upload-img__label">Файл не выбран</span>
+                    <div class="residence-add__btn-wrap">
+                      <button class="btn btn--blue residence-add__btn-upload-img">Выберите файл</button>
+                      <span class="residence-add__upload-text">Файл не выбран</span>
                     </div>
 
-                    <div class="residence-upload-img__btn-wrap">
-                      <button class="btn btn--blue residence-upload-img__btn">Выберите файл</button>
-                      <span class="residence-upload-img__label">Файл не выбран</span>
+                    <div class="residence-add__btn-wrap">
+                      <button class="btn btn--blue residence-add__btn-upload-img">Выберите файл</button>
+                      <span class="residence-add__upload-text">Файл не выбран</span>
                     </div>
                   </div>
                 </div>
               </fieldset>
 
-              <fieldset class="residence-form__fieldset">
-                <div class="residence-form__label-wrap">
-                  <label class="residence-form__label">
-                    <span class="residence-form__label-text">Высотность</span>
-                    <input class="residence-form__input" type="text" placeholder="23">
+              <fieldset class="residence-add__fieldset">
+                <div class="residence-add__label-wrap">
+                  <label class="residence-add__label">
+                    <span class="residence-add__label-text">Высотность</span>
+                    <input class="residence-add__input" type="text" placeholder="23">
                   </label>
 
-                  <label class="residence-form__label">
-                    <span class="residence-form__label-text">Корпусов</span>
-                    <input class="residence-form__input" type="text" placeholder="2">
+                  <label class="residence-add__label">
+                    <span class="residence-add__label-text">Корпусов</span>
+                    <input class="residence-add__input" type="text" placeholder="2">
                   </label>
 
-                  <label class="residence-form__label">
-                    <span class="residence-form__label-text">Цена за м
+                  <label class="residence-add__label">
+                    <span class="residence-add__label-text">Цена за м
                       <sup>2</sup>
                     </span>
 
-                    <input class="residence-form__input" type="text" placeholder="Жилой комплекс «Адмиралтейский»">
+                    <input class="residence-add__input" type="text" placeholder="Жилой комплекс «Адмиралтейский»">
                   </label>
 
-                  <label class="residence-form__label">
-                    <span class="residence-form__label-text">Класс дома</span>
-                    <input class="residence-form__input" type="text" placeholder="Жилой комплекс «Адмиралтейский»">
+                  <label class="residence-add__label">
+                    <span class="residence-add__label-text">Класс дома</span>
+                    <input class="residence-add__input" type="text" placeholder="Жилой комплекс «Адмиралтейский»">
                   </label>
 
-                  <label class="residence-form__label">
-                    <span class="residence-form__label-text">Сдача</span>
-                    <input class="residence-form__input" type="text" placeholder="Жилой комплекс «Адмиралтейский»">
+                  <label class="residence-add__label">
+                    <span class="residence-add__label-text">Сдача</span>
+                    <input class="residence-add__input" type="text" placeholder="Жилой комплекс «Адмиралтейский»">
                   </label>
 
-                  <label class="residence-form__label">
-                    <span class="residence-form__label-text">Тип дома</span>
-                    <input class="residence-form__input" type="text" placeholder="Жилой комплекс «Адмиралтейский»">
+                  <label class="residence-add__label">
+                    <span class="residence-add__label-text">Тип дома</span>
+                    <input class="residence-add__input" type="text" placeholder="Жилой комплекс «Адмиралтейский»">
                   </label>
                 </div>
 
                 <div>
-                  <label class="residence-form__label">
-                    <span class="residence-form__label-text">Инфраструктура</span>
-                    <textarea class="residence-form__textarea-description" >Большая закрытая детская площадка, большой торговый центр в двух минутах хотьбы, ЖД станция в пяти минутах хотьбы, взрослая и детская больницы</textarea>
+                  <label class="residence-add__label">
+                    <span class="residence-add__label-text">Инфраструктура</span>
+                    <textarea class="residence-add__textarea-description" >Большая закрытая детская площадка, большой торговый центр в двух минутах хотьбы, ЖД станция в пяти минутах хотьбы, взрослая и детская больницы</textarea>
                   </label>
                 </div>
 
-                <div class="residence-form-map">
-                  <label class="residence-form-map__label">
-                    <span class="residence-form-map__label-text">
+                <div class="residence-add__map-wrap">
+                  <label class="residence-add__label">
+                    <span class="residence-add__label-text">
                       Местоположение
-                      <span class="residence-form-map__required">*</span>
+                      <span class="residence-add__required">*</span>
                     </span>
                   </label>
 
-                  <input class="residence-form-map__address-input" type="text" value="Приморский край, Владивостокский городской округ, Владивосток, Первореченский район, улица Анны Щетининой, 9">
+                  <input class="residence-add__map-address-input" type="text" value="Приморский край, Владивостокский городской округ, Владивосток, Первореченский район, улица Анны Щетининой, 9">
 
-                  <button class="residence-form-map__change-address" type="button">Изменить</button>
+                  <button class="residence-add__btn-change-address" type="button">Изменить</button>
 
                   <div style="outline: 1px dashed pink; height: 452px;"></div>
                 </div>
               </fieldset>
 
-              <fieldset class="residence-form__fieldset">
-                <div class="residence-form__fieldset-inner">
-                  <label class="residence-form__label">
-                    <span class="residence-form__label-text">Интерактивная карта</span>
-                    <button class="residence-form__btn-save">Сначала сохрани</button>
+              <fieldset class="residence-add__fieldset">
+                <div class="residence-add__fieldset-inner">
+                  <label class="residence-add__label">
+                    <span class="residence-add__label-text">Интерактивная карта</span>
+                    <button class="residence-add__btn-save">Сначала сохрани</button>
                   </label>
 
-                  <button class="btn btn--blue residence-form__btn-edit" type="button">Редактировать ЖК</button>
+                  <button class="btn btn--blue residence-add__btn-edit" type="button">Редактировать ЖК</button>
                 </div>
 
-                <label class="residence-form__label">
-                  <span class="residence-form__label-text">Онлайн-камера</span>
-                  <input class="residence-form__input" type="text" placeholder="https://onlinecams.com/id234234">
+                <label class="residence-add__label">
+                  <span class="residence-add__label-text">Онлайн-камера</span>
+                  <input class="residence-add__input" type="text" placeholder="https://onlinecams.com/id234234">
                 </label>
               </fieldset>
 
-              <fieldset class="residence-form__fieldset">
-                <button class="btn btn--blue residence-form__btn-add" type="button">Добавить ЖК</button>
-                <button class="residence-form__btn-reset" type="button">Отменить</button>
+              <fieldset class="residence-add__fieldset">
+                <button class="btn btn--blue residence-add__btn-add" type="button">Добавить ЖК</button>
+                <button class="residence-add__btn-reset" type="button">Отменить</button>
               </fieldset>
             </form>
           </div>
