@@ -33,3 +33,44 @@
 @mixin border($color) {
   border: 1px solid $color;
 }
+
+@mixin btn-reset {
+  justify-self: flex-end; // проверить
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 14px;
+  min-width: 190px;
+  font-size: $font-regular;
+  text-align: center;
+  color: $residence-btn-reset;
+  background-color: $residence-btn-bg;
+  border: none;
+  border-radius: 5px;
+}
+
+@mixin residence-form-label {
+  display: block;
+  margin: 0;
+  width: auto;
+  font-size: $font-medium;
+  font-weight: 600;
+  color: $text-form;
+}
+
+@mixin residence-form-input {
+  display: block;
+  padding: 8px 20px;
+  width: 100%;
+  font-family: $font-family;
+  font-size: 14px;
+  line-height: 1;
+  color: $text-form-placeholder;
+  @include residence-input-outline;
+}
+
+// @mixin link {
+//   font-size: inherit;
+//   color:
+// }

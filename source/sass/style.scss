@@ -39,8 +39,13 @@
 // 4 part - residence-form-add
 
 @import "blocks/residence-tooltip.scss";
-@import "blocks/residence-add.scss"; // форма добавления квартиры
-@import "blocks/residence-form.scss"; // форма добавления квартиры
-@import "blocks/residence-form-map.scss"; // форма добавления квартиры
-@import "blocks/residence-download-area.scss";
+@import "blocks/residence-form-map.scss";
+@import "blocks/residence-upload-area.scss";
 @import "blocks/residence-upload-img.scss";
+@import "blocks/residence-form-active-check.scss";
+@import "blocks/residence-add-help.scss";
+@import "blocks/residence-form.scss";
+@import "blocks/checkerboard.scss";
+@import "blocks/residence-add.scss";
+@import "blocks/residence-form-building.scss";
+@import "blocks/residence-form-flatplan.scss";

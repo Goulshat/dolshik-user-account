@@ -1,0 +1,48 @@
+.residence-form-active-check {
+  margin: 0;
+  padding: 0;
+  grid-column: 1 / -1;
+}
+
+.residence-form-active-check__label {
+  @include residence-form-label;
+}
+
+//.residence-form-active__input - visually-hidden
+
+.residence-form-active-check__text {
+  position: relative;
+  display: block;
+  padding-left: 35px;
+  font-size: $font-large;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    @include square(25px);
+    border: 5px solid $border-color;
+    border-radius: 3px;
+    background-color: $text-lightest;
+  }
+
+  &::after {
+    display: none;
+  }
+
+  .residence-form-active-check__input:checked + & {
+    color: $accent-green-residence;
+  }
+
+  .residence-form-active-check__input:checked + &:before {
+    border-color: $accent-green-residence;
+  }
+
+  .residence-form-active-check__input:checked + &:after {
+    display: block;
+    border-color: $accent-green-residence;
+    background-color: $accent-green-residence;
+  }
+}

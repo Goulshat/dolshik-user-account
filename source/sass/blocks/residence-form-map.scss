@@ -2,18 +2,13 @@
 .residence-form-map {
   grid-column: 1 / -1;
   display: block;
+  margin: 0;
+  padding: 0;
   margin-top: 15px;
 }
 
 .residence-form-map__label {
-  display: block;
-  margin: 0;
-  margin-bottom: 10px;
-  width: auto;
-  height: auto;
-  font-size: $font-medium;
-  font-weight: 600;
-  color: $text-form;
+  @include residence-form-label;
 }
 
 .residence-form-map__label-text {
@@ -38,9 +33,11 @@
   background-color: transparent;
 }
 
-.residence-form-map__change-address {
+.residence-form-map__btn-address {
   display: block;
+  margin: 0;
   margin-bottom: 20px;
+  padding: 0 5px;
   font-family: $font-family;
   color: $accent-blue;
   line-height: 1;

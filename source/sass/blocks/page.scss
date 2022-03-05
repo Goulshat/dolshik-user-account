@@ -11,26 +11,12 @@ img {
 }
 
 .page {
-  height: 100%;
-}
-
-.page__body {
-  min-width: 1440px;
   min-height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: 400;
-  color: $text-grey;
-  text-align: left;
-  background-color: #fbfbfb;
 }
 
 .page__body {
   min-width: $mobile;
-  //min-width: 1920px;
+  min-width: 1440px;
   //min-width: 1200px;
   min-height: 100%;
   margin: 0;
