@@ -18,7 +18,7 @@
         background-repeat: no-repeat;
         background-position: 0 0;
         background-size: 1920px auto;
-        background-image: url("img/mockup/form.png");
+        background-image: url("img/mockup/residence-form-flatplan.png");
       }
 
     </style>
@@ -42,6 +42,7 @@
         </li>
       </ul>
     </div>
+
     <div class="page__container page__container--form">
       <nav class="usernav page__container-nav">
         <ul class="usernav__list">
@@ -173,8 +174,8 @@
       <main class="page__container-main">
         <h1 class="page__main-title">Добавить ЖК</h1>
 
-        <div class="residence-add">
-          <div class="residence-add__container">
+        <div class="residence-add residence-add--start">
+          <div class="residence-add__form-container">
             <ul class="residence-add__progress">
               <li class="residence-add__progress-item residence-add__progress-item--filled">Шаг 1: ЖК</li>
               <li class="residence-add__progress-item">Шаг 2: Дома</li>
@@ -183,7 +184,7 @@
               <li class="residence-add__progress-item">Шаг 5: Квартиры</li>
             </ul>
 
-            <form class="residence-form" action="#" method="post" name="form-add-new-residence">
+            <form class="residence-form residence-add__form" action="#" method="post" name="form-add-new-residence">
               <fieldset class="residence-form__fieldset">
                 <label class="residence-form__label">
                   <span class="residence-form__label-text">
@@ -217,8 +218,8 @@
                   <input class="residence-form__input" type="text" placeholder="Жилой комплекс «Адмиралтейский»">
                 </label>
 
-                <label class="residence-form__label residence-form__label--upload">
-                  <span class="residence-form__label-text">Логотип ЖК
+                <div class="residence-form__label residence-form__label--upload">
+                  <span class="residence-form__label-text">Превью дома
                     <span class="residence-form__required">*</span>
                   </span>
 
@@ -228,7 +229,7 @@
                       <a href="#" class="residence-download-area__link">выберите на ПК</a>
                     </span>
                   </div>
-                </label>
+                </div>
               </fieldset>
 
               <fieldset class="residence-form__fieldset">
@@ -332,17 +333,16 @@
                   </label>
                 </div>
 
-                <div class="residence-form-map">
+                <div class="residence-form-map residence-form__map">
                   <label class="residence-form-map__label">
                     <span class="residence-form-map__label-text">
                       Местоположение
                       <span class="residence-form-map__required">*</span>
                     </span>
+                    <input class="residence-form-map__address-input" type="text" value="Приморский край, Владивостокский городской округ, Владивосток, Первореченский район, улица Анны Щетининой, 9">
                   </label>
 
-                  <input class="residence-form-map__address-input" type="text" value="Приморский край, Владивостокский городской округ, Владивосток, Первореченский район, улица Анны Щетининой, 9">
-
-                  <button class="residence-form-map__change-address" type="button">Изменить</button>
+                  <button class="residence-form-map__btn-address" type="button">Изменить</button>
 
                   <div style="outline: 1px dashed pink; height: 452px;"></div>
                 </div>
@@ -371,10 +371,10 @@
             </form>
           </div>
 
-          <aside class="residence-add__help">
+          <aside class="residence-add-help">
             Если у вас возникли трудности или вопросы при добавлении своего жилого комплекса, рекомендуем обратиться к справочной информации
 
-            <a class="residence-add__help-link" href="#">Инструкция по добавлению ЖК, домов, секций, планировок и квартир</a>
+            <a class="residence-add-help__link" href="#">Инструкция по добавлению ЖК, домов, секций, планировок и квартир</a>
           </aside>
 
           <select class="residence-add__select-residence" name="select-residence" id="" required>
