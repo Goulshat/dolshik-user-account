@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Личный кабинет: Добавить ЖК</title>
+    <!--<link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/152.svg" type="image/svgxml">
+    <link rel="apple-touch-icon" href="img/favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font"> -->
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <!-- Pixel Glass-->
+    <style>
+      html {
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 1920px auto;
+        background-image: url("img/mockup/residence-form-flat.png");
+      }
+
+    </style>
+    <!-- <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    Pixel Glass -->
+
+  </head>
+  <body class="page__body">
+    <header style="height: 170px; outline: 1px dashed pink"></header>
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Дольщик.онлайн</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Личный кабинет</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link breadcrumbs__link--current">Корзина</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="page__container page__container--form">
+      <nav class="usernav page__container-nav">
+        <ul class="usernav__list">
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Личные данные</h2>
+
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Сообщения
+                  <span class="usernav__item-count">99</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Документы
+                  <span class="usernav__item-count">2</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Договоры
+                  <span class="usernav__item-count">3</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Изменить личные данные</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Финансы</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Баланс</a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Кэшбэк</a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">История платежей</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Квартиры</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Мои квартиры
+                  <span class="usernav__item-count">2</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Забронированные
+                  <span class="usernav__item-count">5</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Избранные
+                  <span class="usernav__item-count">17</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Покупки</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Корзина товаров
+                  <span class="usernav__item-count">3</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Заказы
+                  <span class="usernav__item-count">10</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Услуги подрядчико</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Мои заказы
+                  <span class="usernav__item-count">10</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Избранные подрядчики</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Кредитование</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Ипотека
+                  <span class="usernav__item-count">10</span>
+                </a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Потребительский кредит</a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Страхование</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="usernav__section">
+            <h2 class="usernav__section-title">Электронные сервисы</h2>
+            <ul class="usernav__section-list">
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Заказать ЭЦП</a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Электронный документооборот</a>
+              </li>
+              <li class="usernav__section-item">
+                <a href="#" class="usernav__item-link">Запрос в Росреестр</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="page__container-main">
+        <h1 class="page__main-title">Добавить ЖК</h1>
+
+        <div class="residence-add">
+          <div class="residence-add__bg-container">
+            <div class="residence-add__form-container">
+              <ul class="residence-add__progress">
+                <li class="residence-add__progress-item residence-add__progress-item--filled">Шаг 1: ЖК</li>
+                <li class="residence-add__progress-item residence-add__progress-item--filled">Шаг 2: Дома</li>
+                <li class="residence-add__progress-item">Шаг 3: Секции</li>
+                <li class="residence-add__progress-item">Шаг 4: Планировки</li>
+                <li class="residence-add__progress-item">Шаг 5: Квартиры</li>
+              </ul>
+
+              <form class="residence-form-flat residence-add__form" action="#" method="post" name="form-add-new-residence">
+                <fieldset class="residence-form-flat__fieldset">
+                <!-- Чекбокс "Активность" -->
+                  <div class="residence-form-active-check residence-form-flat__active-check">
+                    <label class="residence-form-active-check__label">
+                      Активность
+                      <input class="residence-form-active-check__input visually-hidden" type="checkbox">
+                      <span class="residence-form-active-check__text">Да</span>
+                    </label>
+                  </div>
+
+                  <div>
+                    <label class="residence-form-flat__label">
+                      <span class="residence-form-flat__label-text">Название
+                        <span class="residence-form-flat__required">*</span>
+                      </span>
+
+                      <input class="residence-form-flat__input" type="text" placeholder="Дом №1">
+                    </label>
+
+                    <label class="residence-form-flat__label">
+                      <span class="residence-form-flat__label-text">Стадия строительства</span>
+
+                      <select class="residence-form-flat__select" name="construction-stage">
+                        <option value="in-progress" selected>Строится</option>
+                        <option value="finished">Сдан</option>
+                      </select>
+                    </label>
+
+                    <label class="residence-form-flat__label">
+                      <span class="residence-form-flat__label-text">Тип дома</span>
+
+                      <select class="residence-form-flat__select" name="construction-type">
+                        <option value="monolith" selected>Монолит</option>
+                        <option value="brick">Кирпич</option>
+                      </select>
+                    </label>
+                  </div>
+
+                  <div class="residence-form-flat__label residence-form-flat__label--upload-area">
+                    <span class="residence-form-flat__label-text">
+                      Превью дома
+                      <span class="residence-form-flat__required">*</span>
+                    </span>
+
+                    <div class="residence-upload-area">
+                      <span class="residence-upload-area__text">
+                        Перетяните сюда логотип ЖК или&nbsp;<a href="#" class="residence-upload-area__link">выберите на ПК</a>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <label class="residence-form-flat__label">
+                      <span class="residence-form-flat__label-text">
+                        Расположение
+                        <span class="residence-form-flat__required">*</span>
+                      </span>
+
+                      <select class="residence-form-flat__select residence-form-flat__select--visible" name="construction" size="6" required>
+                        <option value="in-progress" selected>Строящийся</option>
+                        <option value="finished">Сданный</option>
+                      </select>
+                    </label>
+                  </div>
+
+                  <div>
+                    <label class="residence-form-flat__label">
+                      <span class="residence-form-flat__label-text">
+                        Преимущества
+                        <span class="residence-form-flat__required">*</span>
+                      </span>
+
+                      <select class="residence-form-flat__select residence-form-flat__select--visible" name="construction" size="6" required>
+                        <option value="in-progress" selected>Строящийся</option>
+                        <option value="finished">Сданный</option>
+                      </select>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <fieldset class="residence-form-flat__fieldset residence-form-flat__fieldset--no-columns residence-form-map">
+                  <label class="residence-form-map__label">
+                    <span class="residence-form-map__label-text">
+                      Местоположение
+                      <span class="residence-form-map__required">*</span>
+                    </span>
+                  </label>
+
+                  <input class="residence-form-map__address-input" type="text" value="Приморский край, Владивостокский городской округ, Владивосток, Первореченский район, улица Анны Щетининой, 9">
+
+                  <button class="residence-form-map__btn-address" type="button">Изменить</button>
+
+                  <div style="outline: 1px dashed pink; height: 452px;"></div>
+                </fieldset>
+
+                <fieldset class="residence-form-flat__fieldset residence-form-flat__fieldset--no-columns">
+                  <div class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">
+                      Описание
+                      <span class="residence-form-flat__required">*</span>
+                    </span>
+                  </div>
+
+                  <div style="outline: 1px dashed pink; height: 452px;"></div>
+                </fieldset>
+
+                <fieldset class="residence-form-flat__fieldset">
+                  <button class="btn btn--blue residence-form-flat__btn-add" type="button">Сохранить</button>
+
+                  <button class="residence-form-flat__btn-reset" type="button">Отменить</button>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

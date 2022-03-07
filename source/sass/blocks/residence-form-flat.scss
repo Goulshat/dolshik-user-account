@@ -1,0 +1,118 @@
+// /*--------- Форма --------*/
+// //.residence-form-building {}
+// .residence-form-building__fieldset {
+//   margin: 0;
+//   padding: 30px 36px 36px;
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   column-gap: 30px;
+//   row-gap: 20px;
+//   border: none;
+
+//   &--no-columns {
+//     display: block;
+//     padding-top: 0;
+//   }
+
+//   &:last-child {
+//     padding-top: 0;
+//   }
+// }
+
+// .residence-form-building__active-check {
+//   grid-column: 1 / -1;
+// }
+
+// .residence-form-building__map {
+//   padding: 30px 36px 36px;
+//   display: block;
+//   border: none;
+// }
+
+// .residence-form-building__label {
+//   @include residence-form-label;
+//   margin-bottom: 10px;
+
+//   &:last-child {
+//     margin-bottom: 0;
+//   }
+
+//   &--upload-area {
+//     display: grid;
+//     grid-template-rows: min-content 1fr;
+//     margin-bottom: 0;
+//   }
+// }
+
+// .residence-form-building__label-text {
+//   display: block;
+//   margin-bottom: 5px;
+//   padding-left: 5px;
+
+//   sup {
+//     font-size: $font-medium * .5;
+//     line-height: 1;
+//   }
+// }
+
+// .residence-form-building__required {
+//   color: $accent-red;
+// }
+
+// .residence-form-building__input {
+//   @include residence-form-input;
+
+//   &::placeholder {
+//     font-family: $font-family;
+//     color: $residence-placeholder;
+//   }
+// }
+
+// .residence-form-building__select {
+//   @include residence-form-input;
+//   padding: 8px 0;
+//   height: 38px;
+//   background-color: $white;
+
+//   &--visible {
+//     height: auto;
+//   }
+
+//   option {
+//     display: block;
+//     padding: 5px 10px;
+//     font-family: $font-family;
+//     color: $text-form-placeholder;
+
+//     &:checked {
+//       background-color: $bg-hover;
+//     }
+//   }
+// }
+
+// .residence-form-building__select-advantage {
+//   @include residence-form-input;
+
+//   option {
+//     padding: 5px 10px;
+//     font-family: $font-family;
+//     font-size: 14px;
+//     color: $text-form-placeholder;
+
+//     &:selected {
+//       background-color: $bg-hover;
+//     } // не применяется из-за дефолтных стилей select
+//   }
+// }
+
+// .residence-form-building__btn-add {
+//   justify-self: flex-start;
+//   padding: 8px 14px;
+//   min-width: 190px;
+//   font-size: $font-small;
+// }
+
+// .residence-form-building__btn-reset {
+//   @include btn-reset;
+//   font-size: $font-small;
+// }
