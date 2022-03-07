@@ -1,118 +1,220 @@
-// /*--------- Форма --------*/
-// //.residence-form-building {}
-// .residence-form-building__fieldset {
-//   margin: 0;
-//   padding: 30px 36px 36px;
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   column-gap: 30px;
-//   row-gap: 20px;
-//   border: none;
+//.residence-form-flat {}
+.residence-form-flat__fieldset {
+  margin: 0;
+  padding: 30px 36px 36px;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  column-gap: 30px;
+  row-gap: 20px;
+  border: none;
 
-//   &--no-columns {
-//     display: block;
-//     padding-top: 0;
-//   }
+  &:nth-child(2n + 1) {
+    background-color: $residence-fieldset-bg;
+  }
 
-//   &:last-child {
-//     padding-top: 0;
-//   }
-// }
+  &:last-child {
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 0;
+    background-color: $white;
+  }
 
-// .residence-form-building__active-check {
-//   grid-column: 1 / -1;
-// }
+  &:first-child > {
 
-// .residence-form-building__map {
-//   padding: 30px 36px 36px;
-//   display: block;
-//   border: none;
-// }
+    :first-child {
+      grid-column: span 7;
+    }
 
-// .residence-form-building__label {
-//   @include residence-form-label;
-//   margin-bottom: 10px;
+    :nth-child(2) {
+      grid-column: span 2;
+    }
 
-//   &:last-child {
-//     margin-bottom: 0;
-//   }
+    :nth-child(3) {
+      grid-column: span 4;
+    }
 
-//   &--upload-area {
-//     display: grid;
-//     grid-template-rows: min-content 1fr;
-//     margin-bottom: 0;
-//   }
-// }
+    :nth-child(4) {
+      grid-column: span 3;
+    }
+  }
 
-// .residence-form-building__label-text {
-//   display: block;
-//   margin-bottom: 5px;
-//   padding-left: 5px;
+  &:nth-child(2) > {
+    :first-child {
+      grid-column: span 6;
+    }
 
-//   sup {
-//     font-size: $font-medium * .5;
-//     line-height: 1;
-//   }
-// }
+    :nth-child(2) {
+      grid-column: span 3;
+    }
 
-// .residence-form-building__required {
-//   color: $accent-red;
-// }
+    :nth-child(3) {
+      grid-column: span 3;
+    }
 
-// .residence-form-building__input {
-//   @include residence-form-input;
+    :nth-child(4) {
+      grid-column: span 2;
+    }
 
-//   &::placeholder {
-//     font-family: $font-family;
-//     color: $residence-placeholder;
-//   }
-// }
+    :nth-child(5) {
+      grid-column: span 2;
+    }
 
-// .residence-form-building__select {
-//   @include residence-form-input;
-//   padding: 8px 0;
-//   height: 38px;
-//   background-color: $white;
+    :nth-child(6) {
+      grid-column: span 8;
+    }
+  }
 
-//   &--visible {
-//     height: auto;
-//   }
+  &:nth-child(3) > {
+    :first-child {
+      grid-column: span 5;
+    }
 
-//   option {
-//     display: block;
-//     padding: 5px 10px;
-//     font-family: $font-family;
-//     color: $text-form-placeholder;
+    :nth-child(2) {
+      grid-column: span 2;
+    }
 
-//     &:checked {
-//       background-color: $bg-hover;
-//     }
-//   }
-// }
+    :nth-child(3) {
+      grid-column: span 3;
+    }
 
-// .residence-form-building__select-advantage {
-//   @include residence-form-input;
+    :nth-child(4) {
+      grid-column: span 3;
+    }
 
-//   option {
-//     padding: 5px 10px;
-//     font-family: $font-family;
-//     font-size: 14px;
-//     color: $text-form-placeholder;
+    :nth-child(5) {
+      grid-column: span 3;
+    }
+  }
+}
 
-//     &:selected {
-//       background-color: $bg-hover;
-//     } // не применяется из-за дефолтных стилей select
-//   }
-// }
+.residence-form-flat__input-btn-wrap {
+  display: flex;
+  align-items: center;
+}
 
-// .residence-form-building__btn-add {
-//   justify-self: flex-start;
-//   padding: 8px 14px;
-//   min-width: 190px;
-//   font-size: $font-small;
-// }
+.residence-form-flat__label {
+  @include residence-form-label;
+  grid-column: span 4;
 
-// .residence-form-building__btn-reset {
-//   @include btn-reset;
-//   font-size: $font-small;
-// }
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--upload-area {
+    grid-column: span 8;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    margin-bottom: 0;
+  }
+}
+
+.residence-form-flat__example {
+  padding-left: 5px;
+  font-weight: $font-weight-regular;
+  color: $residence-label-example;
+}
+
+.residence-form-flat__label-upload-buttons {
+  grid-column: 9 / 17;
+  grid-row: 2 / 4;
+}
+
+.residence-form-flat__label-text {
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 5px;
+
+  .residence-form-flat__input-grid-wrap > & {
+    grid-column: 1 / -1;
+  }
+}
+
+.residence-form-flat__required {
+  color: $accent-red;
+}
+
+.residence-form-flat__input-grid-wrap {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  row-gap: 20px;
+  align-items: flex-start;
+
+  .residence-form-flat__input-btn {
+    margin-left: 0;
+    justify-self: flex-start;
+  }
+}
+
+.residence-form-flat__input-btn {
+  margin-left: 10px;
+}
+
+.residence-form-flat__input {
+  @include residence-form-input;
+
+  &::placeholder {
+    font-family: $font-family;
+    color: $residence-placeholder;
+  }
+}
+
+.residence-form-flat__select {
+  @include residence-form-input;
+  padding: 8px 0;
+  height: 37px;
+  background-color: $white;
+
+  &--visible {
+    height: auto;
+  }
+
+  option {
+    display: block;
+    padding: 5px 10px;
+    font-family: $font-family;
+    color: $text-form-placeholder;
+
+    &:selected {
+      background-color: $bg-hover;
+    }
+  }
+}
+
+.residence-form-flat__explanation {
+  grid-column: 1 / -1;
+  margin: 5px 0 0;
+  padding: 0 0 30px;
+  font-size: $font-small;
+  font-weight: $font-weight-regular;
+  color: $residence-upload-text;
+  line-height: 1.5;
+  border-bottom: 1px solid $border-color;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  b {
+    font-weight: $font-weight-semibold;
+  }
+}
+
+.residence-form-flat__description {
+  grid-column: 1 / -1;
+}
+
+.residence-form-flat__btn-add {
+  justify-self: flex-start;
+  padding: 8px 14px;
+  min-width: 90px;
+  font-size: $font-small;
+}
+
+.residence-form-flat__btn-reset {
+  @include btn-reset;
+  min-width: 90px;
+  justify-self: flex-end;
+  font-size: $font-small;
+}

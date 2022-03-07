@@ -17,7 +17,6 @@ $accent-blue-light-10: rgba($accent-blue, .1);
 $accent-yellow: #eba900; //
 
 $bg-main: #fbfbfb;
-$bg-main: transparent;
 $bg-count: #e3ecef;
 $bg-hover: #f6f6f6;
 $bg-focus: #f0f0f0;
@@ -48,12 +47,15 @@ $residence-help-bg: #f2f5e7;
 $residence-fieldset-bg: #fafafa;
 $residence-upload-border: #dbdbdb;
 $residence-upload-text: #a2a2a2;
+$residence-input-btn-select: #e2e2e2;
 $residence-input-text: #c4c4c4;
 $residence-progress-item: #c5c5c5;
 $residence-btn-reset: #c6c6c6;
 $residence-btn-bg: #f6f6f6;
 $residence-placeholder: #ccc;
 $residence-help-text: #6c6c6c;
+$residence-flat-id: #cbcbcb;
+$residence-label-example: #c0c0c0;
 
 //chat
 $text-chatbox-messages: #686868;
@@ -72,7 +74,9 @@ $font-medium: 14px;
 $font-small: 12px;
 // $font-counter: 10px;
 // $font-title: 48px;
-
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
 
 $mobile: 576px;
 $tablet: 768px;

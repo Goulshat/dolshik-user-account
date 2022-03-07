@@ -174,8 +174,8 @@
       <main class="page__container-main">
         <h1 class="page__main-title">Добавить ЖК</h1>
 
-        <div class="residence-add">
-          <div class="residence-add__bg-container">
+        <section class="residence-add">
+          <div class="residence-add__bg-container residence-add__bg-container--flex">
             <div class="residence-add__form-container">
               <ul class="residence-add__progress">
                 <li class="residence-add__progress-item residence-add__progress-item--filled">Шаг 1: ЖК</li>
@@ -187,46 +187,322 @@
 
               <form class="residence-form-flat residence-add__form" action="#" method="post" name="form-add-new-residence">
                 <fieldset class="residence-form-flat__fieldset">
-                <!-- Чекбокс "Активность" -->
-                  <div class="residence-form-active-check residence-form-flat__active-check">
-                    <label class="residence-form-active-check__label">
-                      Активность
-                      <input class="residence-form-active-check__input visually-hidden" type="checkbox">
-                      <span class="residence-form-active-check__text">Да</span>
-                    </label>
-                  </div>
+                  <label class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">Название
+                      <span class="residence-form-flat__required">*</span>
+                    </span>
 
-                  <div>
-                    <label class="residence-form-flat__label">
-                      <span class="residence-form-flat__label-text">Название
+                    <input class="residence-form-flat__input" type="text" placeholder="2-к квартира в ЖСК «Радость» № 1">
+                  </label>
+
+                  <label class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">№ кв</span>
+
+                    <input class="residence-form-flat__input" type="number" value="1">
+                  </label>
+
+                  <label class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">
+                      Статус квартиры
+                      <span class="residence-form-flat__required">*</span>
+                    </span>
+
+                    <select class="residence-form-flat__select" name="flat-status">
+                      <option value="not-selected">-</option>
+                      <option value="free" selected>Свободна</option>
+                      <option value="booked">Забронирована</option>
+                      <option value="sold">Продана</option>
+                    </select>
+                  </label>
+
+                  <label class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">
+                      Цена
+                      <span class="residence-form-flat__required">*</span>
+                    </span>
+
+                    <input class="residence-form-flat__input" type="number" value="5055800">
+                  </label>
+                </fieldset>
+
+                <fieldset class="residence-form-flat__fieldset">
+                  <!-- инпут с кнопочкой рядом -->
+                  <div class="residence-form-flat__label">
+                    <label class="residence-form-flat__label-container" for="residence-of-building">
+                      <span class="residence-form-flat__label-text">
+                        ЖК
                         <span class="residence-form-flat__required">*</span>
                       </span>
-
-                      <input class="residence-form-flat__input" type="text" placeholder="Дом №1">
                     </label>
-
-                    <label class="residence-form-flat__label">
-                      <span class="residence-form-flat__label-text">Стадия строительства</span>
-
-                      <select class="residence-form-flat__select" name="construction-stage">
-                        <option value="in-progress" selected>Строится</option>
-                        <option value="finished">Сдан</option>
-                      </select>
+                    <div class="residence-form-flat__input-btn-wrap">
+                      <input class="residence-form-flat__input" id="residence-of-building" type="text" placeholder="Выберете ЖК из списка" value="zhk-radost-vlad">
+                      <button class="residence-form-btn-select residence-form-flat__input-btn">...</button>
+                    </div>
+                    <div class="residence-form-flat__example" aria-label="Пример Жилого комплекса">Радость</div>
+                  </div>
+                  <!-- инпут с кнопочкой рядом -->
+                  <div class="residence-form-flat__label">
+                    <label class="residence-form-flat__label-container" for="building-number">
+                      <span class="residence-form-flat__label-text">
+                        Дом
+                        <span class="residence-form-flat__required">*</span>
+                      </span>
                     </label>
-
-                    <label class="residence-form-flat__label">
-                      <span class="residence-form-flat__label-text">Тип дома</span>
-
-                      <select class="residence-form-flat__select" name="construction-type">
-                        <option value="monolith" selected>Монолит</option>
-                        <option value="brick">Кирпич</option>
-                      </select>
+                    <div class="residence-form-flat__input-btn-wrap">
+                      <input class="residence-form-flat__input" id="building-number" type="text" placeholder="Выберете дом из списка" value="1082">
+                      <button class="residence-form-btn-select residence-form-flat__input-btn">...</button>
+                    </div>
+                    <div class="residence-form-flat__example" aria-label="Пример названия дома">Дом 1</div>
+                  </div>
+                  <!-- инпут с кнопочкой рядом -->
+                  <div class="residence-form-flat__label">
+                    <label class="residence-form-flat__label-container" for="building-section">
+                      <span class="residence-form-flat__label-text">
+                        Секция
+                        <span class="residence-form-flat__required">*</span>
+                      </span>
                     </label>
+                    <div class="residence-form-flat__input-btn-wrap">
+                      <input class="residence-form-flat__input" id="building-section" type="text" placeholder="Выберете секцию" value="1082">
+                      <button class="residence-form-btn-select residence-form-flat__input-btn">...</button>
+                    </div>
+                    <div class="residence-form-flat__example" aria-label="Пример наименования секции">Секция 1</div>
                   </div>
 
+                  <label class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">Этаж</span>
+                    <input class="residence-form-flat__input" type="number" name="flat-floor" value="2">
+                  </label>
+
+                  <label class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">Лифт</span>
+
+                    <select class="residence-form-flat__select" name="flat-has-elevator">
+                      <option value="yes" selected>Есть</option>
+                      <option value="no">Нет</option>
+                    </select>
+                  </label>
+
+                  <label class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">
+                      Местоположение
+                      <span class="residence-form-flat__required">*</span>
+                    </span>
+                    <input class="residence-form-flat__input" name="building-location" type="number" value="2">
+                  </label>
+
+                  <label class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">Срок сдачи</span>
+                    <input class="residence-form-flat__input" name="building-competion-date" type="number" value="2">
+                  </label>
+
+                  <label class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">Этажей в доме</span>
+                    <input class="residence-form-flat__input" name="building-floors-number" type="number" value="2">
+                  </label>
+
+                  <label class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">
+                      Класс дома
+                      <span class="residence-form-flat__required">*</span>
+                    </span>
+
+                    <select class="residence-form-flat__select" name="flat-status">
+                      <option value="not-selected">-</option>
+                      <option value="free" selected>Свободна</option>
+                      <option value="booked">Забронирована</option>
+                      <option value="sold">Продана</option>
+                    </select>
+                  </label>
+
+                  <label class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">Этаж</span>
+                    <input class="residence-form-flat__input" name="flat-floor" type="number" value="2">
+                  </label>
+
+                  <label class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">Сторона света</span>
+
+                    <select class="residence-form-flat__select" name="flat-side">
+                      <option value="south-west">Юго-Запад</option>
+                      <option value="west" selected>Запад</option>
+                      <option value="south">Юг</option>
+                      <option value="south-east">Юго-Восток</option>
+                      <option value="east">Восток</option>
+                    </select>
+                  </label>
+
+                  <label class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">Вид из окон</span>
+
+                    <select class="residence-form-flat__select" name="flat-view">
+                      <option value="south-west">Юго-Запад</option>
+                      <option value="west" selected>Запад</option>
+                      <option value="south">Юг</option>
+                      <option value="south-east">Юго-Восток</option>
+                      <option value="east">Восток</option>
+                    </select>
+                  </label>
+                </fieldset>
+
+                <fieldset class="residence-form-flat__fieldset">
+                  <!-- инпут с кнопочкой рядом -->
+                  <div class="residence-form-flat__label">
+                    <label class="residence-form-flat__label-container" for="flat-flatplan">
+                      <span class="residence-form-flat__label-text">
+                        Планировка
+                        <span class="residence-form-flat__required">*</span>
+                      </span>
+                    </label>
+                    <div class="residence-form-flat__input-btn-wrap">
+                      <input class="residence-form-flat__input" id="flat-flatplan" type="text" placeholder="Выберете планировку" value="2.1 [1092]">
+                      <button class="residence-form-btn-select residence-form-flat__input-btn">Список</button>
+                    </div>
+                  </div>
+
+                  <label class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">Комнат</span>
+
+                    <select class="residence-form-flat__select" name="flat-rooms-number">
+                      <option value="1" selected>1</option>
+                      <option value="2" >2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </label>
+
+                  <label class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">
+                      Общая S
+                      <span class="residence-form-flat__required">*</span>
+                    </span>
+                    <input class="residence-form-flat__input" name="flat-square-total" type="number" value="49.79">
+                  </label>
+
+                  <label class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">Жилая</span>
+                    <input class="residence-form-flat__input" name="flat-square-living" type="number" value="18.1">
+                  </label>
+
+                  <label class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">
+                      Кухня
+                      <span class="residence-form-flat__required">*</span>
+                    </span>
+                    <input class="residence-form-flat__input" name="flat-square-kitchen" type="number" value="9.2">
+                  </label>
+
+                  <small class="residence-form-flat__explanation">
+                    <p>Данные по площадям помещений автоматически подтягиваются из указанной планировки.</p>
+                    <p>В случае, если характеристики данной квартиры отличаются от характеристик планировки, пожалуйста, укажите их вручную.</p>
+                    <p>&nbsp;</p>
+                    <p>
+                      Данные, указанные вручную на странице квартиры,
+                      <b>считаются более приоритетными, чем данные из планировки.</b>
+                    </p>
+                  </small>
+
+                  <div class="residence-form-flat__input-grid-wrap">
+                    <span class="residence-form-flat__label-text">Площадь комнат</span>
+                    <input class="residence-form-flat__input" name="flat-square-room-1" type="text" value="23.0 / 8.6">
+                    <input class="residence-form-flat__input" name="flat-square-room-2" type="text">
+                    <input class="residence-form-flat__input" name="flat-square-room-3" type="text">
+                    <input class="residence-form-flat__input" name="flat-square-room-4" type="text">
+                    <button class="residence-form-btn-select residence-form-flat__input-btn">Добавить</button>
+                  </div>
+
+                  <label class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">Высота потолков</span>
+                    <input class="residence-form-flat__input" name="flat-square-living" type="number" value="18.1">
+                  </label>
+
+                  <label class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">Покрытие пола</span>
+
+                    <select class="residence-form-flat__select" name="flat-rooms-number">
+                      <option value="1" selected>1</option>
+                      <option value="2" >2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </label>
+
+                  <label class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">Материал стен</span>
+
+                    <select class="residence-form-flat__select" name="flat-rooms-number">
+                      <option value="1" selected>1</option>
+                      <option value="2" >2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </label>
+
+                  <label class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">Тип окон</span>
+                    <input class="residence-form-flat__input" name="flat-square-living" type="number" value="18.1">
+                  </label>
+
+                  <label class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">Категория объекта</span>
+
+                    <select class="residence-form-flat__select" name="flat-rooms-number">
+                      <option value="1" selected>1</option>
+                      <option value="2" >2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </label>
+
+                  <label class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">Тип комнат</span>
+                    <input class="residence-form-flat__input" name="flat-square-living" type="number" value="18.1">
+                  </label>
+
+                  <label class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">Балкон / лоджия</span>
+                    <input class="residence-form-flat__input" name="flat-square-living" type="number" value="18.1">
+                  </label>
+
+                  <label class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">Санузел</span>
+                    <input class="residence-form-flat__input" name="flat-square-living" type="number" value="18.1">
+                  </label>
+
+                  <label class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">Свободная планировка</span>
+
+                    <select class="residence-form-flat__select" name="flat-rooms-number">
+                      <option value="1" selected>1</option>
+                      <option value="2" >2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </label>
+
+                  <label class="residence-form-flat__label">
+                    <span class="residence-form-flat__label-text">Отделка</span>
+
+                    <select class="residence-form-flat__select" name="flat-rooms-number">
+                      <option value="1" selected>1</option>
+                      <option value="2" >2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </label>
+                </fieldset>
+
+                <!-- Секция загрузки фотографий -->
+                <fieldset class="residence-form-flat__fieldset">
                   <div class="residence-form-flat__label residence-form-flat__label--upload-area">
                     <span class="residence-form-flat__label-text">
-                      Превью дома
+                      План квартиры
                       <span class="residence-form-flat__required">*</span>
                     </span>
 
@@ -237,59 +513,89 @@
                     </div>
                   </div>
 
-                  <div>
-                    <label class="residence-form-flat__label">
-                      <span class="residence-form-flat__label-text">
-                        Расположение
-                        <span class="residence-form-flat__required">*</span>
-                      </span>
-
-                      <select class="residence-form-flat__select residence-form-flat__select--visible" name="construction" size="6" required>
-                        <option value="in-progress" selected>Строящийся</option>
-                        <option value="finished">Сданный</option>
-                      </select>
-                    </label>
-                  </div>
-
-                  <div>
-                    <label class="residence-form-flat__label">
-                      <span class="residence-form-flat__label-text">
-                        Преимущества
-                        <span class="residence-form-flat__required">*</span>
-                      </span>
-
-                      <select class="residence-form-flat__select residence-form-flat__select--visible" name="construction" size="6" required>
-                        <option value="in-progress" selected>Строящийся</option>
-                        <option value="finished">Сданный</option>
-                      </select>
-                    </label>
-                  </div>
-                </fieldset>
-
-                <fieldset class="residence-form-flat__fieldset residence-form-flat__fieldset--no-columns residence-form-map">
-                  <label class="residence-form-map__label">
-                    <span class="residence-form-map__label-text">
-                      Местоположение
-                      <span class="residence-form-map__required">*</span>
-                    </span>
-                  </label>
-
-                  <input class="residence-form-map__address-input" type="text" value="Приморский край, Владивостокский городской округ, Владивосток, Первореченский район, улица Анны Щетининой, 9">
-
-                  <button class="residence-form-map__btn-address" type="button">Изменить</button>
-
-                  <div style="outline: 1px dashed pink; height: 452px;"></div>
-                </fieldset>
-
-                <fieldset class="residence-form-flat__fieldset residence-form-flat__fieldset--no-columns">
-                  <div class="residence-form-flat__label">
+                  <div class="residence-form-flat__label residence-form-flat__label--upload-area">
                     <span class="residence-form-flat__label-text">
-                      Описание
+                      Генеральный план квартиры
                       <span class="residence-form-flat__required">*</span>
                     </span>
+
+                    <div class="residence-upload-area">
+                      <span class="residence-upload-area__text">
+                        Перетяните сюда логотип ЖК или&nbsp;<a href="#" class="residence-upload-area__link">выберите на ПК</a>
+                      </span>
+                    </div>
                   </div>
 
-                  <div style="outline: 1px dashed pink; height: 452px;"></div>
+                  <div class="residence-form-flat__label residence-form-flat__label--upload-area">
+                    <span class="residence-form-flat__label-text">
+                      Вид квартиры на этаже
+                      <span class="residence-form-flat__required">*</span>
+                    </span>
+
+                    <div class="residence-upload-area">
+                      <span class="residence-upload-area__text">
+                        Перетяните сюда логотип ЖК или&nbsp;<a href="#" class="residence-upload-area__link">выберите на ПК</a>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="residence-form-flat__label residence-form-flat__label--upload-area">
+                    <span class="residence-form-flat__label-text">
+                      Вид из окна
+                      <span class="residence-form-flat__required">*</span>
+                    </span>
+
+                    <div class="residence-upload-area">
+                      <span class="residence-upload-area__text">
+                        Перетяните сюда логотип ЖК или&nbsp;<a href="#" class="residence-upload-area__link">выберите на ПК</a>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="residence-upload-img residence-form-flat__label-upload-buttons">
+                    <span class="residence-upload-img__title">Дополнительные изображения</span>
+
+                    <div class="residence-upload-img__btn-wrap">
+                      <button class="btn btn--blue residence-upload-img__btn">Выберите файл</button>
+                      <span class="residence-upload-img__label">Файл не выбран</span>
+                    </div>
+
+                    <div class="residence-upload-img__btn-wrap">
+                      <button class="btn btn--blue residence-upload-img__btn">Выберите файл</button>
+                      <span class="residence-upload-img__label">Файл не выбран</span>
+                    </div>
+
+                    <div class="residence-upload-img__btn-wrap">
+                      <button class="btn btn--blue residence-upload-img__btn">Выберите файл</button>
+                      <span class="residence-upload-img__label">Файл не выбран</span>
+                    </div>
+
+                    <div class="residence-upload-img__btn-wrap">
+                      <button class="btn btn--blue residence-upload-img__btn">Выберите файл</button>
+                      <span class="residence-upload-img__label">Файл не выбран</span>
+                    </div>
+
+                    <div class="residence-upload-img__btn-wrap">
+                      <button class="btn btn--blue residence-upload-img__btn">Выберите файл</button>
+                      <span class="residence-upload-img__label">Файл не выбран</span>
+                    </div>
+
+                    <div class="residence-upload-img__btn-wrap">
+                      <button class="btn btn--blue residence-upload-img__btn">Выберите файл</button>
+                      <span class="residence-upload-img__label">Файл не выбран</span>
+                    </div>
+                  </div>
+
+                  <div class=" residence-form-flat__description">
+                    <div class="residence-form-flat__label">
+                      <span class="residence-form-flat__label-text">
+                        Описание
+                        <span class="residence-form-flat__required">*</span>
+                      </span>
+                    </div>
+
+                    <div style="outline: 1px dashed pink; height: 452px;"></div>
+                  </div>
                 </fieldset>
 
                 <fieldset class="residence-form-flat__fieldset">
@@ -299,8 +605,15 @@
                 </fieldset>
               </form>
             </div>
+
+            <div>
+              <p class="residence-add__flat-id">
+                ID квартиры:
+                <span>5 055 800</span>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
       </main>
     </div>
   </body>

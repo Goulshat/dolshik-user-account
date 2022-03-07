@@ -1,31 +1,72 @@
-.residence-add {
+// .residence-add {
+  // position: relative;
+  // display: flex;
+  // align-items: flex-start;
+  // flex-direction: column;
+
+  // &--start {
+  //   flex-direction: row;
+  //   height: 100%;
+  //   background: url("../../img/backgroud/residence.svg") 100% 90% / 50% auto no-repeat;
+  // }
+
+  // &--flatplan-bg {
+  //   padding-bottom: 100px;
+  //   background: url("../../img/backgroud/flat-plan.svg") 90% 100% / 50% auto no-repeat;
+  // }
+// }
+/*----- Фон  -----*/
+.residence-add__bg-container {
   position: relative;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  width: 100%;
+  background: url("../../img/backgroud/residence.svg") 100% 95% / 50% auto no-repeat;
 
-  &--start {
+  &--flex {
     flex-direction: row;
+    align-items: stretch;
     height: 100%;
     background: url("../../img/backgroud/residence.svg") 100% 90% / 50% auto no-repeat;
   }
-
-  &--flatplan-bg {
-    padding-bottom: 100px;
-    background: url("../../img/backgroud/flat-plan.svg") 90% 100% / 50% auto no-repeat;
-  }
 }
 
-.residence-add__bg-container {
-  width: 100%;
-  background: url("../../img/backgroud/residence.svg") 100% 95% / 50% auto no-repeat;
-}
-
+/*---- Контейнер для формы ----*/
 .residence-add__form-container {
   max-width: 912px;
   margin-right: 30px;
 }
 
+/*---- ID квартиры - сбоку ----*/
+.residence-add__flat-id {
+  position: sticky;
+  top: 0;
+  left: 30px;
+  margin: 0;
+  padding: 60px 0 0;
+  font-size: $font-small;
+  color: $residence-flat-id;
+  line-height: 1.5;
+  background-color: $bg-main;
+  // z-index: 1;
+
+  span {
+    display: block;
+    color: $text-form;
+  }
+}
+
+/*---- Форма ----*/
+.residence-add__form {
+  background-color: $white;
+  border-top: none;
+  @include block-outline;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/*---- Табы ----*/
 .residence-add__progress {
   list-style: none;
   margin: 0;
@@ -72,15 +113,6 @@
       background-color: $accent-green-residence;
     }
   }
-}
-
-/*---- Контейнер для формы  ----*/
-.residence-add__form {
-  background-color: $white;
-  border-top: none;
-  @include block-outline;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
 }
 
 /*---- селект в подвале ----*/

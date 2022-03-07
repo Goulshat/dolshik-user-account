@@ -174,208 +174,212 @@
       <main class="page__container-main">
         <h1 class="page__main-title">Добавить ЖК</h1>
 
-        <div class="residence-add residence-add--start">
-          <div class="residence-add__form-container">
-            <ul class="residence-add__progress">
-              <li class="residence-add__progress-item residence-add__progress-item--filled">Шаг 1: ЖК</li>
-              <li class="residence-add__progress-item">Шаг 2: Дома</li>
-              <li class="residence-add__progress-item">Шаг 3: Секции</li>
-              <li class="residence-add__progress-item">Шаг 4: Планировки</li>
-              <li class="residence-add__progress-item">Шаг 5: Квартиры</li>
-            </ul>
+        <div class="residence-add">
+          <div class="residence-add__bg-container residence-add__bg-container--flex">
+            <div class="residence-add__form-container">
+              <ul class="residence-add__progress">
+                <li class="residence-add__progress-item residence-add__progress-item--filled">Шаг 1: ЖК</li>
+                <li class="residence-add__progress-item">Шаг 2: Дома</li>
+                <li class="residence-add__progress-item">Шаг 3: Секции</li>
+                <li class="residence-add__progress-item">Шаг 4: Планировки</li>
+                <li class="residence-add__progress-item">Шаг 5: Квартиры</li>
+              </ul>
 
-            <form class="residence-form residence-add__form" action="#" method="post" name="form-add-new-residence">
-              <fieldset class="residence-form__fieldset">
-                <label class="residence-form__label">
-                  <span class="residence-form__label-text">
-                    Название
-                    <span class="residence-form__required">*</span>
-                    <button class="residence-tooltip" type="button" data-tooltip-text="Текст подсказки, который отображается при наведении на вопросик">
-                      <span class="visually-hidden">Подсказка</span>
-                    </button>
-                  </span>
-
-                  <input class="residence-form__input" type="text" placeholder="Адмиралтейский" required>
-                </label>
-
-                <label class="residence-form__label">
-                  <span class="residence-form__label-text">
-                    Статус ЖК
-                    <span class="residence-form__required">*</span>
-                  </span>
-
-                  <select class="residence-form__select-stage" name="construction" required>
-                    <option value="in-progress" checked>Строящийся</option>
-                    <option value="finished">Сданный</option>
-                  </select>
-                </label>
-
-                <label class="residence-form__label residence-form__label--full-name">
-                  <span class="residence-form__label-text">Полное обозначение (Жилой комплекс)
-                    <span class="residence-form__required">*</span>
-                  </span>
-
-                  <input class="residence-form__input" type="text" placeholder="Жилой комплекс «Адмиралтейский»">
-                </label>
-
-                <div class="residence-form__label residence-form__label--upload-area">
-                  <span class="residence-form__label-text">Превью дома
-                    <span class="residence-form__required">*</span>
-                  </span>
-
-                  <div class="residence-upload-area">
-                    <span class="residence-upload-area__text">
-                      Перетяните сюда логотип ЖК или
-                      <a href="#" class="residence-upload-area__link">выберите на ПК</a>
+              <form class="residence-form residence-add__form" action="#" method="post" name="form-add-new-residence">
+                <fieldset class="residence-form__fieldset">
+                  <label class="residence-form__label">
+                    <span class="residence-form__label-text">
+                      Название
+                      <span class="residence-form__required">*</span>
+                      <button class="residence-tooltip" type="button" data-tooltip-text="Текст подсказки, который отображается при наведении на вопросик">
+                        <span class="visually-hidden">Подсказка</span>
+                      </button>
                     </span>
-                  </div>
-                </div>
-              </fieldset>
 
-              <fieldset class="residence-form__fieldset">
-                <div>
-                  <label class="residence-form__label">
-                    <span class="residence-form__label-text">Заголовок для описания</span>
-                    <input class="residence-form__input" type="text" placeholder="ЖК «Адмиралтейский»">
+                    <input class="residence-form__input" type="text" placeholder="Адмиралтейский" required>
                   </label>
 
-                  <label class="residence-form__label ">
-                    <span class="residence-form__label-text">Краткое описание ЖК</span>
-                    <textarea class="residence-form__textarea-description residence-form__textarea-description--summary" >«Жилой комплекс «Адмиралтейский», расположен в районе Снеговая падь, состоит из двух монолитных домов. В настоящий момент Застройщиком реализуются квартиры в доме А «Жилого комплекса «Адмиралтейский».</textarea>
-                  </label>
-                </div>
-
-                <div>
                   <label class="residence-form__label">
-                    <span class="residence-form__label-text">Преимущества</span>
+                    <span class="residence-form__label-text">
+                      Статус ЖК
+                      <span class="residence-form__required">*</span>
+                    </span>
 
-                    <select class="residence-form__select-advantage" name="advantages" size="6">
-                      <option value="not-set">(не установлено)</option>
-                      <option value="bike-path">Велодорожки</option>
-                      <option value="playground">Детская площадка</option>
-                      <option value="safe-area">Огороженная территория</option>
-                      <option value="ground-floor">Первые этажи для бизнеса</option>
-                      <option value="parking">Подземные парковки и наземные гаражи</option>
+                    <select class="residence-form__select-stage" name="construction" required>
+                      <option value="in-progress" checked>Строящийся</option>
+                      <option value="finished">Сданный</option>
                     </select>
                   </label>
 
-                  <div class="residence-upload-img">
-                    <span class="residence-upload-img__title">Дополнительные изображения</span>
+                  <label class="residence-form__label residence-form__label--full-name">
+                    <span class="residence-form__label-text">Полное обозначение (Жилой комплекс)
+                      <span class="residence-form__required">*</span>
+                    </span>
 
-                    <div class="residence-upload-img__btn-wrap">
-                      <button class="btn btn--blue residence-upload-img__btn">Выберите файл</button>
-                      <span class="residence-upload-img__label">Файл не выбран</span>
-                    </div>
+                    <input class="residence-form__input" type="text" placeholder="Жилой комплекс «Адмиралтейский»">
+                  </label>
 
-                    <div class="residence-upload-img__btn-wrap">
-                      <button class="btn btn--blue residence-upload-img__btn">Выберите файл</button>
-                      <span class="residence-upload-img__label">Файл не выбран</span>
-                    </div>
+                  <div class="residence-form__label residence-form__label--upload-area">
+                    <span class="residence-form__label-text">Превью дома
+                      <span class="residence-form__required">*</span>
+                    </span>
 
-                    <div class="residence-upload-img__btn-wrap">
-                      <button class="btn btn--blue residence-upload-img__btn">Выберите файл</button>
-                      <span class="residence-upload-img__label">Файл не выбран</span>
-                    </div>
-
-                    <div class="residence-upload-img__btn-wrap">
-                      <button class="btn btn--blue residence-upload-img__btn">Выберите файл</button>
-                      <span class="residence-upload-img__label">Файл не выбран</span>
-                    </div>
-
-                    <div class="residence-upload-img__btn-wrap">
-                      <button class="btn btn--blue residence-upload-img__btn">Выберите файл</button>
-                      <span class="residence-upload-img__label">Файл не выбран</span>
+                    <div class="residence-upload-area">
+                      <span class="residence-upload-area__text">
+                        Перетяните сюда логотип ЖК или
+                        <a href="#" class="residence-upload-area__link">выберите на ПК</a>
+                      </span>
                     </div>
                   </div>
-                </div>
-              </fieldset>
+                </fieldset>
 
-              <fieldset class="residence-form__fieldset">
-                <div class="residence-form__label-wrap">
+                <fieldset class="residence-form__fieldset">
+                  <div>
+                    <label class="residence-form__label">
+                      <span class="residence-form__label-text">Заголовок для описания</span>
+                      <input class="residence-form__input" type="text" placeholder="ЖК «Адмиралтейский»">
+                    </label>
+
+                    <label class="residence-form__label ">
+                      <span class="residence-form__label-text">Краткое описание ЖК</span>
+                      <textarea class="residence-form__textarea-description residence-form__textarea-description--summary" >«Жилой комплекс «Адмиралтейский», расположен в районе Снеговая падь, состоит из двух монолитных домов. В настоящий момент Застройщиком реализуются квартиры в доме А «Жилого комплекса «Адмиралтейский».</textarea>
+                    </label>
+                  </div>
+
+                  <div>
+                    <label class="residence-form__label">
+                      <span class="residence-form__label-text">Преимущества</span>
+
+                      <select class="residence-form__select-advantage" name="advantages" size="6">
+                        <option value="not-set">(не установлено)</option>
+                        <option value="bike-path">Велодорожки</option>
+                        <option value="playground">Детская площадка</option>
+                        <option value="safe-area">Огороженная территория</option>
+                        <option value="ground-floor">Первые этажи для бизнеса</option>
+                        <option value="parking">Подземные парковки и наземные гаражи</option>
+                      </select>
+                    </label>
+
+                    <div class="residence-upload-img">
+                      <span class="residence-upload-img__title">Дополнительные изображения</span>
+
+                      <div class="residence-upload-img__btn-wrap">
+                        <button class="btn btn--blue residence-upload-img__btn">Выберите файл</button>
+                        <span class="residence-upload-img__label">Файл не выбран</span>
+                      </div>
+
+                      <div class="residence-upload-img__btn-wrap">
+                        <button class="btn btn--blue residence-upload-img__btn">Выберите файл</button>
+                        <span class="residence-upload-img__label">Файл не выбран</span>
+                      </div>
+
+                      <div class="residence-upload-img__btn-wrap">
+                        <button class="btn btn--blue residence-upload-img__btn">Выберите файл</button>
+                        <span class="residence-upload-img__label">Файл не выбран</span>
+                      </div>
+
+                      <div class="residence-upload-img__btn-wrap">
+                        <button class="btn btn--blue residence-upload-img__btn">Выберите файл</button>
+                        <span class="residence-upload-img__label">Файл не выбран</span>
+                      </div>
+
+                      <div class="residence-upload-img__btn-wrap">
+                        <button class="btn btn--blue residence-upload-img__btn">Выберите файл</button>
+                        <span class="residence-upload-img__label">Файл не выбран</span>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="residence-form__fieldset">
+                  <div class="residence-form__label-wrap">
+                    <label class="residence-form__label">
+                      <span class="residence-form__label-text">Высотность</span>
+                      <input class="residence-form__input" type="text" placeholder="23">
+                    </label>
+
+                    <label class="residence-form__label">
+                      <span class="residence-form__label-text">Корпусов</span>
+                      <input class="residence-form__input" type="text" placeholder="2">
+                    </label>
+
+                    <label class="residence-form__label">
+                      <span class="residence-form__label-text">Цена за м
+                        <sup>2</sup>
+                      </span>
+
+                      <input class="residence-form__input" type="text" placeholder="Жилой комплекс «Адмиралтейский»">
+                    </label>
+
+                    <label class="residence-form__label">
+                      <span class="residence-form__label-text">Класс дома</span>
+                      <input class="residence-form__input" type="text" placeholder="Жилой комплекс «Адмиралтейский»">
+                    </label>
+
+                    <label class="residence-form__label">
+                      <span class="residence-form__label-text">Сдача</span>
+                      <input class="residence-form__input" type="text" placeholder="Жилой комплекс «Адмиралтейский»">
+                    </label>
+
+                    <label class="residence-form__label">
+                      <span class="residence-form__label-text">Тип дома</span>
+                      <input class="residence-form__input" type="text" placeholder="Жилой комплекс «Адмиралтейский»">
+                    </label>
+                  </div>
+
+                  <div>
+                    <label class="residence-form__label">
+                      <span class="residence-form__label-text">Инфраструктура</span>
+                      <textarea class="residence-form__textarea-description" >Большая закрытая детская площадка, большой торговый центр в двух минутах хотьбы, ЖД станция в пяти минутах хотьбы, взрослая и детская больницы</textarea>
+                    </label>
+                  </div>
+
+                  <div class="residence-form-map residence-form__map">
+                    <label class="residence-form-map__label">
+                      <span class="residence-form-map__label-text">
+                        Местоположение
+                        <span class="residence-form-map__required">*</span>
+                      </span>
+                      <input class="residence-form-map__address-input" type="text" value="Приморский край, Владивостокский городской округ, Владивосток, Первореченский район, улица Анны Щетининой, 9">
+                    </label>
+
+                    <button class="residence-form-map__btn-address" type="button">Изменить</button>
+
+                    <div style="outline: 1px dashed pink; height: 452px;"></div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="residence-form__fieldset">
+                  <div class="residence-form__fieldset-inner">
+                    <label class="residence-form__label">
+                      <span class="residence-form__label-text">Интерактивная карта</span>
+                      <button class="residence-form__btn-save">Сначала сохрани</button>
+                    </label>
+
+                    <button class="btn btn--blue residence-form__btn-edit" type="button">Редактировать ЖК</button>
+                  </div>
+
                   <label class="residence-form__label">
-                    <span class="residence-form__label-text">Высотность</span>
-                    <input class="residence-form__input" type="text" placeholder="23">
+                    <span class="residence-form__label-text">Онлайн-камера</span>
+                    <input class="residence-form__input" type="text" placeholder="https://onlinecams.com/id234234">
                   </label>
+                </fieldset>
 
-                  <label class="residence-form__label">
-                    <span class="residence-form__label-text">Корпусов</span>
-                    <input class="residence-form__input" type="text" placeholder="2">
-                  </label>
+                <fieldset class="residence-form__fieldset">
+                  <button class="btn btn--blue residence-form__btn-add" type="button">Добавить ЖК</button>
+                  <button class="residence-form__btn-reset" type="button">Отменить</button>
+                </fieldset>
+              </form>
+            </div>
 
-                  <label class="residence-form__label">
-                    <span class="residence-form__label-text">Цена за м
-                      <sup>2</sup>
-                    </span>
+            <aside>
+              <div class="residence-add-help">
+                Если у вас возникли трудности или вопросы при добавлении своего жилого комплекса, рекомендуем обратиться к справочной информации
 
-                    <input class="residence-form__input" type="text" placeholder="Жилой комплекс «Адмиралтейский»">
-                  </label>
-
-                  <label class="residence-form__label">
-                    <span class="residence-form__label-text">Класс дома</span>
-                    <input class="residence-form__input" type="text" placeholder="Жилой комплекс «Адмиралтейский»">
-                  </label>
-
-                  <label class="residence-form__label">
-                    <span class="residence-form__label-text">Сдача</span>
-                    <input class="residence-form__input" type="text" placeholder="Жилой комплекс «Адмиралтейский»">
-                  </label>
-
-                  <label class="residence-form__label">
-                    <span class="residence-form__label-text">Тип дома</span>
-                    <input class="residence-form__input" type="text" placeholder="Жилой комплекс «Адмиралтейский»">
-                  </label>
-                </div>
-
-                <div>
-                  <label class="residence-form__label">
-                    <span class="residence-form__label-text">Инфраструктура</span>
-                    <textarea class="residence-form__textarea-description" >Большая закрытая детская площадка, большой торговый центр в двух минутах хотьбы, ЖД станция в пяти минутах хотьбы, взрослая и детская больницы</textarea>
-                  </label>
-                </div>
-
-                <div class="residence-form-map residence-form__map">
-                  <label class="residence-form-map__label">
-                    <span class="residence-form-map__label-text">
-                      Местоположение
-                      <span class="residence-form-map__required">*</span>
-                    </span>
-                    <input class="residence-form-map__address-input" type="text" value="Приморский край, Владивостокский городской округ, Владивосток, Первореченский район, улица Анны Щетининой, 9">
-                  </label>
-
-                  <button class="residence-form-map__btn-address" type="button">Изменить</button>
-
-                  <div style="outline: 1px dashed pink; height: 452px;"></div>
-                </div>
-              </fieldset>
-
-              <fieldset class="residence-form__fieldset">
-                <div class="residence-form__fieldset-inner">
-                  <label class="residence-form__label">
-                    <span class="residence-form__label-text">Интерактивная карта</span>
-                    <button class="residence-form__btn-save">Сначала сохрани</button>
-                  </label>
-
-                  <button class="btn btn--blue residence-form__btn-edit" type="button">Редактировать ЖК</button>
-                </div>
-
-                <label class="residence-form__label">
-                  <span class="residence-form__label-text">Онлайн-камера</span>
-                  <input class="residence-form__input" type="text" placeholder="https://onlinecams.com/id234234">
-                </label>
-              </fieldset>
-
-              <fieldset class="residence-form__fieldset">
-                <button class="btn btn--blue residence-form__btn-add" type="button">Добавить ЖК</button>
-                <button class="residence-form__btn-reset" type="button">Отменить</button>
-              </fieldset>
-            </form>
+                <a class="residence-add-help__link" href="#">Инструкция по добавлению ЖК, домов, секций, планировок и квартир</a>
+              </div>
+            </aside>
           </div>
-
-          <aside class="residence-add-help">
-            Если у вас возникли трудности или вопросы при добавлении своего жилого комплекса, рекомендуем обратиться к справочной информации
-
-            <a class="residence-add-help__link" href="#">Инструкция по добавлению ЖК, домов, секций, планировок и квартир</a>
-          </aside>
 
           <select class="residence-add__select-residence" name="select-residence" id="" required>
             <option value="55">ID: 55 — ЖК Адмиралтейский</option>
