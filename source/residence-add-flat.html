@@ -47,7 +47,7 @@
       <nav class="usernav page__container-nav">
         <ul class="usernav__list">
           <li class="usernav__section">
-            <h2 class="usernav__section-title">Личные данные</h2>
+            <h3 class="usernav__section-title">Личные данные</h3>
 
             <ul class="usernav__section-list">
               <li class="usernav__section-item">
@@ -72,7 +72,7 @@
           </li>
 
           <li class="usernav__section">
-            <h2 class="usernav__section-title">Финансы</h2>
+            <h3 class="usernav__section-title">Финансы</h3>
             <ul class="usernav__section-list">
               <li class="usernav__section-item">
                 <a href="#" class="usernav__item-link">Баланс</a>
@@ -87,7 +87,7 @@
           </li>
 
           <li class="usernav__section">
-            <h2 class="usernav__section-title">Квартиры</h2>
+            <h3 class="usernav__section-title">Квартиры</h3>
             <ul class="usernav__section-list">
               <li class="usernav__section-item">
                 <a href="#" class="usernav__item-link">Мои квартиры
@@ -108,7 +108,7 @@
           </li>
 
           <li class="usernav__section">
-            <h2 class="usernav__section-title">Покупки</h2>
+            <h3 class="usernav__section-title">Покупки</h3>
             <ul class="usernav__section-list">
               <li class="usernav__section-item">
                 <a href="#" class="usernav__item-link">Корзина товаров
@@ -124,7 +124,7 @@
           </li>
 
           <li class="usernav__section">
-            <h2 class="usernav__section-title">Услуги подрядчико</h2>
+            <h3 class="usernav__section-title">Услуги подрядчико</h3>
             <ul class="usernav__section-list">
               <li class="usernav__section-item">
                 <a href="#" class="usernav__item-link">Мои заказы
@@ -138,7 +138,7 @@
           </li>
 
           <li class="usernav__section">
-            <h2 class="usernav__section-title">Кредитование</h2>
+            <h3 class="usernav__section-title">Кредитование</h3>
             <ul class="usernav__section-list">
               <li class="usernav__section-item">
                 <a href="#" class="usernav__item-link">Ипотека
@@ -155,7 +155,7 @@
           </li>
 
           <li class="usernav__section">
-            <h2 class="usernav__section-title">Электронные сервисы</h2>
+            <h3 class="usernav__section-title">Электронные сервисы</h3>
             <ul class="usernav__section-list">
               <li class="usernav__section-item">
                 <a href="#" class="usernav__item-link">Заказать ЭЦП</a>
@@ -172,9 +172,8 @@
       </nav>
 
       <main class="page__container-main">
-        <h1 class="page__main-title">Добавить ЖК</h1>
-
-        <section class="residence-add">
+        <h2 class="page__main-title">Добавить ЖК</h2>
+        <div class="residence-add">
           <div class="residence-add__bg-container residence-add__bg-container--flex">
             <div class="residence-add__form-container">
               <ul class="residence-add__progress">
@@ -238,7 +237,7 @@
                       <input class="residence-form-flat__input" id="residence-of-building" type="text" placeholder="Выберете ЖК из списка" value="zhk-radost-vlad">
                       <button class="residence-form-btn-select residence-form-flat__input-btn">...</button>
                     </div>
-                    <div class="residence-form-flat__example" aria-label="Пример Жилого комплекса">Радость</div>
+                    <div class="residence-form-flat__example">Радость</div>
                   </div>
                   <!-- инпут с кнопочкой рядом -->
                   <div class="residence-form-flat__label">
@@ -252,7 +251,7 @@
                       <input class="residence-form-flat__input" id="building-number" type="text" placeholder="Выберете дом из списка" value="1082">
                       <button class="residence-form-btn-select residence-form-flat__input-btn">...</button>
                     </div>
-                    <div class="residence-form-flat__example" aria-label="Пример названия дома">Дом 1</div>
+                    <div class="residence-form-flat__example">Дом 1</div>
                   </div>
                   <!-- инпут с кнопочкой рядом -->
                   <div class="residence-form-flat__label">
@@ -266,7 +265,7 @@
                       <input class="residence-form-flat__input" id="building-section" type="text" placeholder="Выберете секцию" value="1082">
                       <button class="residence-form-btn-select residence-form-flat__input-btn">...</button>
                     </div>
-                    <div class="residence-form-flat__example" aria-label="Пример наименования секции">Секция 1</div>
+                    <div class="residence-form-flat__example">Секция 1</div>
                   </div>
 
                   <label class="residence-form-flat__label">
@@ -393,7 +392,7 @@
                     <input class="residence-form-flat__input" name="flat-square-kitchen" type="number" value="9.2">
                   </label>
 
-                  <small class="residence-form-flat__explanation">
+                  <div class="residence-form-flat__explanation">
                     <p>Данные по площадям помещений автоматически подтягиваются из указанной планировки.</p>
                     <p>В случае, если характеристики данной квартиры отличаются от характеристик планировки, пожалуйста, укажите их вручную.</p>
                     <p>&nbsp;</p>
@@ -401,7 +400,7 @@
                       Данные, указанные вручную на странице квартиры,
                       <b>считаются более приоритетными, чем данные из планировки.</b>
                     </p>
-                  </small>
+                  </div>
 
                   <div class="residence-form-flat__input-grid-wrap">
                     <span class="residence-form-flat__label-text">Площадь комнат</span>
@@ -508,7 +507,7 @@
 
                     <div class="residence-upload-area">
                       <span class="residence-upload-area__text">
-                        Перетяните сюда логотип ЖК или&nbsp;<a href="#" class="residence-upload-area__link">выберите на ПК</a>
+                        Перетяните сюда изображение или&nbsp;<a href="#" class="residence-upload-area__link">выберите на ПК</a>
                       </span>
                     </div>
                   </div>
@@ -521,7 +520,7 @@
 
                     <div class="residence-upload-area">
                       <span class="residence-upload-area__text">
-                        Перетяните сюда логотип ЖК или&nbsp;<a href="#" class="residence-upload-area__link">выберите на ПК</a>
+                        Перетяните сюда изображение или&nbsp;<a href="#" class="residence-upload-area__link">выберите на ПК</a>
                       </span>
                     </div>
                   </div>
@@ -534,7 +533,7 @@
 
                     <div class="residence-upload-area">
                       <span class="residence-upload-area__text">
-                        Перетяните сюда логотип ЖК или&nbsp;<a href="#" class="residence-upload-area__link">выберите на ПК</a>
+                        Перетяните сюда изображение или&nbsp;<a href="#" class="residence-upload-area__link">выберите на ПК</a>
                       </span>
                     </div>
                   </div>
@@ -547,7 +546,7 @@
 
                     <div class="residence-upload-area">
                       <span class="residence-upload-area__text">
-                        Перетяните сюда логотип ЖК или&nbsp;<a href="#" class="residence-upload-area__link">выберите на ПК</a>
+                        Перетяните сюда изображение или&nbsp;<a href="#" class="residence-upload-area__link">выберите на ПК</a>
                       </span>
                     </div>
                   </div>
@@ -606,14 +605,14 @@
               </form>
             </div>
 
-            <div>
+            <div class="residence-add__flat-id-wrap">
               <p class="residence-add__flat-id">
                 ID квартиры:
                 <span>5 055 800</span>
               </p>
             </div>
           </div>
-        </section>
+        </div>
       </main>
     </div>
   </body>

@@ -39,17 +39,29 @@
 }
 
 /*---- ID квартиры - сбоку ----*/
+.residence-add__flat-id-wrap {
+  padding-top: 30px;
+}
+
 .residence-add__flat-id {
   position: sticky;
   top: 0;
   left: 30px;
   margin: 0;
-  padding: 60px 0 0;
+  padding: 30px 0 0;
   font-size: $font-small;
   color: $residence-flat-id;
   line-height: 1.5;
   background-color: $bg-main;
-  // z-index: 1;
+
+  &::before {
+    position: absolute;
+    top: 30px;
+    left: -15px;
+    content: "\2014";
+    width: 15px;
+    height: 15px;
+  }
 
   span {
     display: block;

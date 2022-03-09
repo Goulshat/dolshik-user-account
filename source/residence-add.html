@@ -172,7 +172,7 @@
       </nav>
 
       <main class="page__container-main">
-        <h1 class="page__main-title">Добавить ЖК</h1>
+        <h2 class="page__main-title">Добавить ЖК</h2>
 
         <div class="residence-add">
           <div class="residence-add__bg-container residence-add__bg-container--flex">
@@ -187,17 +187,18 @@
 
               <form class="residence-form residence-add__form" action="#" method="post" name="form-add-new-residence">
                 <fieldset class="residence-form__fieldset">
-                  <label class="residence-form__label">
-                    <span class="residence-form__label-text">
+                  <div class="residence-form__label">
+                    <label class="residence-form__label-text" for="residence-name">
                       Название
                       <span class="residence-form__required">*</span>
-                      <button class="residence-tooltip" type="button" data-tooltip-text="Текст подсказки, который отображается при наведении на вопросик">
-                        <span class="visually-hidden">Подсказка</span>
-                      </button>
-                    </span>
+                    </label>
 
-                    <input class="residence-form__input" type="text" placeholder="Адмиралтейский" required>
-                  </label>
+                    <button class="residence-tooltip" type="button" data-tooltip-text="Текст подсказки, который отображается при наведении на вопросик">
+                      <span class="visually-hidden">Подсказка</span>
+                    </button>
+
+                    <input class="residence-form__input" id="residence-name" type="text" placeholder="Адмиралтейский" required>
+                  </div>
 
                   <label class="residence-form__label">
                     <span class="residence-form__label-text">
