@@ -1,8 +1,16 @@
 .chat-search {
   position: relative;
+  padding-right: 5px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 10px;
+}
+
+.chat-search__wrap {
+  display: flex;
+  align-items: center;
+  width: auto;
 }
 
 .chat-search__input {
@@ -30,8 +38,10 @@
 .chat-search__btn {
   position: absolute;
   top: 50%;
-  right: 5px;
+  right: 40px;
   transform: translateY(-50%);
+  margin: 0;
+  padding: 0;
   display: flex;
   @include round(30px);
   justify-content: center;
@@ -42,8 +52,8 @@
 }
 
 .chat-search__icon {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   fill: $text-light;
 
   .chat-search__input:hover + .chat-search__btn &,
@@ -59,4 +69,28 @@
   .chat-search__btn:active & {
     fill: $text-grey;
   }
+}
+
+.chat-search__new-btn {
+  display: flex;
+  @include square(34px);
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 3px;
+  background-color: $white;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 7px $box-shadow;
+  }
+}
+
+.chat-search__new-icon {
+  width: 30px;
+  height: 30px;
+  fill: $text-light;
 }

@@ -169,7 +169,7 @@
   </nav>
 
   <section class="page__container-main">
-    <h2 class="visually-hidden">Сообщения</h2>
+    <h2 class="page__main-title">Сообщения</h2>
 
     <section class="chat-section">
       <a class="chat-section__open-chat-btn" href="#0">
@@ -179,21 +179,13 @@
       <nav class="chat-section__contacts-list"> <!-- открыть в мобилке - chat-section__contacts-list--shown -->
         <!-- CHAT LIST SEARCH -->
         <div class="chat-search">
-          <div class="chat-search__wrap">
-            <input class="chat-search__input" type="search" placeholder="Найти чат">
+          <input class="chat-search__input" type="search" placeholder="Найти чат">
 
-            <button class="chat-search__btn" type="button">
-              <svg class="chat-search__icon" width="20" height="20">
-                <use xlink:href="img/icons/sprite.svg#arrow-right" aria-hidden="true"></use>
-              </svg>
-            </button>
-          </div>
-
-          <a class="chat-search__new-btn" src="#" title="Создать новый чат">
-            <svg class="chat-search__new-icon" width="30" height="30">
-              <use xlink:href="img/icons/sprite.svg#edit-icon" aria-hidden="true"></use>
+          <button class="chat-search__btn" type="button">
+            <svg class="chat-search__icon" width="30" height="30">
+              <use xlink:href="img/icons/sprite.svg#arrow-right" aria-hidden="true"></use>
             </svg>
-          </a>
+          </button>
         </div>
 
         <!-- CHAT CONTACTS LIST -->
@@ -247,158 +239,35 @@
             </a>
           </li>
 
-          <li class="chat-contacts-list__item">
-            <a class="chat-contacts-list__link" href="#0">
-              <b class="chat-contacts-list__name">Дизайн 3-хкомнатной квартиры 138 кв.м. ...</b>
-              <span class="chat-contacts-list__excerp">ДА!</span>
-            </a>
-          </li>
+            <li class="chat-contacts-list__item">
+              <a class="chat-contacts-list__link" href="#0">
+                <b class="chat-contacts-list__name">Дизайн 3-хкомнатной квартиры 138 кв.м. ...</b>
+                <span class="chat-contacts-list__excerp">ДА!</span>
+              </a>
+            </li>
 
-          <li class="chat-contacts-list__item">
-            <a class="chat-contacts-list__link" href="#0">
-              <b class="chat-contacts-list__name">Дизайн 3-хкомнатной квартиры 138 кв.м. ...</b>
-              <span class="chat-contacts-list__excerp">ДА!</span>
-            </a>
-          </li>
+            <li class="chat-contacts-list__item">
+              <a class="chat-contacts-list__link" href="#0">
+                <b class="chat-contacts-list__name">Дизайн 3-хкомнатной квартиры 138 кв.м. ...</b>
+                <span class="chat-contacts-list__excerp">ДА!</span>
+              </a>
+            </li>
 
-          <li class="chat-contacts-list__item">
-            <a class="chat-contacts-list__link" href="#0">
-              <b class="chat-contacts-list__name">Дизайн 3-хкомнатной квартиры 138 кв.м. ...</b>
-              <span class="chat-contacts-list__excerp">ДА!</span>
-            </a>
-          </li>
+            <li class="chat-contacts-list__item">
+              <a class="chat-contacts-list__link" href="#0">
+                <b class="chat-contacts-list__name">Дизайн 3-хкомнатной квартиры 138 кв.м. ...</b>
+                <span class="chat-contacts-list__excerp">ДА!</span>
+              </a>
+            </li>
 
-          <li class="chat-contacts-list__item">
-            <a class="chat-contacts-list__link" href="#0">
-              <b class="chat-contacts-list__name">Дизайн 3-хкомнатной квартиры 138 кв.м. ...</b>
-              <span class="chat-contacts-list__excerp">ДА!</span>
-            </a>
-          </li>
+            <li class="chat-contacts-list__item">
+              <a class="chat-contacts-list__link" href="#0">
+                <b class="chat-contacts-list__name">Дизайн 3-хкомнатной квартиры 138 кв.м. ...</b>
+                <span class="chat-contacts-list__excerp">ДА!</span>
+              </a>
+            </li>
         </ul>
       </nav>
-      <!-- chatbox -->
-      <article class="chatbox chat-section__chatbox"><!--chat-section__chatbox--hidden-->
-        <header class="chatbox__header">
-          <h2 class="chatbox__header-caption">Чат
-            <span class="chatbox__header-caption-bold">&laquo;Дизайн <nobr>3-х</nobr> квартиры 138 кв.м. в&nbsp;ЖК&nbsp;Восход&raquo;</span>
-          </h2>
-
-          <p class="chatbox__header-users">Участники:
-            <a class="chatbox__header-user-current">Вы, </a>
-            <a class="chatbox__header-user-others" href="#">Светлана Светланская, Анастасия Михайлова</a>
-          </p>
-        </header>
-
-        <!-- chatbox-message -->
-        <div class="chatbox__main">
-          <div class="chatbox-message chatbox-message--other-user">
-            <b class="chatbox-message__user-name">Светлана Светланская
-              <span class="chatbox-message__user-role chatbox-message__user-role--designer">Дизайнер</span>
-            </b>
-            <p class="chatbox-message__text">А что это тут у нас?</p>
-            <p class="chatbox-message__text">А это сообщение в три строки чтобы было понятно как оно выглядит</p>
-          </div>
-
-          <div class="chatbox-message chatbox-message--other-user">
-            <b class="chatbox-message__user-name">Светлана Светланская
-              <span class="chatbox-message__user-role chatbox-message__user-role--service-manager">Менеджер&nbsp;сервиса</span>
-            </b>
-            <p class="chatbox-message__text">А это уже какой-то тестовый ответ от уже другого пользователя в две строки</p>
-          </div>
-
-          <div class="chatbox-message chatbox-message--current-user">
-            <b class="chatbox-message__user-name">Я
-              <span class="chatbox-message__user-role"></span>
-            </b>
-            <p class="chatbox-message__text">Пункт. Проверка</p>
-            <p class="chatbox-message__text">Да</p>
-          </div>
-
-          <div class="chatbox-message chatbox-message--other-user">
-            <b class="chatbox-message__user-name">Светлана Светланская
-              <span class="chatbox-message__user-role chatbox-message__user-role--service-manager">Менеджер&nbsp;сервиса</span>
-            </b>
-            <p class="chatbox-message__text">А это уже какой-то тестовый ответ от уже другого пользователя в две строки</p>
-          </div>
-
-          <div class="chatbox-message chatbox-message--current-user">
-            <b class="chatbox-message__user-name">Я
-              <span class="chatbox-message__user-role"></span>
-            </b>
-            <p class="chatbox-message__text">Пункт. Проверка</p>
-            <p class="chatbox-message__text"></p>
-          </div>
-
-          <div class="chatbox-message chatbox-message--other-user">
-            <b class="chatbox-message__user-name">Светлана
-              <span class="chatbox-message__user-role chatbox-message__user-role--designer">Дизайнер</span>
-            </b>
-            <p class="chatbox-message__text">Короткий ответ</p>
-          </div>
-
-          <div class="chatbox-message chatbox-message--current-user">
-            <b class="chatbox-message__user-name">Я
-              <span class="chatbox-message__user-role"></span>
-            </b>
-            <p class="chatbox-message__text">Пункт. Проверка</p>
-            <p class="chatbox-message__text"></p>
-          </div>
-
-          <div class="chatbox-message chatbox-message--other-user">
-            <b class="chatbox-message__user-name">Светлана Светланская
-              <span class="chatbox-message__user-role chatbox-message__user-role--service-manager">Менеджер&nbsp;сервиса</span>
-            </b>
-            <p class="chatbox-message__text">А это уже какой-то тестовый ответ от уже другого пользователя в две строки</p>
-          </div>
-
-          <div class="chatbox-message chatbox-message--current-user">
-            <b class="chatbox-message__user-name">Я
-              <span class="chatbox-message__user-role"></span>
-            </b>
-            <p class="chatbox-message__text">Пункт. Проверка</p>
-            <p class="chatbox-message__text"></p>
-          </div>
-
-          <div class="chatbox-message chatbox-message--other-user">
-            <b class="chatbox-message__user-name">Светлана Светланская
-              <span class="chatbox-message__user-role chatbox-message__user-role--service-manager">Менеджер&nbsp;сервиса</span>
-            </b>
-            <p class="chatbox-message__text">А это уже какой-то тестовый ответ от уже другого пользователя в две строки</p>
-          </div>
-
-          <div class="chatbox-message chatbox-message--current-user">
-            <b class="chatbox-message__user-name">Я
-              <span class="chatbox-message__user-role"></span>
-            </b>
-            <p class="chatbox-message__text">Пункт. Проверка</p>
-            <p class="chatbox-message__text"></p>
-          </div>
-
-          <div class="chatbox-message">
-            <b class="chatbox-message__user-name">Татьяна
-              <span class="chatbox-message__user-role chatbox-message__user-role--designer">Дизайнер</span>
-            </b>
-            <p class="chatbox-message__text">Еще одно большоооооооооое сообщение чтобы посмотреть разницу в размерах блоков</p>
-          </div>
-
-          <div class="chatbox-message chatbox-message--current-user">
-            <b class="chatbox-message__user-name">Я
-              <span class="chatbox-message__user-role"></span>
-            </b>
-            <p class="chatbox-message__text">ДА!</p>
-          </div>
-          </div>
-
-          <!-- Новое сообщение -->
-          <footer class="chatbox__footer">
-            <div action="#" method="#" class="chatbox-input">
-              <input class="chatbox-input__input" type="text" placeholder="Напишите сообщение">
-              <button class="btn btn--blue chatbox-input__send-button" type="button">
-                Отправить
-              </button>
-            </div>
-          </footer>
-      </article>
     </section>
   </section>
 </div>
