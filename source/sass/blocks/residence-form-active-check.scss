@@ -3,10 +3,13 @@
   padding: 0;
 }
 
-.residence-form-active-check__label {
+.residence-form-active-check__inner {
   @include residence-form-label;
 }
 
+.residence-form-active-check__label {
+  display: block;
+}
 //.residence-form-active__input - visually-hidden
 
 .residence-form-active-check__text {

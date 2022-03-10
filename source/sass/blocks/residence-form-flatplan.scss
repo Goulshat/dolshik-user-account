@@ -77,52 +77,25 @@
 
 .residence-form-flatplan__input {
   @include residence-form-input;
-  background-position: center;
-  background-size: 20px;
+  padding-right: 30px;
+  background-position: 94% 40%;
+  background-size: 20px 24px;
   background-repeat: no-repeat;
+
+  &--rub {
+    background-size: 18px 20px;
+    background-image: url("../../img/icons/rub.svg");
+  }
+
+  &--meter {
+    background-image: url("../../img/icons/м2.svg");
+  }
 
   &::placeholder {
     font-family: $font-family;
     color: $residence-placeholder;
   }
 }
-
-.residence-form-flatplan__select {
-  @include residence-form-input;
-  padding: 8px 0;
-  height: 38px;
-  background-color: $white;
-
-  &--visible {
-    height: auto;
-  }
-
-  option {
-    display: block;
-    padding: 5px 10px;
-    font-family: $font-family;
-    color: $text-form-placeholder;
-
-    &:checked {
-      background-color: $bg-hover;
-    }
-  }
-}
-
-// .residence-form-building__select-advantage {
-//   @include residence-form-input;
-
-//   option {
-//     padding: 5px 10px;
-//     font-family: $font-family;
-//     font-size: 14px;
-//     color: $text-form-placeholder;
-
-//     &:selected {
-//       background-color: $bg-hover;
-//     } // не применяется из-за дефолтных стилей select
-//   }
-// }
 
 .residence-form-flatplan__btn-save {
   justify-self: flex-start;

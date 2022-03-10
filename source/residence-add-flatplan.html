@@ -11,21 +11,6 @@
     <link rel="preload" href="fonts/opensans.woff2" as="font">
     <link rel="preload" href="fonts/opensansbold.woff2" as="font"> -->
     <link rel="stylesheet" href="css/style.min.css">
-
-    <!-- Pixel Glass-->
-    <style>
-      html {
-        background-repeat: no-repeat;
-        background-position: 0 0;
-        background-size: 1920px auto;
-        background-image: url("img/mockup/residence-form-flatplan-flatplan.png");
-      }
-
-    </style>
-    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-    <script src="../node_modules/pixel-glass/script.js"></script>
-    <!-- Pixel Glass -->
-
   </head>
   <body class="page__body">
     <header style="height: 170px; outline: 1px dashed pink"></header>
@@ -189,11 +174,13 @@
                 <div>
                   <!-- Чекбокс "Активность" -->
                   <div class="residence-form-active-check residence-form-flatplan__active-check">
-                    <label class="residence-form-active-check__label">
-                      Активность
-                      <input class="residence-form-active-check__input visually-hidden" type="checkbox">
-                      <span class="residence-form-active-check__text">Да</span>
-                    </label>
+                    <div class="residence-form-active-check__inner">
+                      <span class="residence-form-active-check__label">Активность</span>
+                      <label>
+                        <input id="residence-form-active-check" class="residence-form-active-check__input visually-hidden" type="checkbox">
+                        <span class="residence-form-active-check__text">Да</span>
+                      </label>
+                    </div>
                   </div>
 
                   <label class="residence-form-flatplan__label">
@@ -242,7 +229,7 @@
                   <label class="residence-form-flatplan__label">
                     <span class="residence-form-flatplan__label-text">Расположение</span>
 
-                    <select class="residence-form-flatplan__select residence-form-flatplan__select--visible" name="advantages" size="5">
+                    <select class="residence-form-select residence-form-select--visible" name="advantages" size="5">
                       <option value="bike-path">Верхний уровень</option>
                       <option value="playground">Академгородок</option>
                       <option value="safe-area">Дом 1</option>
@@ -265,7 +252,7 @@
 
                   <label class="residence-form-flatplan__label">
                     <span class="residence-form-flatplan__label-text">Цена</span>
-                    <input class="residence-form-flatplan__input" type="number" placeholder="4 320 000">
+                    <input class="residence-form-flatplan__input residence-form-flatplan__input--rub" type="text" placeholder="4 320 000">
                   </label>
 
                   <label class="residence-form-flatplan__label">
@@ -273,12 +260,12 @@
                       Общая S
                       <span class="residence-form-flatplan__required">*</span>
                     </span>
-                    <input class="residence-form-flatplan__input" type="text" placeholder="Жилой комплекс «Адмиралтейский»">
+                    <input class="residence-form-flatplan__input residence-form-flatplan__input--meter" type="text" placeholder="Жилой комплекс «Адмиралтейский»">
                   </label>
 
                   <label class="residence-form-flatplan__label">
                     <span class="residence-form-flatplan__label-text">Жилая</span>
-                    <input class="residence-form-flatplan__input" type="text" placeholder="Жилой комплекс «Адмиралтейский»">
+                    <input class="residence-form-flatplan__input residence-form-flatplan__input--meter" type="text" placeholder="Жилой комплекс «Адмиралтейский»">
                   </label>
 
                   <label class="residence-form-flatplan__label">
@@ -286,13 +273,13 @@
                       Кухня
                       <span class="residence-form-flatplan__required">*</span>
                     </span>
-                    <input class="residence-form-flatplan__input" type="text" placeholder="Жилой комплекс «Адмиралтейский»">
+                    <input class="residence-form-flatplan__input  residence-form-flatplan__input--meter" type="text" placeholder="Жилой комплекс «Адмиралтейский»">
                   </label>
 
                   <label class="residence-form-flatplan__label">
                     <span class="residence-form-flatplan__label-text">Качество отделки</span>
 
-                    <select class="residence-form-flatplan__select" name="advantages">
+                    <select class="residence-form-select" name="advantages">
                       <option value="not-set">(не установлено)</option>
                       <option value="bike-path">Косметический ремонт</option>
                       <option value="playground">Детская площадка</option>

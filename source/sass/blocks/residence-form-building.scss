@@ -68,28 +68,6 @@
   }
 }
 
-.residence-form-building__select {
-  @include residence-form-input;
-  padding: 8px 0;
-  height: 38px;
-  background-color: $white;
-
-  &--visible {
-    height: auto;
-  }
-
-  option {
-    display: block;
-    padding: 5px 10px;
-    font-family: $font-family;
-    color: $text-form-placeholder;
-
-    &:checked {
-      background-color: $bg-hover;
-    }
-  }
-}
-
 .residence-form-building__select-advantage {
   @include residence-form-input;
 

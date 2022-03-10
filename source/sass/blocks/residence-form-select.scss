@@ -1,0 +1,21 @@
+.residence-form-select {
+  @include residence-form-input;
+  padding: 8px 0;
+  height: 37px;
+  background-color: $white;
+
+  &--visible {
+    height: auto;
+  }
+
+  option {
+    display: block;
+    padding: 5px 10px;
+    font-family: $font-family;
+    color: $text-form-placeholder;
+
+    // &:selected {
+    //   background-color: $bg-hover;
+    // }
+  }
+}

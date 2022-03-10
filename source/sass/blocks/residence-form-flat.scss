@@ -152,32 +152,22 @@
 
 .residence-form-flat__input {
   @include residence-form-input;
+  background-position: 90% 40%;
+  background-size: 18px 24px;
+  background-repeat: no-repeat;
+
+  &--rub {
+    background-size: 18px 20px;
+    background-image: url("../../img/icons/rub.svg");
+  }
+
+  &--meter {
+    background-image: url("../../img/icons/м2.svg");
+  }
 
   &::placeholder {
     font-family: $font-family;
     color: $residence-placeholder;
-  }
-}
-
-.residence-form-flat__select {
-  @include residence-form-input;
-  padding: 8px 0;
-  height: 37px;
-  background-color: $white;
-
-  &--visible {
-    height: auto;
-  }
-
-  option {
-    display: block;
-    padding: 5px 10px;
-    font-family: $font-family;
-    color: $text-form-placeholder;
-
-    &:selected {
-      background-color: $bg-hover;
-    }
   }
 }
 

@@ -189,11 +189,13 @@
                 <fieldset class="residence-form-building__fieldset">
                 <!-- Чекбокс "Активность" -->
                   <div class="residence-form-active-check residence-form-building__active-check">
-                    <label class="residence-form-active-check__label">
-                      Активность
-                      <input class="residence-form-active-check__input visually-hidden" type="checkbox">
-                      <span class="residence-form-active-check__text">Да</span>
-                    </label>
+                    <div class="residence-form-active-check__inner">
+                      <span class="residence-form-active-check__label">Активность</span>
+                      <label>
+                        <input id="residence-form-active-check" class="residence-form-active-check__input visually-hidden" type="checkbox">
+                        <span class="residence-form-active-check__text">Да</span>
+                      </label>
+                    </div>
                   </div>
 
                   <div>
@@ -208,7 +210,7 @@
                     <label class="residence-form-building__label">
                       <span class="residence-form-building__label-text">Стадия строительства</span>
 
-                      <select class="residence-form-building__select" name="construction-stage">
+                      <select class="residence-form-select" name="construction-stage">
                         <option value="not-set">(не установлено)</option>
                         <option value="in-progress" selected>Строится</option>
                         <option value="finished">Сдан</option>
@@ -218,7 +220,7 @@
                     <label class="residence-form-building__label">
                       <span class="residence-form-building__label-text">Тип дома</span>
 
-                      <select class="residence-form-building__select" name="construction-type">
+                      <select class="residence-form-select" name="construction-type">
                         <option value="not-set">(не установлено)</option>
                         <option value="monolith" selected>Монолит</option>
                         <option value="brick">Кирпич</option>
@@ -246,7 +248,7 @@
                         <span class="residence-form-building__required">*</span>
                       </span>
 
-                      <select class="residence-form-building__select residence-form-building__select--visible" name="construction" size="6" required>
+                      <select class="residence-form-select residence-form-select--visible" name="construction" size="6" required>
                         <option value="in-progress" selected>Строящийся</option>
                         <option value="finished">Сданный</option>
                       </select>
@@ -260,7 +262,7 @@
                         <span class="residence-form-building__required">*</span>
                       </span>
 
-                      <select class="residence-form-building__select residence-form-building__select--visible" name="construction" size="6" required>
+                      <select class="residence-form-select residence-form-select--visible" name="construction" size="6" required>
                         <option value="in-progress" selected>Строящийся</option>
                         <option value="finished">Сданный</option>
                       </select>
