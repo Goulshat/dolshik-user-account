@@ -1,9 +1,48 @@
 .residence-tooltip {
+  position: relative;
   display: inline-block;
   vertical-align: middle;
+  margin: 0;
+  padding: 0;
   width: 10px;
   height: 10px;
   border: none;
   border-radius: 50%;
   background: #ddd url("../../img/icons/tooltip.svg") center no-repeat;
+  cursor: pointer;
+}
+
+.residence-tooltip__popup {
+  position: absolute;
+  bottom: 15px;
+  left: -30px;
+  display: none;
+  margin-bottom: 5px;
+  min-height: 20px;
+  width: 250px;
+  padding: 10px;
+  z-index: 2;
+  font-size: 9px;
+  line-height: 1.5;
+  text-align: left;
+  color: $text-form-placeholder;
+  background-color: $residence-help-bg;
+  border-radius: 5px;
+
+  &::after {
+    position: absolute;
+    bottom: -5px;
+    left: 30px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: inherit;
+    transform: rotate(45deg);
+    z-index: 1;
+  }
+
+  .residence-tooltip:hover &,
+  .residence-tooltip:focus & {
+    display: block;
+  }
 }

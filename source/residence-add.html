@@ -191,11 +191,11 @@
                     <label class="residence-form__label-text" for="residence-name">
                       Название
                       <span class="residence-form__required">*</span>
-                    </label>
 
-                    <button class="residence-tooltip" type="button" data-tooltip-text="Текст подсказки, который отображается при наведении на вопросик">
-                      <span class="visually-hidden">Подсказка</span>
-                    </button>
+                      <button class="residence-tooltip" type="button" data-tooltip-text="Текст подсказки, который отображается при наведении на вопросик">
+                        <span class="residence-tooltip__popup">Данное название используется внутри системы для администраторов и вас, и не показывается посетителям. Таким образом, вы можете называеть планировки в привычной для вас, например, числовой форме: «2.1.2»</span>
+                      </button>
+                    </label>
 
                     <input class="residence-form__input" id="residence-name" type="text" placeholder="Адмиралтейский" required>
                   </div>
@@ -225,12 +225,13 @@
                       <span class="residence-form__required">*</span>
                     </span>
 
-                    <div class="residence-upload-area">
+                    <label class="residence-upload-area">
                       <span class="residence-upload-area__text">
                         Перетяните сюда логотип ЖК или
-                        <a href="#" class="residence-upload-area__link">выберите на ПК</a>
+                        <span class="residence-upload-area__link">выберите на ПК</span>
+                        <input class="visually-hidden" type="file">
                       </span>
-                    </div>
+                    </label>
                   </div>
                 </fieldset>
 
@@ -264,30 +265,45 @@
                     <div class="residence-upload-img">
                       <span class="residence-upload-img__title">Дополнительные изображения</span>
 
-                      <div class="residence-upload-img__btn-wrap">
-                        <button class="btn btn--blue residence-upload-img__btn">Выберите файл</button>
+                      <label class="residence-upload-img__btn-wrap">
+                        <span class="btn btn--blue residence-upload-img__btn">
+                        <input class="visually-hidden" type="file">
+                          Выберите файл
+                        </span>
                         <span class="residence-upload-img__label">Файл не выбран</span>
-                      </div>
+                      </label>
 
-                      <div class="residence-upload-img__btn-wrap">
-                        <button class="btn btn--blue residence-upload-img__btn">Выберите файл</button>
+                      <label class="residence-upload-img__btn-wrap">
+                        <span class="btn btn--blue residence-upload-img__btn">
+                        <input class="visually-hidden" type="file">
+                          Выберите файл
+                        </span>
                         <span class="residence-upload-img__label">Файл не выбран</span>
-                      </div>
+                      </label>
 
-                      <div class="residence-upload-img__btn-wrap">
-                        <button class="btn btn--blue residence-upload-img__btn">Выберите файл</button>
+                      <label class="residence-upload-img__btn-wrap">
+                        <span class="btn btn--blue residence-upload-img__btn">
+                        <input class="visually-hidden" type="file">
+                          Выберите файл
+                        </span>
                         <span class="residence-upload-img__label">Файл не выбран</span>
-                      </div>
+                      </label>
 
-                      <div class="residence-upload-img__btn-wrap">
-                        <button class="btn btn--blue residence-upload-img__btn">Выберите файл</button>
+                      <label class="residence-upload-img__btn-wrap">
+                        <span class="btn btn--blue residence-upload-img__btn">
+                        <input class="visually-hidden" type="file">
+                          Выберите файл
+                        </span>
                         <span class="residence-upload-img__label">Файл не выбран</span>
-                      </div>
+                      </label>
 
-                      <div class="residence-upload-img__btn-wrap">
-                        <button class="btn btn--blue residence-upload-img__btn">Выберите файл</button>
+                      <label class="residence-upload-img__btn-wrap">
+                        <span class="btn btn--blue residence-upload-img__btn">
+                        <input class="visually-hidden" type="file">
+                          Выберите файл
+                        </span>
                         <span class="residence-upload-img__label">Файл не выбран</span>
-                      </div>
+                      </label>
                     </div>
                   </div>
                 </fieldset>
