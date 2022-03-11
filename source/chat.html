@@ -189,16 +189,26 @@
             </button>
           </div>
 
-          <a class="chat-search__new-btn" src="#" title="Создать новый чат">
+          <button class="chat-search__new-btn" src="#" title="Редактировать списк чатов">
             <svg class="chat-search__new-icon" width="30" height="30">
-              <use xlink:href="img/icons/sprite.svg#edit-icon" aria-hidden="true"></use>
+              <use xlink:href="img/icons/sprite.svg#edit" aria-hidden="true"></use>
             </svg>
-          </a>
+          </button>
+
+          <div class="chat-search__new-chat chat-search__new-chat--shown">
+            <input class="chat-search__input chat-search__new-chat-search" type="search" placeholder="Найти пользователя">
+          </div>
         </div>
 
         <!-- CHAT CONTACTS LIST -->
-        <ul class="chat-contacts-list">
+        <ul class="chat-contacts-list chat-contacts-list--edit">
+        <!-- модификатор раскрывает кнопки редактирования -->
           <li class="chat-contacts-list__item">
+            <button class="chat-contacts-list__item-btn" aria-label="Редактировать чат">
+              <svg class="chat-contacts-list__item-btn-icon" width="30" height="30">
+                <use xlink:href="img/icons/sprite.svg#edit" aria-hidden="true"></use>
+              </svg>
+            </button>
             <a class="chat-contacts-list__link chat-contacts-list__link--current" href="#0">
               <b class="chat-contacts-list__name">Дизайн 3-хкомнатной квартиры 138 кв.м. ...</b>
               <span class="chat-contacts-list__excerp">ДА!</span>
@@ -387,21 +397,34 @@
             </b>
             <p class="chatbox-message__text">ДА!</p>
           </div>
-          </div>
+        </div>
 
-          <!-- Новое сообщение -->
-          <footer class="chatbox__footer">
-            <div action="#" method="#" class="chatbox-input">
-              <input class="chatbox-input__input" type="text" placeholder="Напишите сообщение">
-              <button class="btn btn--blue chatbox-input__send-button" type="button">
-                Отправить
-              </button>
-            </div>
-          </footer>
+        <!-- Новое сообщение -->
+        <footer class="chatbox__footer">
+          <div action="#" method="#" class="chatbox-input">
+            <input class="chatbox-input__input" type="text" placeholder="Напишите сообщение">
+            <button class="btn btn--blue chatbox-input__send-button" type="button">
+              Отправить
+            </button>
+          </div>
+        </footer>
       </article>
     </section>
   </section>
 </div>
+
+<section class="chat-new-popup">
+  <div class="chat-new-popup__container">
+    <h2 class="chat-new-popup__title">Добавить чат</h2>
+    <p class="chat-new-popup__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat inventore facilis nisi impedit aut et tempore adipisci! Suscipit aliquam delectus harum totam saepe commodi consequuntur, doloribus sunt sequi culpa. Assumenda.</p>
+
+    <button class="chat-new-popup__btn chat-new-popup__btn--close ">
+      <svg class="chat-search__new-icon" width="30" height="30">
+        <use xlink:href="img/icons/sprite.svg#edit" aria-hidden="true"></use>
+      </svg>
+    </button>
+  </div>
+</section>
 </body>
 
 </html>

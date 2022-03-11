@@ -1,16 +1,33 @@
+/*---- список чатов ----*/
 .chat-contacts-list {
+  position: relative;
   @include clear-list;
   overflow-y: auto;
+  border-radius: 5px;
+
+  &--edit {
+    box-shadow: 0 0 5px ($accent-pink, 30%);
+  }
 }
 
 .chat-contacts-list__item {
   margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
 
   &:last-child {
     margin-bottom: 0;
   }
 }
 
+.chat-contacts-list__item-btn {
+  flex: 1 0 40px;
+  @include round(45px);
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+}
+/* ---- Ссылка на отдельный чат ---- */
 .chat-contacts-list__link {
   display: flex;
   flex-direction: column;
