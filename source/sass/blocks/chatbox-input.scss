@@ -12,7 +12,7 @@
   padding: 14px 30px;
   width: 100%;
   font-size: 16px;
-  color: $text-messages-chatbox;
+  color: $text-chatbox-messages;
   border-radius: 3px;
   border: 1px solid #c4c4c4;
 
@@ -22,7 +22,7 @@
   }
 }
 
-.chatbox-input__send-button {
+.chatbox-input__send-btn {
   margin-left: 28px;
   padding: 8px 16px;
 

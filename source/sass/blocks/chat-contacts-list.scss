@@ -6,29 +6,50 @@
   border-radius: 5px;
 
   &--edit {
-    box-shadow: 0 0 5px ($accent-pink, 30%);
+    box-shadow: 0 0 10px rgba($black, 0.3);
   }
 }
 
 .chat-contacts-list__item {
   margin-bottom: 10px;
   display: flex;
-  align-items: flex-start;
+  border: 1px solid transparent;
+  border-radius: 5px;
 
   &:last-child {
     margin-bottom: 0;
   }
+
+  &:hover {
+    background-color: $bg-hover;
+  }
+
+  .chat-contacts-list--edit &:hover,
+  .chat-contacts-list--edit &:focus {
+    border-color: $accent-pink;
+  }
 }
 
-.chat-contacts-list__item-btn {
+.chat-contacts-list__btn {
   flex: 1 0 40px;
-  @include round(45px);
-  height: 100%;
-  border: none;
-  border-radius: 5px;
+  display: none;
+
+  .chat-contacts-list--edit & {
+    display: block;
+  }
+
+  .chat-contacts-list__item:hover & {
+    background-color: $bg-hover;
+  }
+
+  .chat-contacts-list__item:focus-within & {
+    background-color: $bg-focus;
+  }
 }
+
 /* ---- Ссылка на отдельный чат ---- */
 .chat-contacts-list__link {
+  flex: 1 1 100%;
   display: flex;
   flex-direction: column;
   padding: 10px 5px 20px 20px;
@@ -36,10 +57,6 @@
   text-decoration: none;
   //overflow: hidden;
   border-radius: 5px;
-
-  &:hover {
-    background-color: $bg-hover;
-  }
 
   &:focus {
     background-color: $bg-focus;
@@ -61,6 +78,6 @@
 .chat-contacts-list__excerp {
   font-weight: 300;
   overflow: hidden;
-  color: #b1b1b1;
+  color: $text-chatlist-excerp;
   height: 30px; // чтобы только в 1 строку
 }

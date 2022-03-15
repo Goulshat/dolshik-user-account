@@ -189,26 +189,34 @@
             </button>
           </div>
 
-          <button class="chat-search__new-btn" src="#" title="Редактировать списк чатов">
-            <svg class="chat-search__new-icon" width="30" height="30">
+          <button class="chat-search__btn-edit-chats" aria-label="Редактировать список чатов">
+            <svg class="chat-search__icon-edit-chats" width="30" height="30">
               <use xlink:href="img/icons/sprite.svg#edit" aria-hidden="true"></use>
             </svg>
           </button>
 
-          <div class="chat-search__new-chat chat-search__new-chat--shown">
-            <input class="chat-search__input chat-search__new-chat-search" type="search" placeholder="Найти пользователя">
-          </div>
+          <!-- <button class="chat-search__btn-finish-edit" type="button" aria-label="Закончить редактирование чатов">
+            <svg class="chat-search__icon-finish-edit" width="30" height="30">
+              <use xlink:href="img/icons/sprite.svg#cross" aria-hidden="true"></use>
+            </svg>
+          </button> -->
+
+          <label class="chat-search__new-chat chat-search__new-chat--shown"> <!--chat-search__new-chat--shown-->
+            <span class="chat-search__new-chat-label">Создать новый чат</span>
+            <input class="chat-search__input chat-search__input--search" type="search" placeholder="Найти пользователя">
+          </label>
         </div>
 
         <!-- CHAT CONTACTS LIST -->
         <ul class="chat-contacts-list chat-contacts-list--edit">
-        <!-- модификатор раскрывает кнопки редактирования -->
+        <!-- модификатор раскрывает кнопки редактирования chat-contacts-list--edit-->
           <li class="chat-contacts-list__item">
-            <button class="chat-contacts-list__item-btn" aria-label="Редактировать чат">
-              <svg class="chat-contacts-list__item-btn-icon" width="30" height="30">
-                <use xlink:href="img/icons/sprite.svg#edit" aria-hidden="true"></use>
+            <button class="chat-contacts-list-btn chat-contacts-list__btn" type="button" aria-label="Редактировать чат">
+              <svg class="chat-contacts-list-btn__icon" width="30" height="30">
+                <use xlink:href="img/icons/sprite.svg#three-dots" aria-hidden="true"></use>
               </svg>
             </button>
+
             <a class="chat-contacts-list__link chat-contacts-list__link--current" href="#0">
               <b class="chat-contacts-list__name">Дизайн 3-хкомнатной квартиры 138 кв.м. ...</b>
               <span class="chat-contacts-list__excerp">ДА!</span>
@@ -216,6 +224,12 @@
           </li>
 
           <li class="chat-contacts-list__item">
+            <button class="chat-contacts-list-btn chat-contacts-list__btn" type="button" aria-label="Редактировать чат">
+              <svg class="chat-contacts-list-btn__icon" width="30" height="30">
+                <use xlink:href="img/icons/sprite.svg#three-dots" aria-hidden="true"></use>
+              </svg>
+            </button>
+
             <a class="chat-contacts-list__link" href="#0">
               <b class="chat-contacts-list__name">Ирина Морина</b>
               <span class="chat-contacts-list__excerp">Здесь нельзя обмениваться личными контактами ...</span>
@@ -403,7 +417,7 @@
         <footer class="chatbox__footer">
           <div action="#" method="#" class="chatbox-input">
             <input class="chatbox-input__input" type="text" placeholder="Напишите сообщение">
-            <button class="btn btn--blue chatbox-input__send-button" type="button">
+            <button class="btn btn--blue chatbox-input__send-btn" type="button">
               Отправить
             </button>
           </div>
@@ -413,7 +427,8 @@
   </section>
 </div>
 
-<section class="chat-new-popup">
+<!--  понадобится ли вообще?  -->
+<!-- <section class="chat-new-popup">
   <div class="chat-new-popup__container">
     <h2 class="chat-new-popup__title">Добавить чат</h2>
     <p class="chat-new-popup__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat inventore facilis nisi impedit aut et tempore adipisci! Suscipit aliquam delectus harum totam saepe commodi consequuntur, doloribus sunt sequi culpa. Assumenda.</p>
@@ -424,7 +439,7 @@
       </svg>
     </button>
   </div>
-</section>
+</section> -->
 </body>
 
 </html>
