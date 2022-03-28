@@ -1,0 +1,36 @@
+.chat-new-popup {
+  display: none;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: $box-shadow-darker;
+
+  &--shown {
+    display: flex;
+  }
+}
+
+//.chat-new-popup__overlay {}
+
+.chat-new-popup__container {
+  margin: auto;
+  padding: 30px;
+  min-width: 400px;
+  max-width: 600px;
+  background-color: $white;
+  @include block-outline;
+}
+
+// .chat-new-popup__title {
+//   font-weight: 16px;
+//   font-size: $font-large;
+// }
+
+//.chat-new-popup__text {}
+
+//.chat-new-popup__btn {}

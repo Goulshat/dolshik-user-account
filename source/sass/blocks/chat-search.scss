@@ -1,8 +1,20 @@
 .chat-search {
   position: relative;
+  padding-right: 5px;
+  display: grid;
+  grid-template-columns: 1fr 38px;
+  column-gap: 5px;
+  row-gap: 15px;
+  align-items: center;
+//  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.chat-search__wrap {
+  position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  width: 100%;
 }
 
 .chat-search__input {
@@ -25,13 +37,21 @@
   &:focus {
     box-shadow: 0 0 7px $box-shadow;
   }
+
+  &--search {
+    &::placeholder {
+      color: $text-chatlist-excerp;
+    }
+  }
 }
 
 .chat-search__btn {
   position: absolute;
   top: 50%;
-  right: 5px;
+  right: 2px;
   transform: translateY(-50%);
+  margin: 0;
+  padding: 0;
   display: flex;
   @include round(30px);
   justify-content: center;
@@ -42,8 +62,8 @@
 }
 
 .chat-search__icon {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   fill: $text-light;
 
   .chat-search__input:hover + .chat-search__btn &,
@@ -59,4 +79,61 @@
   .chat-search__btn:active & {
     fill: $text-grey;
   }
+}
+
+.chat-search__btn-edit-chats {
+  display: flex;
+  @include square(38px);
+  margin: 0;
+  padding: 0;
+  margin-left: 5px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 3px;
+  background-color: $white;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 7px $box-shadow;
+  }
+}
+
+.chat-search__icon-edit-chats {
+  @include square(26px);
+  fill: $text-light;
+
+  .chat-search:hover &,
+  .chat-search:focus-within & {
+    fill: $text-chatbox-header;
+  }
+
+  .chat-search__btn-edit-chats:hover &,
+  .chat-search__btn-edit-chats:focus & {
+    fill: $accent-blue;
+  }
+
+  .chat-search__btn-edit-chats:active & {
+    fill: $text-grey;
+  }
+}
+/* Новый блок - поиск пользователя и создание нового чата */
+.chat-search__new-chat {
+  grid-column: 1 / -1;
+  display: none;
+  height: 81px;
+  border-radius: 5px;
+  //background-color: red;
+
+  &--shown {
+    display: block;
+  }
+}
+
+.chat-search__new-chat-label {
+  padding-left: 20px;
+  font-weight: $font-weight-semibold;
+  font-size: $font-regular;
+  color: $black;
 }

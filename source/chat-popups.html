@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Личный кабинет</title>
+<!--<link rel="icon" href="favicon.ico">
+<link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/favicon/180.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preload" href="fonts/opensans.woff2" as="font">
+<link rel="preload" href="fonts/opensansbold.woff2" as="font"> -->
+<link rel="stylesheet" href="css/style.min.css">
+<link rel="stylesheet" href="css/chat.css">
+</head>
+
+<body class="page__body">
+<header style="height: 170px; outline: 1px dashed pink"></header>
+<div class="breadcrumbs">
+  <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Дольщик.онлайн</a>
+      </li>
+      <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Личный кабинет</a>
+      </li>
+      <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link breadcrumbs__link--current">Корзина</a>
+      </li>
+  </ul>
+</div>
+
+<div class="page__container page__container--form">
+  <!-- class="page__container--form"-->
+  <nav class="usernav page__container-nav">
+    <button class="usernav__btn" type="button"></button>
+
+    <ul class="usernav__list">
+      <li class="usernav__section">
+        <h2 class="usernav__section-title">Личные данные</h2>
+
+        <ul class="usernav__section-list">
+          <li class="usernav__section-item">
+            <a href="#" class="usernav__item-link">Сообщения
+              <span class="usernav__item-count">99+</span>
+            </a>
+          </li>
+
+          <li class="usernav__section-item">
+            <a href="#" class="usernav__item-link">Документы
+              <span class="usernav__item-count">2</span>
+            </a>
+          </li>
+
+          <li class="usernav__section-item">
+            <a href="#" class="usernav__item-link">Договоры
+              <span class="usernav__item-count">3</span>
+            </a>
+          </li>
+
+          <li class="usernav__section-item">
+            <a href="#" class="usernav__item-link">Изменить личные данные</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="usernav__section">
+        <h2 class="usernav__section-title">Финансы</h2>
+        <ul class="usernav__section-list">
+          <li class="usernav__section-item">
+            <a href="#" class="usernav__item-link">Баланс</a>
+          </li>
+
+          <li class="usernav__section-item">
+            <a href="#" class="usernav__item-link">Кэшбэк</a>
+          </li>
+
+          <li class="usernav__section-item">
+            <a href="#" class="usernav__item-link">История платежей</a>
+          </li>
+        </ul>
+        </li>
+
+      <li class="usernav__section">
+        <h2 class="usernav__section-title">Квартиры</h2>
+        <ul class="usernav__section-list">
+          <li class="usernav__section-item">
+            <a href="#" class="usernav__item-link">Мои квартиры
+              <span class="usernav__item-count">2</span>
+            </a>
+          </li>
+          <li class="usernav__section-item">
+            <a href="#" class="usernav__item-link">Забронированные
+              <span class="usernav__item-count">5</span>
+            </a>
+          </li>
+          <li class="usernav__section-item">
+            <a href="#" class="usernav__item-link">Избранные
+              <span class="usernav__item-count">17</span>
+            </a>
+          </li>
+        </ul>
+        </li>
+
+      <li class="usernav__section">
+        <h2 class="usernav__section-title">Покупки</h2>
+          <ul class="usernav__section-list">
+            <li class="usernav__section-item">
+              <a href="#" class="usernav__item-link">Корзина товаров
+                <span class="usernav__item-count">3</span>
+              </a>
+            </li>
+
+            <li class="usernav__section-item">
+              <a href="#" class="usernav__item-link">Заказы
+                <span class="usernav__item-count">10</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+      <li class="usernav__section">
+        <h2 class="usernav__section-title">Услуги подрядчико</h2>
+          <ul class="usernav__section-list">
+            <li class="usernav__section-item">
+              <a href="#" class="usernav__item-link">Мои заказы
+                <span class="usernav__item-count">10</span>
+              </a>
+            </li>
+            <li class="usernav__section-item">
+              <a href="#" class="usernav__item-link">Избранные подрядчики</a>
+            </li>
+          </ul>
+        </li>
+
+      <li class="usernav__section">
+        <h2 class="usernav__section-title">Кредитование</h2>
+        <ul class="usernav__section-list">
+          <li class="usernav__section-item">
+            <a href="#" class="usernav__item-link">Ипотека
+              <span class="usernav__item-count">10</span>
+            </a>
+          </li>
+          <li class="usernav__section-item">
+            <a href="#" class="usernav__item-link">Потребительский кредит</a>
+          </li>
+          <li class="usernav__section-item">
+            <a href="#" class="usernav__item-link">Страхование</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="usernav__section">
+        <h2 class="usernav__section-title">Электронные сервисы</h2>
+          <ul class="usernav__section-list">
+            <li class="usernav__section-item">
+              <a href="#" class="usernav__item-link">Заказать ЭЦП</a>
+            </li>
+            <li class="usernav__section-item">
+              <a href="#" class="usernav__item-link">Электронный документооборот</a>
+            </li>
+            <li class="usernav__section-item">
+              <a href="#" class="usernav__item-link">Запрос в Росреестр</a>
+            </li>
+          </ul>
+        </li>
+    </ul>
+  </nav>
+
+  <section class="page__container-main">
+    <h2 class="visually-hidden">Сообщения</h2>
+
+    <section class="chat-section">
+      <a class="chat-section__open-chat-btn" href="#0">
+        <span class="visually-hidden">Вернуться к списку чатов</span>
+      </a>
+
+      <nav class="chat-section__contacts-list"> <!-- открыть в мобилке - chat-section__contacts-list--shown -->
+        <!-- CHAT LIST SEARCH -->
+        <div class="chat-search">
+          <div class="chat-search__wrap">
+            <input class="chat-search__input" type="search" placeholder="Найти чат">
+
+            <button class="chat-search__btn" type="button">
+              <svg class="chat-search__icon" width="20" height="20">
+                <use xlink:href="img/icons/sprite.svg#arrow-right" aria-hidden="true"></use>
+              </svg>
+            </button>
+          </div>
+
+          <button class="chat-search__btn-edit-chats" aria-label="Редактировать список чатов">
+            <svg class="chat-search__icon-edit-chats" width="30" height="30">
+              <use xlink:href="img/icons/sprite.svg#edit" aria-hidden="true"></use>
+            </svg>
+          </button>
+
+          <!-- <button class="chat-search__btn-finish-edit" type="button" aria-label="Закончить редактирование чатов">
+            <svg class="chat-search__icon-finish-edit" width="30" height="30">
+              <use xlink:href="img/icons/sprite.svg#cross" aria-hidden="true"></use>
+            </svg>
+          </button> -->
+
+          <label class="chat-search__new-chat chat-search__new-chat--shown"> <!--chat-search__new-chat--shown-->
+            <span class="chat-search__new-chat-label">Создать новый чат</span>
+            <input class="chat-search__input chat-search__input--search" type="search" placeholder="Найти пользователя">
+          </label>
+        </div>
+
+        <!-- CHAT CONTACTS LIST -->
+        <ul class="chat-contacts-list chat-contacts-list--edit">
+        <!-- модификатор раскрывает кнопки редактирования chat-contacts-list--edit-->
+          <li class="chat-contacts-list__item">
+            <button class="chat-contacts-list-btn chat-contacts-list__btn" type="button" aria-label="Редактировать чат">
+              <svg class="chat-contacts-list-btn__icon" width="30" height="30">
+                <use xlink:href="img/icons/sprite.svg#three-dots" aria-hidden="true"></use>
+              </svg>
+            </button>
+
+            <a class="chat-contacts-list__link chat-contacts-list__link--current" href="#0">
+              <b class="chat-contacts-list__name">Дизайн 3-хкомнатной квартиры 138 кв.м. ...</b>
+              <span class="chat-contacts-list__excerp">ДА!</span>
+            </a>
+          </li>
+
+          <li class="chat-contacts-list__item">
+            <button class="chat-contacts-list-btn chat-contacts-list__btn" type="button" aria-label="Редактировать чат">
+              <svg class="chat-contacts-list-btn__icon" width="30" height="30">
+                <use xlink:href="img/icons/sprite.svg#three-dots" aria-hidden="true"></use>
+              </svg>
+            </button>
+
+            <a class="chat-contacts-list__link" href="#0">
+              <b class="chat-contacts-list__name">Ирина Морина</b>
+              <span class="chat-contacts-list__excerp">Здесь нельзя обмениваться личными контактами ...</span>
+            </a>
+          </li>
+
+          <li class="chat-contacts-list__item">
+            <a class="chat-contacts-list__link" href="#0">
+              <b class="chat-contacts-list__name">Техническая поддержка</b>
+              <span class="chat-contacts-list__excerp">Здравствуйте! Да, конечно! Для этого необходимо ...</span>
+            </a>
+          </li>
+
+          <li class="chat-contacts-list__item">
+            <a class="chat-contacts-list__link" href="#0">
+              <b class="chat-contacts-list__name">Иван Петров</b>
+              <span class="chat-contacts-list__excerp">Ответ на вопрос</span>
+            </a>
+          </li>
+
+          <li class="chat-contacts-list__item">
+            <a class="chat-contacts-list__link" href="#0">
+              <b class="chat-contacts-list__name">Техническая поддержка</b>
+              <span class="chat-contacts-list__excerp">Здравствуйте! Да, конечно! Для этого необходимо ...</span>
+            </a>
+          </li>
+
+          <li class="chat-contacts-list__item">
+            <a class="chat-contacts-list__link" href="#0">
+              <b class="chat-contacts-list__name">Дизайн 3-хкомнатной квартиры 138 кв.м. ...</b>
+              <span class="chat-contacts-list__excerp">ДА!</span>
+            </a>
+          </li>
+
+          <li class="chat-contacts-list__item">
+            <a class="chat-contacts-list__link" href="#0">
+              <b class="chat-contacts-list__name">Дизайн 3-хкомнатной квартиры 138 кв.м. ...</b>
+              <span class="chat-contacts-list__excerp">ДА!</span>
+            </a>
+          </li>
+
+          <li class="chat-contacts-list__item">
+            <a class="chat-contacts-list__link" href="#0">
+              <b class="chat-contacts-list__name">Дизайн 3-хкомнатной квартиры 138 кв.м. ...</b>
+              <span class="chat-contacts-list__excerp">ДА!</span>
+            </a>
+          </li>
+
+          <li class="chat-contacts-list__item">
+            <a class="chat-contacts-list__link" href="#0">
+              <b class="chat-contacts-list__name">Дизайн 3-хкомнатной квартиры 138 кв.м. ...</b>
+              <span class="chat-contacts-list__excerp">ДА!</span>
+            </a>
+          </li>
+
+          <li class="chat-contacts-list__item">
+            <a class="chat-contacts-list__link" href="#0">
+              <b class="chat-contacts-list__name">Дизайн 3-хкомнатной квартиры 138 кв.м. ...</b>
+              <span class="chat-contacts-list__excerp">ДА!</span>
+            </a>
+          </li>
+
+          <li class="chat-contacts-list__item">
+            <a class="chat-contacts-list__link" href="#0">
+              <b class="chat-contacts-list__name">Дизайн 3-хкомнатной квартиры 138 кв.м. ...</b>
+              <span class="chat-contacts-list__excerp">ДА!</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- chatbox -->
+      <article class="chatbox chat-section__chatbox"><!--chat-section__chatbox--hidden-->
+        <header class="chatbox__header">
+          <h2 class="chatbox__header-caption">Чат
+            <span class="chatbox__header-caption-bold">&laquo;Дизайн <nobr>3-х</nobr> квартиры 138 кв.м. в&nbsp;ЖК&nbsp;Восход&raquo;</span>
+          </h2>
+
+          <p class="chatbox__header-users">Участники:
+            <a class="chatbox__header-user-current">Вы, </a>
+            <a class="chatbox__header-user-others" href="#">Светлана Светланская, Анастасия Михайлова</a>
+          </p>
+        </header>
+
+        <!-- chatbox-message -->
+        <div class="chatbox__main">
+          <div class="chatbox-message chatbox-message--other-user">
+            <b class="chatbox-message__user-name">Светлана Светланская
+              <span class="chatbox-message__user-role chatbox-message__user-role--designer">Дизайнер</span>
+            </b>
+            <p class="chatbox-message__text">А что это тут у нас?</p>
+            <p class="chatbox-message__text">А это сообщение в три строки чтобы было понятно как оно выглядит</p>
+          </div>
+
+          <div class="chatbox-message chatbox-message--other-user">
+            <b class="chatbox-message__user-name">Светлана Светланская
+              <span class="chatbox-message__user-role chatbox-message__user-role--service-manager">Менеджер&nbsp;сервиса</span>
+            </b>
+            <p class="chatbox-message__text">А это уже какой-то тестовый ответ от уже другого пользователя в две строки</p>
+          </div>
+
+          <div class="chatbox-message chatbox-message--current-user">
+            <b class="chatbox-message__user-name">Я
+              <span class="chatbox-message__user-role"></span>
+            </b>
+            <p class="chatbox-message__text">Пункт. Проверка</p>
+            <p class="chatbox-message__text">Да</p>
+          </div>
+
+          <div class="chatbox-message chatbox-message--other-user">
+            <b class="chatbox-message__user-name">Светлана Светланская
+              <span class="chatbox-message__user-role chatbox-message__user-role--service-manager">Менеджер&nbsp;сервиса</span>
+            </b>
+            <p class="chatbox-message__text">А это уже какой-то тестовый ответ от уже другого пользователя в две строки</p>
+          </div>
+
+          <div class="chatbox-message chatbox-message--current-user">
+            <b class="chatbox-message__user-name">Я
+              <span class="chatbox-message__user-role"></span>
+            </b>
+            <p class="chatbox-message__text">Пункт. Проверка</p>
+            <p class="chatbox-message__text"></p>
+          </div>
+
+          <div class="chatbox-message chatbox-message--other-user">
+            <b class="chatbox-message__user-name">Светлана
+              <span class="chatbox-message__user-role chatbox-message__user-role--designer">Дизайнер</span>
+            </b>
+            <p class="chatbox-message__text">Короткий ответ</p>
+          </div>
+
+          <div class="chatbox-message chatbox-message--current-user">
+            <b class="chatbox-message__user-name">Я
+              <span class="chatbox-message__user-role"></span>
+            </b>
+            <p class="chatbox-message__text">Пункт. Проверка</p>
+            <p class="chatbox-message__text"></p>
+          </div>
+
+          <div class="chatbox-message chatbox-message--other-user">
+            <b class="chatbox-message__user-name">Светлана Светланская
+              <span class="chatbox-message__user-role chatbox-message__user-role--service-manager">Менеджер&nbsp;сервиса</span>
+            </b>
+            <p class="chatbox-message__text">А это уже какой-то тестовый ответ от уже другого пользователя в две строки</p>
+          </div>
+
+          <div class="chatbox-message chatbox-message--current-user">
+            <b class="chatbox-message__user-name">Я
+              <span class="chatbox-message__user-role"></span>
+            </b>
+            <p class="chatbox-message__text">Пункт. Проверка</p>
+            <p class="chatbox-message__text"></p>
+          </div>
+
+          <div class="chatbox-message chatbox-message--other-user">
+            <b class="chatbox-message__user-name">Светлана Светланская
+              <span class="chatbox-message__user-role chatbox-message__user-role--service-manager">Менеджер&nbsp;сервиса</span>
+            </b>
+            <p class="chatbox-message__text">А это уже какой-то тестовый ответ от уже другого пользователя в две строки</p>
+          </div>
+
+          <div class="chatbox-message chatbox-message--current-user">
+            <b class="chatbox-message__user-name">Я
+              <span class="chatbox-message__user-role"></span>
+            </b>
+            <p class="chatbox-message__text">Пункт. Проверка</p>
+            <p class="chatbox-message__text"></p>
+          </div>
+
+          <div class="chatbox-message">
+            <b class="chatbox-message__user-name">Татьяна
+              <span class="chatbox-message__user-role chatbox-message__user-role--designer">Дизайнер</span>
+            </b>
+            <p class="chatbox-message__text">Еще одно большоооооооооое сообщение чтобы посмотреть разницу в размерах блоков</p>
+          </div>
+
+          <div class="chatbox-message chatbox-message--current-user">
+            <b class="chatbox-message__user-name">Я
+              <span class="chatbox-message__user-role"></span>
+            </b>
+            <p class="chatbox-message__text">ДА!</p>
+          </div>
+        </div>
+
+        <!-- Новое сообщение -->
+        <footer class="chatbox__footer">
+          <div action="#" method="#" class="chatbox-input">
+            <input class="chatbox-input__input" type="text" placeholder="Напишите сообщение">
+            <button class="btn btn--blue chatbox-input__send-btn" type="button">
+              Отправить
+            </button>
+          </div>
+        </footer>
+      </article>
+    </section>
+  </section>
+</div>
+
+<article class="chat-popup">
+  <header class="chat-popup__header">
+    <h2 class="chat-popup__caption">Чат</h2>
+    <button class="chat-popup__btn-hide" type="button" aria-label="Свернуть чат">
+      <svg class="chat-search__icon" width="20" height="20">
+        <use xlink:href="img/icons/sprite.svg#icon-btn-hide" aria-hidden="true"></use>
+      </svg>
+    </button>
+
+    <button class="chat-popup__btn-close" type="button" aria-label="Закрыть чат">
+      <svg class="chat-search__icon" width="20" height="20">
+        <use xlink:href="img/icons/sprite.svg#icon-btn-close" aria-hidden="true"></use>
+      </svg>
+    </button>
+  </header>
+
+  <section class="chat-popup__main">
+    <nav class="chat-popup__list"> <!--  скрыть: chat-popup__list--hidden -->
+      <div class="chat-search">
+        <input class="chat-search__input" type="search" placeholder="Найти чат">
+
+        <button class="chat-search__btn" type="button">
+          <svg class="chat-search__icon" width="30" height="30">
+            <use xlink:href="img/icons/sprite.svg#arrow-right" aria-hidden="true"></use>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="chat-popup-list">
+        <li class="chat-popup-list__item">
+          <a class="chat-popup-list__link" href="#0">
+            <b class="chat-popup-list__name">Техническая поддержка</b>
+            <span class="chat-popup-list__excerp">Здравствуйте! Да, конечно! Для этого необходимо ...</span>
+          </a>
+        </li>
+
+        <li class="chat-popup-list__item">
+          <a class="chat-popup-list__link" href="#0">
+            <b class="chat-popup-list__name">Иван Петров</b>
+            <span class="chat-popup-list__excerp">Ответ на вопрос</span>
+          </a>
+        </li>
+
+        <li class="chat-popup-list__item">
+          <a class="chat-popup-list__link" href="#0">
+            <b class="chat-popup-list__name">Техническая поддержка</b>
+            <span class="chat-popup-list__excerp">Здравствуйте! Да, конечно! Для этого необходимо ...</span>
+          </a>
+        </li>
+
+        <li class="chat-popup-list__item">
+          <a class="chat-popup-list__link" href="#0">
+            <b class="chat-popup-list__name">Дизайн 3-хкомнатной квартиры 138 кв.м. ...</b>
+            <span class="chat-popup-list__excerp">ДА!</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="chat-popup__messages-box chat-popup__messages-box--hidden"> <!-- скрыть: chat-popup__messages-box--hidden -->
+      <div class="chat-popup-message chat-popup-message--current-user">
+        <b class="chat-popup-message__user-name">Я
+          <span class="chat-popup-message__user-role"></span>
+        </b>
+        <p class="chat-popup-message__text">Пункт. Проверка</p>
+        <p class="chat-popup-message__text"></p>
+      </div>
+
+      <div class="chat-popup-message">
+        <b class="chat-popup-message__user-name">Татьяна
+          <span class="chat-popup-message__user-role chat-popup-message__user-role--designer">Дизайнер</span>
+        </b>
+        <p class="chat-popup-message__text">Еще одно большоооооооооое сообщение чтобы посмотреть разницу в размерах блоков</p>
+      </div>
+
+      <div class="chat-popup-message chat-popup-message--current-user">
+        <b class="chat-popup-message__user-name">Я
+          <span class="chat-popup-message__user-role"></span>
+        </b>
+        <p class="chat-popup-message__text">ДА!</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="chat-popup__footer"></footer>
+</article>
+
+<!--  понадобится ли вообще?  -->
+<!-- <section class="chat-new-popup">
+  <div class="chat-new-popup__container">
+    <h2 class="chat-new-popup__title">Добавить чат</h2>
+    <p class="chat-new-popup__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat inventore facilis nisi impedit aut et tempore adipisci! Suscipit aliquam delectus harum totam saepe commodi consequuntur, doloribus sunt sequi culpa. Assumenda.</p>
+
+    <button class="chat-new-popup__btn chat-new-popup__btn--close ">
+      <svg class="chat-search__new-icon" width="30" height="30">
+        <use xlink:href="img/icons/sprite.svg#edit" aria-hidden="true"></use>
+      </svg>
+    </button>
+  </div>
+</section> -->
+</body>
+
+</html>

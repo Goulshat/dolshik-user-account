@@ -14,7 +14,7 @@
   font-size: 16px;
   color: $text-chatbox-messages;
   border-radius: 3px;
-  border: 1px solid $text-chatbox-input;
+  border: 1px solid #c4c4c4;
 
   &::placeholder {
     font-family: "Open Sans";
@@ -22,7 +22,7 @@
   }
 }
 
-.chatbox-input__send-button {
+.chatbox-input__send-btn {
   margin-left: 28px;
   padding: 8px 16px;
 

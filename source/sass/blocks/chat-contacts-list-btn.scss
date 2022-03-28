@@ -1,0 +1,25 @@
+.chat-contacts-list-btn {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    background-color: $bg-focus;
+  }
+}
+
+.chat-contacts-list-btn__icon {
+  fill: $text-lightest;
+
+  .chat-contacts-list-btn:hover &,
+  .chat-contacts-list-btn:focus & {
+    fill: $accent-blue;
+  }
+
+  .chat-contacts-list-btn:active & {
+    fill: $text-form;
+  }
+}
