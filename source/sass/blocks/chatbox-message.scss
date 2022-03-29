@@ -24,6 +24,14 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  // @media (max-width: $tablet-wide) {
+  //   max-width: 75%;
+  // }
+  
+  @media (max-width: $tablet) {
+    max-width: 85%;
+  }
 }
 
 .chatbox-message__user-name {

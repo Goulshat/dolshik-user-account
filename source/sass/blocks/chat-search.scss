@@ -101,7 +101,7 @@
 }
 
 .chat-search__icon-edit-chats {
-  @include square(26px);
+  @include square(20px);
   fill: $text-light;
 
   .chat-search:hover &,
@@ -119,21 +119,20 @@
   }
 }
 /* Новый блок - поиск пользователя и создание нового чата */
-.chat-search__new-chat {
-  grid-column: 1 / -1;
-  display: none;
-  height: 81px;
-  border-radius: 5px;
-  //background-color: red;
+// .chat-search__new-chat {
+//   grid-column: 1 / -1;
+//   display: none;
+//   height: 81px;
+//   border-radius: 5px;
 
-  &--shown {
-    display: block;
-  }
-}
+//   &--shown {
+//     display: block;
+//   }
+// }
 
-.chat-search__new-chat-label {
-  padding-left: 20px;
-  font-weight: $font-weight-semibold;
-  font-size: $font-regular;
-  color: $black;
-}
+// .chat-search__new-chat-label {
+//   padding-left: 20px;
+//   font-weight: $font-weight-semibold;
+//   font-size: $font-regular;
+//   color: $black;
+// }

@@ -1,7 +1,8 @@
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
-const sass = require("gulp-sass");
+//const sass = require("gulp-sass");
+const sass = require('gulp-sass')(require('sass'));
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
@@ -9,7 +10,7 @@ const htmlmin = require("gulp-htmlmin");
 const rename = require("gulp-rename");
 const csso = require("postcss-csso");
 const terser = require("gulp-terser");
-const imagemin = require("gulp-imagemin");
+//const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
@@ -57,17 +58,18 @@ exports.scripts = scripts;
 
 // Images - для продакшна
 
-const optimizeImages = () => {
-  return gulp.src("source/img/**/*.{jpg,png,svg}")
-  .pipe(imagemin([
-    imagemin.mozjpeg({progressive: true}),
-    imagemin.optipng({optimizationLevel: 3}),
-    imagemin.svgo()
-  ]))
-  .pipe(gulp.dest("build/img"))
-}
+// const optimizeImages = () => {
+//   return gulp.src("source/img/**/*.{jpg,png,svg}")
+//   .pipe(imagemin([
+//     imagemin.gifsicle({interlaced: true}),
+//     imagemin.mozjpeg({progressive: true}),
+//     imagemin.optipng({optimizationLevel: 3}),
+//     imagemin.svgo()
+//   ]))
+//   .pipe(gulp.dest("build/img"))
+// }
 
-exports.optimizeImages = optimizeImages;
+// exports.optimizeImages = optimizeImages;
 
 // Images - во время разработки
 
@@ -164,7 +166,7 @@ exports.default = gulp.series(
 const build = gulp.series(
   clean,
   copy,
-  optimizeImages,
+  //optimizeImages,
   gulp.parallel(
     styles,
     html,
