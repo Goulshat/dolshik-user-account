@@ -43,19 +43,5 @@
 }
 
 .chat-section__open-chat-btn {
-  // position: absolute;
-  // top: 40px;
-  // left: 20px;
-  flex-shrink: 0;
-  display: none;
-  margin-right: 15px;
-  width: 35px;
-  height: 35px;
-  border: none;
-  border-radius: 50%;
-  background: rgba($accent-blue, .3) url("../../img/icons/arrow-left.svg") center no-repeat;
-
-  @media (max-width: $desktop) {
-    display: flex;
-  }
+  @include chat-go-back-btn;
 }

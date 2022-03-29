@@ -60,6 +60,18 @@
   color: $text-form;
 }
 
+@mixin form-input {
+  display: block;
+  padding: 8px 20px;
+  width: 100%;
+  font-family: $font-family;
+  font-size: 14px;
+  line-height: 1;
+  color: $text-grey;
+  border: 1px solid $text-chatbox-input;
+  border-radius: 3px;
+}
+
 @mixin residence-form-input {
   display: block;
   padding: 8px 20px;
@@ -71,7 +83,21 @@
   @include residence-input-outline;
 }
 
+@mixin chat-go-back-btn {
+  flex-shrink: 0;
+  display: none;
+  margin-right: 15px;
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  background: rgba($accent-blue, .3) url("../../img/icons/arrow-left.svg") center no-repeat;
+
+  @media (max-width: $desktop) {
+    display: flex;
+  }
+}
 // @mixin link {
 //   font-size: inherit;
-//   color:
+//   color: $accent-blue;
 // }

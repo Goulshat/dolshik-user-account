@@ -15,22 +15,185 @@
   }
 }
 
-//.chat-new-popup__overlay {}
-
 .chat-new-popup__container {
+  position: relative;
   margin: auto;
   padding: 30px;
-  min-width: 400px;
-  max-width: 600px;
+  width: 500px;
+  //width: 400px;
   background-color: $white;
   @include block-outline;
 }
 
-// .chat-new-popup__title {
-//   font-weight: 16px;
-//   font-size: $font-large;
-// }
+/*---- Кнопка Закрыть ----*/
+.chat-new-popup__btn-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  @include square(30px);
+  background-color: transparent;
+  border: none;
+}
 
-//.chat-new-popup__text {}
+.chat-new-popup__btn-close-icon {
+  @include square(15px);
+  fill: $text-light;
 
-//.chat-new-popup__btn {}
+  .chat-new-popup__btn-close:hover &,
+  .chat-new-popup__btn-close:focus & {
+    fill: $accent-blue;
+  }
+
+  .chat-new-popup__btn-close:active & {
+    fill: $text-grey;
+  }
+}
+/*---- Форма ----*/
+.chat-new-popup__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-new-popup__title {
+  padding-left: $chat-popup-input-padding;
+  font-weight: $font-weight-regular;
+  font-size: $font-larger;
+  color: $text-chatbox-header-caption;
+}
+
+.chat-new-popup__label-container {
+  display: block;
+  margin-bottom: 25px;
+  font-size: $font-small;
+  color: $text-form;
+
+  &:last-of-type {
+    margin-bottom: 10px;
+  }
+}
+
+.chat-new-popup__label-text {
+  display: block;
+  padding-left: $chat-popup-input-padding;
+  font-weight: $font-weight-semibold;
+}
+
+.chat-new-popup__required {
+  color: $accent-red;
+}
+
+.chat-new-popup__input {
+  display: block;
+  @include form-input;
+  padding: $chat-popup-input-padding;
+  color: $text-grey;
+
+  &::placeholder {
+    color: $text-light;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 10px $box-shadow;
+  }
+
+  .chat-new-popup__input-wrap &[readonly] {
+    //display: inline-block;
+    border: none;
+    margin-right: 3px;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 5px $box-shadow;
+    }
+  }
+}
+
+/*----- Поле удалить пользователя -----*/
+.chat-new-popup__input-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+
+.chat-new-popup__user-delete-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include square(25px);
+  background-color: transparent;
+  border: none;
+}
+
+.chat-new-popup__user-delete-icon {
+  @include square(10px);
+  fill: $text-light;
+
+  .chat-new-popup__input-wrap:hover &,
+  .chat-new-popup__input-wrap:focus-within & {
+    fill: $text-grey;
+  }
+
+  .chat-new-popup__user-delete-btn:hover &,
+  .chat-new-popup__user-delete-btn:focus & {
+    fill: $accent-blue;
+  }
+
+  .chat-new-popup__user-delete-btn:active & {
+    fill: $text-grey;
+  }
+}
+
+/*---- Поле добавить пользователя ----*/
+.chat-new-popup__select-wrap {
+  position: relative;
+  display: flex;
+}
+
+.chat-new-popup__btn-add-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //align-self: center;
+  width: 42px;
+  //height: 35px;
+  margin-left: 5px;
+  background-color: transparent;
+  border: 1px solid $text-chatbox-input;
+  border-radius: 3px;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 10px $box-shadow;
+  }
+}
+
+.chat-new-popup__btn-add-user-icon {
+  width: 20px;
+  height: 20px;
+  fill: $text-grey;
+  //transform: rotate(45deg);
+  .chat-new-popup__btn-add-user:hover &,
+  .chat-new-popup__btn-add-user:focus & {
+    fill: $accent-blue;
+  }
+
+  .chat-new-popup__btn-add-user:active & {
+    fill: $text-light;
+  }
+}
+/*----- Сохранить изменения ----*/
+.chat-new-popup__btn-save {
+  margin-top: 35px;
+  //  padding: 7px 14px;
+  padding: 10px;
+  font-size: $font-medium;
+}
