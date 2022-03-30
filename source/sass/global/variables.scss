@@ -68,7 +68,13 @@ $bg-message-blue: #def0fd;
 $border-message-blue: #cad7e0;
 
 $chat-height: 600px;
+$chat-new-popup-width: 500px;
+$chat-popup-height: 600px;
+$chat-popup-width: 500px;
+$chat-popup-header-height: 50px;
+$chat-popup-padding: 15px;
 $chat-popup-input-padding: 10px;
+
 //fonts
 $font-family: "Open Sans";
 $font-larger: 24px;
@@ -76,6 +82,7 @@ $font-large: 18px;
 $font-regular: 16px;
 $font-medium: 14px;
 $font-small: 12px;
+$font-tiny: 8px;
 // $font-counter: 10px;
 // $font-title: 48px;
 $font-weight-light: 300;

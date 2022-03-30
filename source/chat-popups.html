@@ -179,25 +179,26 @@
 
   <article class="chat-popup">
     <header class="chat-popup__header">
-      <h2 class="chat-popup__caption">Чат</h2>
-      <button class="chat-popup__btn-hide" type="button" aria-label="Свернуть чат">
-        <svg class="chat-search__icon" width="20" height="20">
-          <use xlink:href="img/icons/sprite.svg#icon-btn-hide" aria-hidden="true"></use>
+      <h2 class=" chat-popup__caption">Чат</h2>
+
+      <button class="chat-popup__btn chat-popup__btn--hide" type="button" aria-label="Свернуть чат">
+        <svg class="chat-popup__btn-icon chat-popup__btn-icon--hide" width="20" height="3">
+          <use xlink:href="img/icons/sprite.svg#btn-hide" aria-hidden="true"></use>
         </svg>
       </button>
 
-      <button class="chat-popup__btn-close" type="button" aria-label="Закрыть чат">
-        <svg class="chat-search__icon" width="20" height="20">
-          <use xlink:href="img/icons/sprite.svg#icon-btn-close" aria-hidden="true"></use>
+      <button class="chat-popup__btn chat-popup__btn--close" type="button" aria-label="Закрыть чат">
+        <svg class="chat-popup__btn-icon chat-popup__btn-icon--close" width="20" height="20">
+          <use xlink:href="img/icons/sprite.svg#btn-close" aria-hidden="true"></use>
         </svg>
       </button>
     </header>
 
-    <section class="chat-popup__main">
-      <nav class="chat-popup__list"> <!--  скрыть: chat-popup__list--hidden -->
+    <div class="chat-popup__main">
+      <nav class="chat-popup__list chat-popup__list--hidden"> <!--  скрыть: chat-popup__list--hidden -->
         <div class="chat-search">
           <input class="chat-search__input" type="search" placeholder="Найти чат">
-
+    
           <button class="chat-search__btn" type="button">
             <svg class="chat-search__icon" width="30" height="30">
               <use xlink:href="img/icons/sprite.svg#arrow-right" aria-hidden="true"></use>
@@ -205,67 +206,137 @@
           </button>
         </div>
 
-        <ul class="chat-popup-list">
-          <li class="chat-popup-list__item">
-            <a class="chat-popup-list__link" href="#0">
-              <b class="chat-popup-list__name">Техническая поддержка</b>
-              <span class="chat-popup-list__excerp">Здравствуйте! Да, конечно! Для этого необходимо ...</span>
+        <ul class="chat-contacts-list"> <!-- chat-popup-list  -->
+          <li class="chat-contacts-list__item">
+            <a class="chat-contacts-list__link chat-contacts-list__link--current" href="#0">
+              <b class="chat-contacts-list__name">Техническая поддержка</b>
+              <span class="chat-contacts-list__excerp">Здравствуйте! Да, конечно! Для этого необходимо ...</span>
+            </a>
+
+            <button class="chat-contacts-list-btn chat-contacts-list__btn" type="button" aria-label="Редактировать чат"></button>
+          </li>
+
+          <li class="chat-contacts-list__item">
+            <a class="chat-contacts-list__link" href="#0">
+              <b class="chat-contacts-list__name">Ирина Морина</b>
+              <span class="chat-contacts-list__excerp">Здесь нельзя обмениваться личными контактами ...</span>
             </a>
           </li>
 
-          <li class="chat-popup-list__item">
-            <a class="chat-popup-list__link" href="#0">
-              <b class="chat-popup-list__name">Иван Петров</b>
-              <span class="chat-popup-list__excerp">Ответ на вопрос</span>
+          <li class="chat-contacts-list__item">
+            <a class="chat-contacts-list__link" href="#0">
+              <b class="chat-contacts-list__name">Техническая поддержка</b>
+              <span class="chat-contacts-list__excerp">Здравствуйте! Да, конечно! Для этого необходимо ...</span>
             </a>
           </li>
 
-          <li class="chat-popup-list__item">
-            <a class="chat-popup-list__link" href="#0">
-              <b class="chat-popup-list__name">Техническая поддержка</b>
-              <span class="chat-popup-list__excerp">Здравствуйте! Да, конечно! Для этого необходимо ...</span>
+          <li class="chat-contacts-list__item">
+            <a class="chat-contacts-list__link" href="#0">
+              <b class="chat-contacts-list__name">Иван Петров</b>
+              <span class="chat-contacts-list__excerp">Ответ на вопрос</span>
             </a>
           </li>
 
-          <li class="chat-popup-list__item">
-            <a class="chat-popup-list__link" href="#0">
-              <b class="chat-popup-list__name">Дизайн 3-хкомнатной квартиры 138 кв.м. ...</b>
-              <span class="chat-popup-list__excerp">ДА!</span>
+          <li class="chat-contacts-list__item">
+            <a class="chat-contacts-list__link" href="#0">
+              <b class="chat-contacts-list__name">Дизайн 3-хкомнатной квартиры 138 кв.м. ...</b>
+              <span class="chat-contacts-list__excerp">ДА!</span>
             </a>
           </li>
         </ul>
       </nav>
 
       <div class="chat-popup__messages-box chat-popup__messages-box--hidden"> <!-- скрыть: chat-popup__messages-box--hidden -->
-        <div class="chat-popup-message chat-popup-message--current-user">
-          <b class="chat-popup-message__user-name">Я
-            <span class="chat-popup-message__user-role"></span>
-          </b>
-          <p class="chat-popup-message__text">Пункт. Проверка</p>
-          <p class="chat-popup-message__text"></p>
-        </div>
+        <ul class="chat-popup__messages">
+          <li class="chatbox-message chatbox-message--other-user">
+            <b class="chatbox-message__user-name">Светлана Светланская
+              <span class="chatbox-message__user-role chatbox-message__user-role--designer">Дизайнер</span>
+            </b>
+            <p class="chatbox-message__text">А что это тут у нас?</p>
+            <p class="chatbox-message__text">А это сообщение в три строки чтобы было понятно как оно выглядит</p>
+          </li>
 
-        <div class="chat-popup-message">
-          <b class="chat-popup-message__user-name">Татьяна
-            <span class="chat-popup-message__user-role chat-popup-message__user-role--designer">Дизайнер</span>
-          </b>
-          <p class="chat-popup-message__text">Еще одно большоооооооооое сообщение чтобы посмотреть разницу в размерах блоков</p>
-        </div>
+          <li class="chatbox-message chatbox-message--other-user">
+            <b class="chatbox-message__user-name">Светлана Светланская
+              <span class="chatbox-message__user-role chatbox-message__user-role--service-manager">Менеджер&nbsp;сервиса</span>
+            </b>
+            <p class="chatbox-message__text">А это уже какой-то тестовый ответ от уже другого пользователя в две строки</p>
+          </li>
 
-        <div class="chat-popup-message chat-popup-message--current-user">
-          <b class="chat-popup-message__user-name">Я
-            <span class="chat-popup-message__user-role"></span>
-          </b>
-          <p class="chat-popup-message__text">ДА!</p>
+          <li class="chatbox-message chatbox-message--current-user">
+            <b class="chatbox-message__user-name">Я
+              <span class="chatbox-message__user-role"></span>
+            </b>
+            <p class="chatbox-message__text">Пункт. Проверка</p>
+            <p class="chatbox-message__text">Да</p>
+          </li>
+
+          <li class="chatbox-message chatbox-message--other-user">
+            <b class="chatbox-message__user-name">Светлана Светланская
+              <span class="chatbox-message__user-role chatbox-message__user-role--service-manager">Менеджер&nbsp;сервиса</span>
+            </b>
+            <p class="chatbox-message__text">А это уже какой-то тестовый ответ от уже другого пользователя в две строки</p>
+          </li>
+
+          <li class="chatbox-message chatbox-message--current-user">
+            <b class="chatbox-message__user-name">Я
+              <span class="chatbox-message__user-role"></span>
+            </b>
+            <p class="chatbox-message__text">Пункт. Проверка</p>
+            <p class="chatbox-message__text"></p>
+          </li>
+
+          <li class="chatbox-message chatbox-message--other-user">
+            <b class="chatbox-message__user-name">Светлана
+              <span class="chatbox-message__user-role chatbox-message__user-role--designer">Дизайнер</span>
+            </b>
+            <p class="chatbox-message__text">Короткий ответ</p>
+          </li>
+
+          <li class="chatbox-message chatbox-message--current-user">
+            <b class="chatbox-message__user-name">Я
+              <span class="chatbox-message__user-role"></span>
+            </b>
+            <p class="chatbox-message__text">Пункт. Проверка</p>
+            <p class="chatbox-message__text"></p>
+          </li>
+
+          <li class="chatbox-message chatbox-message--other-user">
+            <b class="chatbox-message__user-name">Светлана Светланская
+              <span class="chatbox-message__user-role chatbox-message__user-role--service-manager">Менеджер&nbsp;сервиса</span>
+            </b>
+            <p class="chatbox-message__text">А это уже какой-то тестовый ответ от уже другого пользователя в две строки</p>
+          </li>
+
+          <li class="chatbox-message chatbox-message--current-user">
+            <b class="chatbox-message__user-name">Я
+              <span class="chatbox-message__user-role"></span>
+            </b>
+            <p class="chatbox-message__text">Пункт. Проверка</p>
+            <p class="chatbox-message__text"></p>
+          </li>
+
+          <li class="chatbox-message chatbox-message--other-user">
+            <b class="chatbox-message__user-name">Светлана Светланская
+              <span class="chatbox-message__user-role chatbox-message__user-role--service-manager">Менеджер&nbsp;сервиса</span>
+            </b>
+            <p class="chatbox-message__text">А это уже какой-то тестовый ответ от уже другого пользователя в две строки</p>
+          </li>
+        </ul>
+
+        <div class="chat-popup__footer">
+          <div class="chatbox-input">
+            <input class="chatbox-input__input" type="text" placeholder="Напишите сообщение">
+            <button class="btn btn--blue chatbox-input__send-btn" type="button">
+              <span>Отправить</span>
+            </button>
+          </div>
         </div>
       </div>
-    </section>
-
-    <footer class="chat-popup__footer"></footer>
+    </div>
   </article>
 
-  <!--  понадобится ли вообще?  -->
-  <section class="chat-new-popup chat-new-popup--shown">
+  <section class="chat-new-popup">
     <!-- по умолчанию попап скрыт, отображается при добавлении класса chat-new-popup--shown-->
     <div class="chat-new-popup__container">
       <button class="chat-new-popup__btn-close" type="button" aria-label="Закрыть окно редактирования чата">

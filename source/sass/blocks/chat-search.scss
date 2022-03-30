@@ -6,7 +6,6 @@
   column-gap: 5px;
   row-gap: 15px;
   align-items: center;
-//  justify-content: space-between;
   margin-bottom: 10px;
 }
 
@@ -118,21 +117,3 @@
     fill: $text-grey;
   }
 }
-/* Новый блок - поиск пользователя и создание нового чата */
-// .chat-search__new-chat {
-//   grid-column: 1 / -1;
-//   display: none;
-//   height: 81px;
-//   border-radius: 5px;
-
-//   &--shown {
-//     display: block;
-//   }
-// }
-
-// .chat-search__new-chat-label {
-//   padding-left: 20px;
-//   font-weight: $font-weight-semibold;
-//   font-size: $font-regular;
-//   color: $black;
-// }

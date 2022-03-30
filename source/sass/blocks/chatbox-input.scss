@@ -4,6 +4,10 @@
   align-items: center;
   padding: 0;
   padding-top: 20px;
+
+  .chat-popup & {
+    padding: 0;
+  }
 }
 
 .chatbox-input__input {
@@ -20,11 +24,19 @@
     font-family: "Open Sans";
     font-size: 16px;
   }
+
+  .chat-popup & {
+    margin-right: 0;
+    border-radius: 5px;
+  }
 }
 
 .chatbox-input__send-btn {
   margin-left: 28px;
   padding: 8px 16px;
+  background-position: center;
+  background-size: 75% auto;
+  background-repeat: no-repeat;
 
   &:hover,
   &:focus {
@@ -33,6 +45,17 @@
 
   &:active {
     opacity: .4;
+  }
+
+  .chat-popup & {
+    margin-left: 15px;
+    width: auto;
+    height: 38px;
+    background-image: url("../../img/icons/btn-send.svg");
+
+    span {
+      @include visually-hidden;
+    }
   }
 }
 /*

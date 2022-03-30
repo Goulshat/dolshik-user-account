@@ -3,8 +3,6 @@
   padding: 0;
   border: none;
   border-radius: 5px;
-  background-color: $bg-focus;
-  background-color: red;
   background: url("../../img/icons/edit.svg") center 15px no-repeat ;
   opacity: 0;
 
@@ -17,16 +15,3 @@
     opacity: .5;
   }
 }
-
-// .chat-contacts-list-btn__icon {
-//   fill: $text-lightest;
-
-//   .chat-contacts-list-btn:hover &,
-//   .chat-contacts-list-btn:focus & {
-//     fill: $accent-blue;
-//   }
-
-//   .chat-contacts-list-btn:active & {
-//     fill: $text-form;
-//   }
-// }

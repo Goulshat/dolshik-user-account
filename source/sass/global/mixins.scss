@@ -60,6 +60,11 @@
   color: $text-form;
 }
 
+@mixin chatbox-input-outline {
+  border: 1px solid $text-chatbox-input;
+  border-radius: 3px;
+}
+
 @mixin form-input {
   display: block;
   padding: 8px 20px;
@@ -68,8 +73,7 @@
   font-size: 14px;
   line-height: 1;
   color: $text-grey;
-  border: 1px solid $text-chatbox-input;
-  border-radius: 3px;
+  @include chatbox-input-outline;
 }
 
 @mixin residence-form-input {
@@ -101,3 +105,14 @@
 //   font-size: inherit;
 //   color: $accent-blue;
 // }
+
+@mixin visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+}

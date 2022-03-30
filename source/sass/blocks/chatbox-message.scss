@@ -1,6 +1,6 @@
 .chatbox-message {
   display: block;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
   padding: 20px 28px;
   width: fit-content;
   max-width: 65%;
@@ -32,6 +32,11 @@
   @media (max-width: $tablet) {
     max-width: 85%;
   }
+
+  .chat-popup & {
+    padding: 15px 20px;
+    max-width: 95%;
+  }
 }
 
 .chatbox-message__user-name {
@@ -39,25 +44,28 @@
   vertical-align: middle;
   margin: 0;
   padding: 0;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: $font-large;
+  font-weight: $font-weight-semibold;
   color: $black;
 
   .chatbox-message--current-user & {
     display: none;
+  }
+
+  .chat-popup & {
+    font-size: $font-regular;
   }
 }
 
 .chatbox-message__user-role {
   position: relative;
   bottom: 2px;
-  margin-left: 8px;
+  margin-left: $font-tiny;
   padding: 2px 8px;
-  font-size: 8px;
-  font-weight: 400;
+  font-size: $font-tiny;
+  font-weight: $font-weight-regular;
   color: $black;
   border-radius: 4px;
-  //transform: translateY(-10px);
 
   &--designer {
     background-color: $accent-yellow;

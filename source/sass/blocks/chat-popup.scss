@@ -1,58 +1,116 @@
 .chat-popup {
   position: fixed;
-  bottom: 0;
+  bottom: 10px;
   right: 35px;
-  //width: 300px;
-  max-height: 50vh;
+  width: $chat-popup-width;
+  max-height: $chat-popup-height;
   display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  padding: 30px;
+  grid-template-rows: min-content 1fr;
+  padding: $chat-popup-padding;
+  font-size: $font-medium;
+  line-height: 1.8;
   @include block-outline;
   background-color: $white;
   box-shadow: 0 0 10px $box-shadow;
+  overflow: hidden;
 }
 
 // Шапка
 .chat-popup__header {
   display: flex;
   padding: 10px;
+  margin-bottom: 10px;
+  height: $chat-popup-header-height;
 }
 
 .chat-popup__caption {
   margin: 0;
   margin-right: auto;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: $font-medium;
+  font-weight: $font-weight-regular;
 }
 
-.chat-popup__btn-hide,
-.chat-popup__btn-close {
+.chat-popup__btn {
   display: flex;
-  @include square(20px);
+  @include square(15px);
+  padding: 0 0 2px 0;
+  justify-content: center;
+  align-items: flex-end;
+  border: none;
+  background-color: transparent;
+
+  &:first-of-type {
+    margin-left: auto;
+  }
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.chat-popup__btn-icon {
+  width: 80%;
+  height: auto;
+  fill: $text-light;
+
+  .chat-popup:hover &,
+  .chat-popup:focus-within & {
+    fill: $text-grey;
+  }
+
+  .chat-popup__btn:hover &,
+  .chat-popup__btn:focus &  {
+    fill: $accent-blue;
+  }
+
+  .chat-popup__btn:active & {
+    fill: $text-light;
+  }
+
+}
+// контейнер для списка контактов и сообщений 
+.chat-popup__main {
+  position: relative;
 }
 
 // контейнер для списка контактов
 .chat-popup__list {
   position: relative;
   transform: translateX(0);
+  width: ($chat-popup-width - $chat-popup-padding * 2);
+  height: $chat-popup-height - ($chat-popup-padding * 2 + $chat-popup-header-height + 50px); //50px - высота поля поиска (40px) и отступа выше (10px)
+  overflow-y: auto;
 
   &--hidden {
-    transform: translateX(-100%);
+    transform: translateX(-110%);
   }
 }
 
 // контейнер для сообщений
 .chat-popup__messages-box {
+  position: absolute;
+  top: 0;
+  right: -($chat-popup-width);
+  right: 0;
+
+  width: ($chat-popup-width - $chat-popup-padding * 2);
+
+  &--shown {
+    right: 0;
+  }
+}
+
+.chat-popup__messages {
+  @include clear-list;
+
   display: flex;
   flex-direction: column;
   margin: 0;
-  margin-right: -10px;
-  padding: 30px 25px 20px 0;
-  max-height: 800px;
+  padding: 30px 15px 25px 10px;
+  height: $chat-popup-height - ($chat-popup-padding * 4 + $chat-popup-header-height + 50px + 35px); // высота футера (50px)
   overflow-y: auto;
-  transform: translateX(0);
+}
 
-  &--hidden {
-    transform: translateX(120%);
-  }
+.chat-popup__footer {
+  padding-top: $chat-popup-padding;
 }

@@ -27,11 +27,6 @@
   &:hover {
     background-color: $bg-hover;
   }
-
-  // .chat-contacts-list--edit &:hover,
-  // .chat-contacts-list--edit &:focus {
-  //   border-color: $accent-pink;
-  // }
 }
 
 .chat-contacts-list__btn {
@@ -39,7 +34,16 @@
 
   .chat-contacts-list__item:hover &,
   .chat-contacts-list__item:focus-within & {
+    opacity: .7;
+  }
+
+  &:hover,
+  &:focus {
     opacity: 1;
+  }
+
+  &:active {
+    opacity: .5;
   }
 }
 
@@ -67,7 +71,6 @@
   overflow: hidden;
   color: $black;
   height: 30px; // чтобы только в 1 строку
-  //.chat-contacts-list--active & {}
 }
 
 .chat-contacts-list__excerp {
