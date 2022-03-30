@@ -202,7 +202,6 @@
             </label> -->
           </div>
   
-          <!-- CHAT CONTACTS LIST -->
           <ul class="chat-contacts-list chat-contacts-list--edit">
           <!-- модификатор раскрывает кнопки редактирования chat-contacts-list--edit-->
             <li class="chat-contacts-list__item">
@@ -291,20 +290,20 @@
           </ul>
         </nav>
 
-        <div class="chatbox-empty chatbox-empty--shown"> <!-- вместо пустоты -->
+        <!-- вместо пустоты и иконки 
+        <div class="chatbox-empty chatbox-empty--shown"> 
           <div class="chatbox-empty__container">
             <a class="chatbox-empty__btn" href="#0">
               <span class="visually-hidden">Вернуться к списку чатов</span>
             </a>
   
-            <p class="chatbox-empty__text">Выберите чат <!--или
-              <a class="chatbox-empty__link" href="#0">создайте&nbsp;новый</a> -->
+            <p class="chatbox-empty__text">Выберите чат или
+              <a class="chatbox-empty__link" href="#0">создайте&nbsp;новый</a>
             </p>
           </div>
-        </div>
+        </div> -->
 
-        <!-- chatbox -->
-        <article class="chatbox chat-section__chatbox chat-section__chatbox--hidden"><!--chat-section__chatbox--hidden-->
+        <article class="chatbox chat-section__chatbox chat-section__chatbox--hidden"><!-- скрывает chat-section__chatbox--hidden-->
           <header class="chatbox__header">
             <a class="chat-section__open-chat-btn" href="#0">
               <span class="visually-hidden">Вернуться к списку чатов</span>
@@ -322,7 +321,6 @@
             </div>
           </header>
   
-          <!-- chatbox-message -->
           <div class="chatbox__main">
             <div class="chatbox-message chatbox-message--other-user">
               <b class="chatbox-message__user-name">Светлана Светланская
@@ -434,22 +432,6 @@
         </article>
       </section>
     </section>
-  </div>
-  
-  <!--  понадобится ли вообще?  -->
-  <section class="chat-new-popup">
-    <!-- по умолчанию класс скрыт, отображается при добавлении класса chat-new-popup--shown-->
-    <div class="chat-new-popup__container">
-      <h2 class="chat-new-popup__title">Добавить чат</h2>
-      <p class="chat-new-popup__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat inventore facilis nisi impedit aut et tempore adipisci! Suscipit aliquam delectus harum totam saepe commodi consequuntur, doloribus sunt sequi culpa. Assumenda.</p>
-  
-      <button class="chat-new-popup__btn chat-new-popup__btn--close ">
-        <svg class="chat-search__new-icon" width="30" height="30">
-          <use xlink:href="img/icons/sprite.svg#edit" aria-hidden="true"></use>
-        </svg>
-      </button>
-    </div>
-  </section>
   </div>
 </body>
 
