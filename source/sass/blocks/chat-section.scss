@@ -1,6 +1,13 @@
 .chat-section {
   display: flex;
   position: relative;
+  font-family: $font-family, "Helvetica", "Arial", sans-serif;
+  font-size: $font-regular;
+  line-height: 2;
+  font-weight: $font-weight-regular;
+  color: $text-grey;
+  text-align: left;
+  //background-color:  $bg-main; //#fbfbfb;
   background: url("../../img/icons/chat-bg.svg") 72% center no-repeat;
 }
 
@@ -31,15 +38,6 @@
       transform: translateX(-100%, 0);
       transition: transform 0.3 ease-in;
     }
-  }
-}
-
-.chat-section__chatbox {
-  display: flex;
-  flex-direction: column;
-
-  &--hidden {
-    display: none;
   }
 }
 

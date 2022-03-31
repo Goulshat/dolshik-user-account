@@ -32,6 +32,7 @@
   @include square(30px);
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .chat-new-popup__btn-close-icon {
@@ -54,6 +55,7 @@
 }
 
 .chat-new-popup__title {
+  margin: 0 0 25px 0;
   padding-left: $chat-popup-input-padding;
   font-weight: $font-weight-regular;
   font-size: $font-larger;
@@ -62,17 +64,14 @@
 
 .chat-new-popup__label-container {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-size: $font-small;
   color: $text-form;
-
-  &:last-of-type {
-    margin-bottom: 10px;
-  }
 }
 
 .chat-new-popup__label-text {
   display: block;
+  margin-bottom: 5px;
   padding-left: $chat-popup-input-padding;
   font-weight: $font-weight-semibold;
 }
@@ -99,6 +98,8 @@
   .chat-new-popup__input-wrap &[readonly] {
     border: none;
     margin-right: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 
     &:hover,
     &:focus {
@@ -129,6 +130,7 @@
   @include square(25px);
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .chat-new-popup__user-delete-icon {
@@ -165,6 +167,7 @@
   background-color: transparent;
   border: 1px solid $text-chatbox-input;
   border-radius: 3px;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -188,7 +191,8 @@
 }
 /*----- Сохранить изменения ----*/
 .chat-new-popup__btn-save {
-  margin-top: 35px;
+  margin-top: 25px;
   padding: 10px;
   font-size: $font-medium;
+  cursor: pointer;
 }

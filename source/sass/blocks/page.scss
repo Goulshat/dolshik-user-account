@@ -21,13 +21,13 @@ img {
   min-height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 30px;
+  font-family: $font-family, "Helvetica", "Arial", sans-serif;
+  font-size: $font-regular;
+  line-height: 2;
   font-weight: 400;
   color: $text-grey;
   text-align: left;
-  background-color: #fbfbfb;
+  background-color:  $bg-main; //#fbfbfb;
 }
 /*---- Layout страницы - гриды ----*/
 /*

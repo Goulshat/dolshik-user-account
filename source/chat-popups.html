@@ -183,13 +183,13 @@
 
       <button class="chat-popup__btn chat-popup__btn--hide" type="button" aria-label="Свернуть чат">
         <svg class="chat-popup__btn-icon chat-popup__btn-icon--hide" width="20" height="3">
-          <use xlink:href="img/icons/sprite.svg#btn-hide" aria-hidden="true"></use>
+          <path d="M20 0H0V2H20V0Z"/>
         </svg>
       </button>
 
       <button class="chat-popup__btn chat-popup__btn--close" type="button" aria-label="Закрыть чат">
-        <svg class="chat-popup__btn-icon chat-popup__btn-icon--close" width="20" height="20">
-          <use xlink:href="img/icons/sprite.svg#btn-close" aria-hidden="true"></use>
+        <svg class="chat-popup__btn-icon chat-popup__btn-icon--close" width="20" height="20" viewBox="0 0 21 20">
+          <path d="M21 1.36585L19.5659 0L10.5512 8.58537L1.43415 0L0 1.36585L9.01463 10.0488L0 18.6341L1.43415 20L10.5512 11.4146L19.5659 20L21 18.6341L11.9854 10.0488L21 1.36585Z"/>
         </svg>
       </button>
     </header>
@@ -200,8 +200,8 @@
           <input class="chat-search__input" type="search" placeholder="Найти чат">
     
           <button class="chat-search__btn" type="button">
-            <svg class="chat-search__icon" width="30" height="30">
-              <use xlink:href="img/icons/sprite.svg#arrow-right" aria-hidden="true"></use>
+            <svg class="chat-search__icon" width="30" height="30" viewBox="0 0 24 24">
+              <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"/>
             </svg>
           </button>
         </div>
@@ -327,6 +327,7 @@
         <div class="chat-popup__footer">
           <div class="chatbox-input">
             <input class="chatbox-input__input" type="text" placeholder="Напишите сообщение">
+            
             <button class="btn btn--blue chatbox-input__send-btn" type="button">
               <span>Отправить</span>
             </button>
@@ -340,8 +341,8 @@
     <!-- по умолчанию попап скрыт, отображается при добавлении класса chat-new-popup--shown-->
     <div class="chat-new-popup__container">
       <button class="chat-new-popup__btn-close" type="button" aria-label="Закрыть окно редактирования чата">
-        <svg class="chat-new-popup__btn-close-icon" width="20" height="20">
-          <use xlink:href="img/icons/sprite.svg#btn-close" aria-hidden="true"></use>
+        <svg class="chat-new-popup__btn-close-icon" width="20" height="20" viewBox="0 0 21 20">
+          <path d="M21 1.36585L19.5659 0L10.5512 8.58537L1.43415 0L0 1.36585L9.01463 10.0488L0 18.6341L1.43415 20L10.5512 11.4146L19.5659 20L21 18.6341L11.9854 10.0488L21 1.36585Z"/>
         </svg>
       </button>
 
@@ -363,8 +364,8 @@
             <input class="chat-new-popup__input" type="search" value="Иван Иванович" readonly>
 
             <button class="chat-new-popup__user-delete-btn" type="button" aria-label="Удалить пользователя из чата">
-              <svg class="chat-new-popup__user-delete-icon" width="20" height="20">
-                <use xlink:href="img/icons/sprite.svg#btn-close" aria-hidden="true"></use>
+              <svg class="chat-new-popup__user-delete-icon" width="20" height="20" viewBox="0 0 21 20">
+                <path d="M21 1.36585L19.5659 0L10.5512 8.58537L1.43415 0L0 1.36585L9.01463 10.0488L0 18.6341L1.43415 20L10.5512 11.4146L19.5659 20L21 18.6341L11.9854 10.0488L21 1.36585Z"/>
               </svg>
             </button>
           </div>
@@ -373,8 +374,8 @@
             <input class="chat-new-popup__input" type="search" value="Иван Иванович" readonly>
 
             <button class="chat-new-popup__user-delete-btn" type="button" aria-label="Удалить пользователя из чата">
-              <svg class="chat-new-popup__user-delete-icon" width="20" height="20">
-                <use xlink:href="img/icons/sprite.svg#btn-close" aria-hidden="true"></use>
+              <svg class="chat-new-popup__user-delete-icon" width="20" height="20" viewBox="0 0 21 20">
+                <path d="M21 1.36585L19.5659 0L10.5512 8.58537L1.43415 0L0 1.36585L9.01463 10.0488L0 18.6341L1.43415 20L10.5512 11.4146L19.5659 20L21 18.6341L11.9854 10.0488L21 1.36585Z"/>
               </svg>
             </button>
           </div>
@@ -391,14 +392,14 @@
             </select>
 
             <button class="chat-new-popup__btn-add-user" type="button" aria-label="Добавить пользователя">
-              <svg class="chat-new-popup__btn-add-user-icon" width="20" height="20">
-                <use xlink:href="img/icons/sprite.svg#plus-slim" aria-hidden="true"></use>
+              <svg class="chat-new-popup__btn-add-user-icon" width="20" height="20" viewBox="0 0 30 30">
+                <g><path d="M28.0284 16.0125L28.0325 14.0326L15.5876 14.0072L15.5424 1.49147L13.5626 1.48742L13.4663 14.0029L1.02146 13.9774L1.01739 15.9573L13.5328 16.0535L13.5075 28.4985L15.4873 28.5025L15.5127 16.0577L28.0284 16.0125Z"/></g>
               </svg>
-          </button>
+            </button>
           </div>
         </div>
 
-        <button class="btn btn--blue chat-new-popup__btn-save" type="submit">Сохранить</button>
+        <button class="btn btn--blue chat-new-popup__btn-save" type="button">Сохранить</button>
       </form>
     </div>
   </section>
