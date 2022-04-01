@@ -9,6 +9,7 @@
   width: 100%;
   min-height: 100vh;
   background-color: $box-shadow-darker;
+  z-index: 10;
 
   &--shown {
     display: flex;
@@ -163,6 +164,7 @@
   justify-content: center;
   align-items: center;
   width: 42px;
+  height: 44px;
   margin-left: 5px;
   background-color: transparent;
   border: 1px solid $text-chatbox-input;
@@ -189,10 +191,23 @@
     fill: $text-light;
   }
 }
-/*----- Сохранить изменения ----*/
+/*----- Сохранить изменения ----*/ 
 .chat-new-popup__btn-save {
   margin-top: 25px;
   padding: 10px;
   font-size: $font-medium;
   cursor: pointer;
+}
+/*----- Selectize ----*/
+.selectize-input {
+  display: block;
+  padding: 10px;
+  border: none;
+}
+div.chat-new-popup__input {
+  padding: 0;
+}
+.selectize-dropdown-content .option {
+  background: url("https://portal.go-digital-software.de/upload/resize_cache/main/9c1/100_100_2/profile.png") left center/35px 35px no-repeat;
+  padding: 15px 5px 15px 45px;
 }
