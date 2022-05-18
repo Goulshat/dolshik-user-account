@@ -1,7 +1,7 @@
 .chat-popup {
   position: fixed;
-  bottom: 10px;
-  right: 35px;
+  bottom: 2vh;
+  right: 5vh;
   width: $chat-popup-width;
   max-height: $chat-popup-height;
   display: grid;
@@ -13,6 +13,45 @@
   background-color: $white;
   box-shadow: 0 0 10px $box-shadow;
   overflow: hidden;
+
+  &--hidden {
+    padding: 0;
+    width: min-content;
+    height: min-content;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+  }
+}
+ 
+.chat-popup__open-btn {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  @include round(50px);
+  background-color: $bg-message-blue;
+  border: none;
+  opacity: 0.5;
+
+  svg {
+      fill: $white;
+      stroke: $accent-blue;
+      stroke-width: 5;
+  }
+
+  &:hover,
+  &:focus {
+      opacity: 1;
+  }
+
+  &:active {
+      opacity: 0.8;
+  }
+
+  .chat-popup--hidden & {
+    display: flex;
+  }
 }
 
 // Шапка
@@ -21,6 +60,10 @@
   padding: 10px;
   margin-bottom: 10px;
   height: $chat-popup-header-height;
+
+  .chat-popup--hidden & {
+    display: none;
+  }
 }
 
 .chat-popup__caption {
@@ -72,6 +115,11 @@
 // контейнер для списка контактов и сообщений 
 .chat-popup__main {
   position: relative;
+  display: block;
+
+  .chat-popup--hidden & {
+    display: none;
+  }
 }
 
 // контейнер для списка контактов

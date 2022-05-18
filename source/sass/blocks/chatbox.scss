@@ -10,6 +10,10 @@
 
   &:focus-within {
     box-shadow: 0 0 15px rgba($accent-blue, 0.3);
+
+    .chat-popup & {
+      box-shadow: none;
+    }
   }
 
   &--empty {
