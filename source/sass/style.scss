@@ -25,29 +25,29 @@
 // @import "blocks/floor-plan.scss";
 
 //3 part - chat
-@import "blocks/chat-search.scss";
-@import "blocks/chat-contacts-list-btn.scss";
-@import "blocks/chat-contacts-list.scss";
-@import "blocks/chatbox.scss";
-@import "blocks/chat-section.scss";
-@import "blocks/chatbox-message.scss";
-@import "blocks/chatbox-input.scss";
-@import "blocks/chatbox-empty.scss";
+// @import "blocks/chat-search.scss";
+// @import "blocks/chat-contacts-list-btn.scss";
+// @import "blocks/chat-contacts-list.scss";
+// @import "blocks/chatbox.scss";
+// @import "blocks/chat-section.scss";
+// @import "blocks/chatbox-message.scss";
+// @import "blocks/chatbox-input.scss";
+// @import "blocks/chatbox-empty.scss";
 
-@import "blocks/chat-popup.scss";
+// @import "blocks/chat-popup.scss";
 
-@import "blocks/chat-new-popup.scss"; //edit?
+// @import "blocks/chat-new-popup.scss"; //edit?
 
 //4 part - residence-form-add
 
-// @import "blocks/residence-tooltip.scss";
+@import "blocks/residence-tooltip.scss";
 // @import "blocks/residence-form-map.scss";
-// @import "blocks/residence-upload-area.scss";
+@import "blocks/residence-upload-area.scss";
 // @import "blocks/residence-upload-img.scss";
-// @import "blocks/residence-form-active-check.scss";
+@import "blocks/residence-form-active-check.scss";
 // @import "blocks/residence-form-select.scss";
 // @import "blocks/residence-add-help.scss";
-// @import "blocks/residence-form.scss";
+//@import "blocks/residence-form.scss";
 // @import "blocks/residence-form-btn-select.scss";
 // @import "blocks/checkerboard.scss";
 // @import "blocks/checkerboard-section.scss";
@@ -56,3 +56,4 @@
 // @import "blocks/residence-form-building.scss";
 // @import "blocks/residence-form-flatplan.scss";
 // @import "blocks/residence-form-flat.scss";
+@import "blocks/residence-form-developer.scss";

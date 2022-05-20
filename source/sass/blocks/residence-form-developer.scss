@@ -1,0 +1,121 @@
+
+/*----- Фон  -----*/
+.residence-developer__container {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  background: none;
+}
+
+/*---- Контейнер для формы ----*/
+.residence-developer__form-container {
+  max-width: 912px;
+  margin-right: 30px;
+}
+
+/*--------- Форма --------*/
+.residence-developer__form {
+  @include block-outline;
+}
+
+.residence-developer__fieldset {
+  border: none;
+  margin: 0;
+  padding: 30px 36px 36px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 30px;
+  background-color: $white;
+
+  &:first-child {
+    padding-top: 40px;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 30px;
+    row-gap: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  &:nth-child(2n) {
+    background-color: $residence-fieldset-bg;
+  }
+
+  &:last-child {
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+/* -------------- Чекбокс Активность ------------*/
+
+.residence-developer__active-check {
+  grid-column: 1 / -1;
+}
+
+.residence-developer__label {
+  @include residence-form-label;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--upload-area {
+    grid-row: 2 / 4;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+  }
+
+  &--textarea {
+    grid-column: 1 / -1;
+  }
+}
+
+.residence-developer__label-text {
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 5px;
+}
+
+.residence-developer__required {
+  color: $accent-red;
+}
+
+.residence-developer__input {
+  @include form-input;
+  color: $text-form-placeholder;
+
+  &::placeholder {
+    font-family: $font-family;
+    color: $residence-placeholder;
+  }
+}
+
+.residence-developer__textarea-description {
+  @include textarea;
+  min-height: 180px;
+}
+
+.residence-form__btn-edit {
+  margin-left: 10px;
+  padding: 9px 15px;
+  min-width: 190px;
+  font-size: $font-regular;
+}
+
+/*---------- Подвал формы ------------*/
+.residence-developer__btn-save {
+  min-width: 145px;
+  justify-self: flex-start;
+  font-size: $font-regular;
+}
+
+.residence-developer__btn-reset {
+  @include btn-reset;
+  justify-self: flex-end;
+  min-width: 145px;
+}
